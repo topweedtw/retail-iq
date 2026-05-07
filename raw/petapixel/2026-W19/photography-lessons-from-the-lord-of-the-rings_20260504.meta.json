@@ -1,0 +1,26 @@
+{
+  "source_url": "https://petapixel.com/2026/05/03/photography-lessons-from-the-lord-of-the-rings/",
+  "source_type": "petapixel",
+  "source_tier": "T2",
+  "source_title": "Photography Lessons From ‘The Lord of the Rings’",
+  "fetched_at": "2026-05-04T14:52:13+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:39df2b206870ebe49f8996ad9b08827502512644f4da0d960fe61e48d99001f5",
+  "content_type": "text/html",
+  "content_size_bytes": 119374,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Sun, 03 May 2026 13:30:46 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 0,
+  "relevance_reasoning": "文章內容與 Apple 產品、生態系統或零售訓練無關，時效性也為零。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 0
+  },
+  "key_entities": []
+}

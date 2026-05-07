@@ -1,0 +1,26 @@
+{
+  "source_url": "https://sixcolors.com/podcast/2026/05/downstream-117-love-to-your-mothers/",
+  "source_type": "six-colors",
+  "source_tier": "T2",
+  "source_title": "(Podcast) Downstream 117: Love to Your Mothers",
+  "fetched_at": "2026-05-04T14:52:07+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:f2d3c5861ef19cb9391d7121b678234d801c6802cbded25bc3cdb5a2785453cb",
+  "content_type": "text/html",
+  "content_size_bytes": 43452,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Sat, 02 May 2026 00:17:13 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 0,
+  "relevance_reasoning": "文章內容與 Apple 產品、生態或門市訓練無關，且無時效性。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 0
+  },
+  "key_entities": []
+}

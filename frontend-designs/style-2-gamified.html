@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RetailIQ — Gamified 遊戲化風</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    background: #faf7f2;
+    color: #2a2a3e;
+  }
+  .pop-card {
+    background: white;
+    border-radius: 24px;
+    border-bottom: 4px solid #e0dcd4;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.02);
+    transition: transform .15s ease;
+  }
+  .pop-card:hover { transform: translateY(-2px); }
+  .btn-pop {
+    display: inline-block; padding: 14px 24px; border-radius: 16px; font-weight: 700;
+    background: #58cc02; color: white; border-bottom: 4px solid #58a700;
+    cursor: pointer; transition: transform .1s ease;
+  }
+  .btn-pop:active { transform: translateY(2px); border-bottom-width: 2px; }
+  .btn-pop.orange { background: #ff9600; border-bottom-color: #e87f00; }
+  .btn-pop.purple { background: #a560e8; border-bottom-color: #8a43d0; }
+  .btn-pop.pink { background: #ff4b8d; border-bottom-color: #e0356e; }
+  .btn-ghost {
+    display: inline-block; padding: 14px 24px; border-radius: 16px; font-weight: 700;
+    background: white; color: #5b6a7a; border: 2px solid #e0dcd4; border-bottom: 4px solid #e0dcd4;
+    cursor: pointer;
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 14px; border-radius: 980px; font-size: 13px; font-weight: 700;
+    background: white; border: 2px solid #e0dcd4;
+  }
+  .streak-fire {
+    background: linear-gradient(135deg, #ff9600 0%, #ff4b8d 100%);
+    color: white; border: none;
+  }
+  .progress-bar {
+    height: 16px; border-radius: 16px; background: #e0dcd4; overflow: hidden; position: relative;
+  }
+  .progress-fill {
+    height: 100%; border-radius: 16px; background: linear-gradient(90deg, #58cc02, #89e219);
+  }
+  .tile {
+    background: white; border-radius: 20px;
+    border: 3px solid #e0dcd4; border-bottom-width: 6px;
+    cursor: pointer; transition: all .15s;
+  }
+  .tile:hover { border-color: #58cc02; }
+  .tile.locked { opacity: 0.5; cursor: not-allowed; }
+  .confetti {
+    position: absolute; font-size: 24px; animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%,100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+  }
+  .grad-hero {
+    background: linear-gradient(135deg, #ffeecc 0%, #ffd4e8 100%);
+  }
+  .pill-tab {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 10px 18px; border-radius: 16px; font-weight: 700; font-size: 14px;
+    background: white; border: 2px solid #e0dcd4; border-bottom-width: 4px;
+    cursor: pointer; transition: all .15s;
+  }
+  .pill-tab.active { border-color: #58cc02; background: #e6f9d1; color: #3c7a00; }
+</style>
+</head>
+<body>
+
+<!-- 設計註解 -->
+<div class="bg-neutral-900 text-white text-xs py-2 px-6 text-center">
+  <strong>Style 2 · Gamified 遊戲化</strong> — 靈感來自 Duolingo、Quizlet。暖色調 + 圓角 + 粗體 + 4px 按鈕陰影（按下去會縮）、徽章、連續天數、升級進度條。適合：年輕門市人員、強化學習黏著度、適合以測驗為核心。
+</div>
+
+<!-- Top Nav -->
+<nav class="bg-white border-b border-[#e0dcd4] sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <div class="font-black text-xl text-[#58cc02]">⚡ RetailIQ</div>
+      <div class="flex gap-2">
+        <span class="pill-tab">📰 週報</span>
+        <span class="pill-tab active">🎯 測驗</span>
+        <span class="pill-tab">🎤 腳本</span>
+        <span class="pill-tab">📚 知識庫</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="badge streak-fire">🔥 7 天</span>
+      <span class="badge">💎 1,240</span>
+      <span class="badge">❤️ 5</span>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-300 to-pink-300 border-4 border-white" style="box-shadow: 0 0 0 2px #e0dcd4;"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero with Confetti -->
+<section class="grad-hero py-16 relative overflow-hidden">
+  <span class="confetti" style="top:20px;left:10%;">✨</span>
+  <span class="confetti" style="top:40px;right:15%;animation-delay:0.5s;">🎉</span>
+  <span class="confetti" style="bottom:30px;left:20%;animation-delay:1s;">⭐</span>
+  <span class="confetti" style="bottom:50px;right:25%;animation-delay:1.5s;">🚀</span>
+
+  <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+    <div class="inline-block badge streak-fire mb-4">🔥 連續 7 天達成</div>
+    <h1 class="text-5xl font-black mb-3">早安，Willer！</h1>
+    <p class="text-xl text-[#5b6a7a] mb-2">你離下一個徽章還差</p>
+    <p class="text-3xl font-black text-[#ff9600] mb-6">⚔️ 2 場挑戰</p>
+    <button class="btn-pop text-lg">開始今日挑戰 →</button>
+
+    <!-- Level progress -->
+    <div class="mt-10 max-w-md mx-auto">
+      <div class="flex items-center justify-between text-xs font-bold mb-2 text-[#5b6a7a]">
+        <span>Lv.12 產品知識學徒</span>
+        <span>340 / 500 XP</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 68%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 三大模組 Tile Grid -->
+<section class="max-w-5xl mx-auto px-6 py-12">
+  <h2 class="text-2xl font-black mb-6">今天要做什麼？</h2>
+  <div class="grid grid-cols-3 gap-4">
+    <div class="tile p-6">
+      <div class="text-5xl mb-3">🎯</div>
+      <div class="badge mb-3">+50 XP</div>
+      <h3 class="font-black text-lg mt-2 mb-1">每日 5 題挑戰</h3>
+      <p class="text-sm text-[#5b6a7a]">iPhone 17 Pro 相機系統</p>
+      <div class="mt-4 flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-[#58cc02]"></span>
+        <span class="w-2 h-2 rounded-full bg-[#58cc02]"></span>
+        <span class="w-2 h-2 rounded-full bg-[#58cc02]"></span>
+        <span class="w-2 h-2 rounded-full bg-[#e0dcd4]"></span>
+        <span class="w-2 h-2 rounded-full bg-[#e0dcd4]"></span>
+      </div>
+    </div>
+    <div class="tile p-6" style="border-color:#ff9600; border-bottom-color:#ff9600;">
+      <div class="text-5xl mb-3">⚔️</div>
+      <div class="badge" style="background:#fff3e0; border-color:#ff9600;">🔥 限時</div>
+      <h3 class="font-black text-lg mt-2 mb-1">情境對決賽</h3>
+      <p class="text-sm text-[#5b6a7a]">客戶問「為什麼不是鈦金屬？」</p>
+      <div class="mt-4 text-xs font-bold text-[#ff9600]">⏱ 還剩 02:34:12</div>
+    </div>
+    <div class="tile p-6">
+      <div class="text-5xl mb-3">📰</div>
+      <div class="badge mb-3">+20 XP</div>
+      <h3 class="font-black text-lg mt-2 mb-1">本週新知</h3>
+      <p class="text-sm text-[#5b6a7a]">10 則產業動態待閱讀</p>
+      <div class="mt-4">
+        <div class="progress-bar"><div class="progress-fill" style="width:60%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 徽章牆 -->
+<section class="max-w-5xl mx-auto px-6 pb-12">
+  <div class="flex items-baseline justify-between mb-4">
+    <h2 class="text-2xl font-black">🏆 徽章牆</h2>
+    <a class="text-sm font-bold text-[#a560e8]" href="#">查看全部 42 枚 →</a>
+  </div>
+  <div class="pop-card p-6">
+    <div class="grid grid-cols-6 gap-4">
+      <div class="text-center">
+        <div class="text-5xl mb-1">🥇</div>
+        <div class="text-xs font-bold">首購達人</div>
+      </div>
+      <div class="text-center">
+        <div class="text-5xl mb-1">📸</div>
+        <div class="text-xs font-bold">相機專家</div>
+      </div>
+      <div class="text-center">
+        <div class="text-5xl mb-1">⚡️</div>
+        <div class="text-xs font-bold">閃電回答</div>
+      </div>
+      <div class="text-center">
+        <div class="text-5xl mb-1">🎬</div>
+        <div class="text-xs font-bold">腳本大師</div>
+      </div>
+      <div class="text-center opacity-30">
+        <div class="text-5xl mb-1">🔒</div>
+        <div class="text-xs font-bold">待解鎖</div>
+      </div>
+      <div class="text-center opacity-30">
+        <div class="text-5xl mb-1">🔒</div>
+        <div class="text-xs font-bold">待解鎖</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 腳本生成器 Quest Mode -->
+<section class="max-w-4xl mx-auto px-6 pb-16">
+  <div class="pop-card p-8">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="text-3xl">🎤</span>
+      <span class="badge" style="background:#f3e8ff; border-color:#a560e8; color:#6b20b8;">腳本任務</span>
+    </div>
+    <h2 class="text-3xl font-black mb-2">客戶來了！</h2>
+    <p class="text-[#5b6a7a] mb-8">3 步產出你的專屬劇本</p>
+
+    <!-- Step 1 -->
+    <div class="mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-7 h-7 rounded-full bg-[#58cc02] text-white font-black flex items-center justify-center text-sm">1</span>
+        <span class="font-black">產品？</span>
+      </div>
+      <div class="flex gap-2 flex-wrap">
+        <span class="pill-tab active">📱 iPhone 17 Pro</span>
+        <span class="pill-tab">📱 iPad Air</span>
+        <span class="pill-tab">💻 MacBook Neo</span>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-7 h-7 rounded-full bg-[#58cc02] text-white font-black flex items-center justify-center text-sm">2</span>
+        <span class="font-black">客戶是...？</span>
+      </div>
+      <div class="flex gap-2 flex-wrap">
+        <span class="pill-tab">🎓 學生</span>
+        <span class="pill-tab active">💼 商務</span>
+        <span class="pill-tab">📸 攝影師</span>
+        <span class="pill-tab">👨‍👩‍👧 家庭</span>
+      </div>
+    </div>
+
+    <!-- Step 3: Length as game difficulty -->
+    <div class="mb-8">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-7 h-7 rounded-full bg-[#58cc02] text-white font-black flex items-center justify-center text-sm">3</span>
+        <span class="font-black">展示長度？</span>
+      </div>
+      <div class="grid grid-cols-3 gap-3">
+        <div class="tile p-4 text-center">
+          <div class="text-3xl mb-2">⚡</div>
+          <div class="font-black">1 分鐘</div>
+          <div class="text-xs text-[#5b6a7a] mt-1">快閃模式</div>
+        </div>
+        <div class="tile p-4 text-center">
+          <div class="text-3xl mb-2">🔥</div>
+          <div class="font-black">3 分鐘</div>
+          <div class="text-xs text-[#5b6a7a] mt-1">精華模式</div>
+        </div>
+        <div class="tile p-4 text-center" style="border-color:#ff4b8d; background:#fff0f6;">
+          <div class="text-3xl mb-2">💎</div>
+          <div class="font-black text-[#ff4b8d]">5 分鐘</div>
+          <div class="text-xs text-[#5b6a7a] mt-1">大師模式</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-pop pink text-lg w-full">🚀 生成我的劇本！</button>
+  </div>
+</section>
+
+<!-- Leaderboard -->
+<section class="max-w-4xl mx-auto px-6 pb-24">
+  <div class="flex items-baseline justify-between mb-4">
+    <h2 class="text-2xl font-black">👑 本週排行榜</h2>
+    <span class="badge">信義旗艦店</span>
+  </div>
+  <div class="pop-card p-6 space-y-3">
+    <div class="flex items-center gap-4 p-3 rounded-2xl bg-gradient-to-r from-yellow-100 to-orange-100">
+      <span class="text-3xl">🥇</span>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-300 to-purple-300"></div>
+      <div class="flex-1">
+        <div class="font-black">阿明</div>
+        <div class="text-xs text-[#5b6a7a]">Lv.18 · 產品知識大師</div>
+      </div>
+      <div class="font-black text-[#ff9600]">2,840 XP</div>
+    </div>
+    <div class="flex items-center gap-4 p-3 rounded-2xl bg-gradient-to-r from-gray-100 to-gray-50">
+      <span class="text-3xl">🥈</span>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-300 to-cyan-300"></div>
+      <div class="flex-1">
+        <div class="font-black">小芬</div>
+        <div class="text-xs text-[#5b6a7a]">Lv.16</div>
+      </div>
+      <div class="font-black text-[#5b6a7a]">2,120 XP</div>
+    </div>
+    <div class="flex items-center gap-4 p-3 rounded-2xl bg-gradient-to-r from-orange-50 to-yellow-50">
+      <span class="text-3xl">🥉</span>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-300 to-emerald-300"></div>
+      <div class="flex-1">
+        <div class="font-black">志豪</div>
+        <div class="text-xs text-[#5b6a7a]">Lv.15</div>
+      </div>
+      <div class="font-black text-[#ff9600]">1,960 XP</div>
+    </div>
+    <div class="flex items-center gap-4 p-3 rounded-2xl border-2 border-[#58cc02] bg-[#e6f9d1]">
+      <span class="font-black text-[#58cc02] w-8 text-center">#7</span>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-300 to-pink-300"></div>
+      <div class="flex-1">
+        <div class="font-black">Willer（你）</div>
+        <div class="text-xs text-[#5b6a7a]">Lv.12 · 還差 120 XP 升級</div>
+      </div>
+      <div class="font-black text-[#58cc02]">1,240 XP</div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-[#e0dcd4] py-8">
+  <div class="max-w-6xl mx-auto px-6 text-xs text-[#5b6a7a] flex justify-between">
+    <div>RetailIQ · 玩中學，學中賣 · v0.1 mockup</div>
+    <div>Schema v1.6 · 2026-04-30</div>
+  </div>
+</footer>
+
+</body>
+</html>

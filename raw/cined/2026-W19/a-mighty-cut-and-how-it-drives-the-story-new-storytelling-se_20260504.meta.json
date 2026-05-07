@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.cined.com/a-mighty-cut-and-how-it-drives-the-story-new-storytelling-sessions-webinar-on-may-13th/",
+  "source_type": "cined",
+  "source_tier": "T2",
+  "source_title": "A Mighty Cut and How it Drives the Story – New Storytelling Sessions Webinar on May 13th",
+  "fetched_at": "2026-05-04T14:52:22+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:ceed8ebd220ce47254b411347feb59bf996dced8ac772814d8152d3b92b312c5",
+  "content_type": "text/html",
+  "content_size_bytes": 551408,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Fri, 01 May 2026 12:17:44 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 1,
+  "relevance_reasoning": "文章與 Apple 產品無關，但探討的敘事技巧可能適用於任何影片製作訓練。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 1,
+    "d4_timeliness": 0
+  },
+  "key_entities": [
+    "GoPro Mission 1 Pro ILS",
+    "Kinefinity Vista",
+    "NAB 2026",
+    "MZed",
+    "Alfred Hitchcock"
+  ]
+}

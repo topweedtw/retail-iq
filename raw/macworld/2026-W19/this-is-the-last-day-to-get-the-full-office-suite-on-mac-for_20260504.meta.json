@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.macworld.com/article/3126961/this-is-the-last-day-to-get-the-full-office-suite-on-mac-for-45.html",
+  "source_type": "macworld",
+  "source_tier": "T2",
+  "source_title": "This is the last day to get the full Office suite on Mac for $45",
+  "fetched_at": "2026-05-04T14:52:18+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:5fbc204a8e304de0e02195162ed8d2f2e7751fbba01ef845ba27337a5be93667",
+  "content_type": "text/html",
+  "content_size_bytes": 190237,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Sun, 03 May 2026 08:00:00 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 7,
+  "relevance_reasoning": "文章主要關於 Mac 上的 Office 軟體，但提及多款 Apple 產品，具備訓練潛力，時效性普通。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 2,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Mac",
+    "iPhone",
+    "iPad",
+    "Apple Watch",
+    "AirPods"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/tw/iphone-17-pro/",
+  "source_type": "apple-com-tw",
+  "source_tier": "T1",
+  "source_title": "iphone-17-pro",
+  "fetched_at": "2026-05-07T11:15:25+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:42a1ce449adbd240c6c95dbb940bcba93cdb8345b1335883b2bd7e919afe6d09",
+  "content_type": "text/html",
+  "content_size_bytes": 769939,
+  "http_status": 200,
+  "locale": "zh-TW",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": null
+}

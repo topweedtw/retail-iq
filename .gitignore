@@ -1,0 +1,96 @@
+# ──────────────────────────────────────────────────────
+# RetailIQ .gitignore
+# ──────────────────────────────────────────────────────
+
+# ─── 系統／編輯器 ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.fleet/
+.cursor/
+*.sublime-project
+*.sublime-workspace
+
+# ─── Python ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ─── Node.js（未來前端）───────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+.yarn/
+pnpm-lock.yaml.backup
+
+# ─── Next.js ─────────────────────────────────────────
+.next/
+out/
+build/
+dist/
+
+# ─── 秘密與憑證（永遠不 commit）────────────────────────
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+*.pem
+*.key
+.aws/
+.ssh/
+
+# ─── 暫存與筆記 ──────────────────────────────────────
+tmp/
+.scratch/
+.tmp/
+scratchpad.md
+todo.local.md
+
+# ─── 合規：raw 原始 HTML 不入 git（版權風險）──────────
+# 只保留 .txt（LLM 已提取純文字）、.meta.json、.zh-TW.md
+# 詳見 CONTRIBUTING.md § 法務與合規
+raw/**/*.html
+raw/**/*.pdf
+raw/**/*.docx
+raw/**/*.pptx
+raw/assets/
+
+# ─── Ingest Agent runtime 產出 ────────────────────────
+raw/_archive/
+raw/**/.ingest-cache/
+raw/**/*.meta.json.new
+raw/**/*.meta.json.tmp
+
+# ─── LLM embedding 快取（大、可重算）──────────────────
+*.embed.json
+embeddings-cache/
+
+# ─── Git LFS pointer files 以外的大檔 ─────────────────
+*.mp4
+*.mov
+*.m4v
+# （若要追蹤，改放 raw/assets/videos 並用 Git LFS）
+
+# ─── macOS 特殊 ──────────────────────────────────────
+.AppleDouble
+.LSOverride
+Icon
+
+# ─── Enchanté conversation files（對話工作目錄）──────
+# 這個檔案在對話專用目錄下，不入 git
+# （用於開發期間，實際 repo 應從 cleaner path 初始化）

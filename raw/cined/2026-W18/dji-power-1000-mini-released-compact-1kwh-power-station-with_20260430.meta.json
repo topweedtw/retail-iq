@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.cined.com/dji-power-1000-mini-released-compact-1kwh-power-station-with-retractable-usb-c-and-58-minute-recharge/",
+  "source_type": "cined",
+  "source_tier": "T2",
+  "source_title": "DJI Power 1000 Mini Released – Compact 1kWh Power Station with Retractable USB-C and 58-Minute Recharge",
+  "fetched_at": "2026-04-30T16:37:27+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:1efbd286adfca6107899c48cf526b5eb24f8ad5f86d5327d425f76e826d5f763",
+  "content_type": "text/html",
+  "content_size_bytes": 553448,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Thu, 30 Apr 2026 07:35:54 +0000; extracted via pre-w2-crawler"
+}

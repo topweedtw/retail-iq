@@ -1,0 +1,55 @@
+# ──────────────────────────────────────────────────────
+# RetailIQ .gitattributes
+# Git LFS 追蹤設定 — 為未來影片、圖片、PDF 準備
+# ──────────────────────────────────────────────────────
+
+# ─── Line endings（跨平台一致）────────────────────────
+* text=auto eol=lf
+
+# Windows batch files keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# ─── 明確標記為文字檔（幫助 diff 顯示）─────────────────
+*.md text
+*.markdown text
+*.json text
+*.yaml text
+*.yml text
+*.py text
+*.js text
+*.ts text
+*.tsx text
+*.html text
+*.css text
+*.sql text
+*.toml text
+.gitignore text
+.gitattributes text
+
+# ─── 二進位檔 ────────────────────────────────────────
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg binary
+
+# ─── Git LFS 追蹤（若未來啟用 LFS）─────────────────────
+# 要啟用前請先跑：
+#   git lfs install
+#   git lfs track "raw/assets/videos/*.mp4" --lockable
+# 底下是建議 track 的 pattern：
+#
+# raw/assets/videos/*.mp4  filter=lfs diff=lfs merge=lfs -text
+# raw/assets/videos/*.mov  filter=lfs diff=lfs merge=lfs -text
+# raw/assets/images/*.psd  filter=lfs diff=lfs merge=lfs -text
+# raw/**/*.pdf             filter=lfs diff=lfs merge=lfs -text
+#
+# （目前 raw/**/*.pdf 在 .gitignore 中排除；若未來法務批准後再開）
+
+# ─── linguist overrides（GitHub 顯示語言統計）─────────
+*.md linguist-detectable=true
+generated-scripts/*.md linguist-documentation=true
+wiki/weekly-digest/*.md linguist-documentation=true

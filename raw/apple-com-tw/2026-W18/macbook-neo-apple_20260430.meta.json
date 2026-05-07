@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/tw/macbook-neo/",
+  "source_type": "apple-com-tw",
+  "source_tier": "T1",
+  "source_title": "MacBook Neo - Apple (台灣)",
+  "fetched_at": "2026-04-30T16:42:00+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:57c33174bdbefb8150fdc0579cbf43de31cb2a7565d34598ee39f17a35c753fe",
+  "content_type": "text/html",
+  "content_size_bytes": 579243,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.apple.com/tw/iphone-17/",
+  "source_type": "apple-com-tw",
+  "source_tier": "T1",
+  "source_title": "iphone-17",
+  "fetched_at": "2026-05-05T13:28:32+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:208c3676c8e567413c5ce0606aa8479940cc9327d34edc27c614add8f05c822b",
+  "content_type": "text/html",
+  "content_size_bytes": 655773,
+  "http_status": 200,
+  "locale": "zh-TW",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": "2026-05-07T12:12:08+08:00|iphone-17-pro",
+  "notes": null,
+  "relevance_score": 10,
+  "relevance_reasoning": "文章詳細介紹 iPhone 17 系列，包含產品特色、技術與 iOS 26，具備高訓練潛力與時效性。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 3,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "iPhone 17",
+    "Apple Intelligence",
+    "iOS 26",
+    "A19 晶片",
+    "ProMotion 技術"
+  ],
+  "ingest_targets": [
+    "iphone-17-pro"
+  ]
+}

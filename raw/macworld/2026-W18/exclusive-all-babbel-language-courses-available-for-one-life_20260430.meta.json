@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.macworld.com/article/3123289/exclusive-all-babbel-language-courses-available-for-one-lifetime-price.html",
+  "source_type": "macworld",
+  "source_tier": "T2",
+  "source_title": "Exclusive: All Babbel language courses available for one lifetime price",
+  "fetched_at": "2026-04-30T16:37:23+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:6cc1faa7f9c2d5636a331360a0d47b15263ec57d3caa2436937a98618f0ff506",
+  "content_type": "text/html",
+  "content_size_bytes": 189256,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Thu, 30 Apr 2026 08:00:00 +0000; extracted via pre-w2-crawler"
+}

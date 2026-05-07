@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.tomsguide.com/phones/iphones/im-stoked-for-the-iphone-fold-but-theres-something-else-that-should-be-a-much-higher-priority-than-a-thin-design",
+  "source_type": "toms-guide",
+  "source_tier": "T3",
+  "source_title": "I’m stoked for the iPhone Fold, but there’s something else that should be a much higher priority than a thin design",
+  "fetched_at": "2026-05-04T14:52:28+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:9aef4f895a87cc7b29b52e52f83a94ac6dea99167fc6a19166adca551a129363",
+  "content_type": "text/html",
+  "content_size_bytes": 1706012,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending-review",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Mon, 04 May 2026 06:45:00 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 5,
+  "relevance_reasoning": "文章提及 iPhone 和 Apple Watch，但重點在於對折疊手機的期望，訓練素材潛力有限。",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "iPhone",
+    "Apple Watch",
+    "Apple Intelligence"
+  ]
+}

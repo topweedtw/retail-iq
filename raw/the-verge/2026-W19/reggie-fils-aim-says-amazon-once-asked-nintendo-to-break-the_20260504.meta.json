@@ -1,0 +1,26 @@
+{
+  "source_url": "https://www.theverge.com/games/922840/reggie-fils-aime-amazon-nintendo-illegal",
+  "source_type": "the-verge",
+  "source_tier": "T3",
+  "source_title": "Reggie Fils-Aimé says Amazon once asked Nintendo to break the law",
+  "fetched_at": "2026-05-04T14:52:25+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:ccd65e5f8df942639074a4974fdad58967826118ba66ec1e40ef8a3b6c77401b",
+  "content_type": "text/html",
+  "content_size_bytes": 528651,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: 2026-05-03T11:24:27-04:00; extracted via pre-w2-crawler",
+  "relevance_score": 0,
+  "relevance_reasoning": "文章內容與 Apple 產品、生態系統或零售訓練無關，且時效性低。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 0
+  },
+  "key_entities": []
+}

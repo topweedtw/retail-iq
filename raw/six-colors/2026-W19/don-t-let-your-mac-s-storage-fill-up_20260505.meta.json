@@ -1,0 +1,32 @@
+{
+  "source_url": "https://sixcolors.com/post/2026/05/dont-let-your-macs-storage-fill-up/",
+  "source_type": "six-colors",
+  "source_tier": "T2",
+  "source_title": "Don’t let your Mac’s storage fill up!",
+  "fetched_at": "2026-05-05T13:28:36+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:515c7f5d5b084e7865a6cf941c92b363c05338796a8bd93d9ab635523c1832cc",
+  "content_type": "text/html",
+  "content_size_bytes": 49272,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending-review",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Mon, 04 May 2026 19:27:34 +0000",
+  "relevance_score": 5,
+  "relevance_reasoning": "文章主要討論 Mac 儲存空間問題，提及 iCloud 和 Photos，但訓練素材潛力有限。",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Mac",
+    "iCloud",
+    "Photos",
+    "APFS snapshots",
+    "Time Machine"
+  ]
+}

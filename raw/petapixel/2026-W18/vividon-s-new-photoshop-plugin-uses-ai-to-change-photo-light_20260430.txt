@@ -1,0 +1,79 @@
+Reviews
+
+Guides
+
+Learn
+
+Podcast
+
+Newsletters
+
+Sample Galleries
+
+Store
+
+Log in
+
+Follow PetaPixel on YouTube
+
+Follow PetaPixel on Facebook
+
+Follow PetaPixel on X
+
+Follow PetaPixel on Instagram
+
+RSS Feed
+
+Vividon’s New Photoshop Plugin Uses AI to Change Photo Lighting
+
+Ask any working photographer what the one thing that they cannot fix in post is, and the answer will almost always be the same: light. It’s easy to clean up skin, tweak color and contrast, and even swap skies or extend backgrounds. Still, bad light has historically meant a costly reshoot, hours of painstaking compositing, or the quiet disappointment of delivering something a client doesn’t like. Stockholm-based startup Vividon is looking to change that, and today it has opened early access to its AI relighting plugin for Adobe Photoshop.
+
+The pitch is clean and practical: powerful AI relighting that lives inside Photoshop, that doesn’t require any prompting, and delivers results on its own editable layers. If you’ve spent any time on commercial sets watching lighting setups eat half the day, the appeal of that workflow is pretty easy to understand.
+
+What Vividon Actually Does
+
+According to the company, the plugin has a library of over 100 professionally curated lighting presets spanning studio, environmental, and cinematic styles (Laid out much like the old Instagram Preset Previews). Available setups include “German Expressionist,” “1940s Film Noir,” “Theater Spotlight,” “Blade Runner,” and “Nightclub” — the kind of looks that, on a real shoot, would require significant time, budget, and likely a gaffer. Each relight is applied on its own fully editable Photoshop layer, which means users can adjust opacity, change blend modes, or paint the effect in and out with a brush. The original image stays completely untouched throughout.
+
+The standout feature, at least on paper, is called Match. It lets photographers extract the lighting signature from any reference image they own and apply it to a new piece of work. For any photographer who has ever shot something and thought a new project should look like something they did years ago, this feature is likely to get attention. Custom environment tools round things out, letting users build their own lighting setups from scratch rather than being limited to the built-in preset library.
+
+“We got tired of watching great work stay just out of reach,” says co-founder and CEO Tomas Axelsson. “Wrong light. No time. No budget for a reshoot. Our job is to remove that friction and give photographers back the time and budget that lighting has always consumed.”
+
+The company says the tool is designed to support the photographer’s creative judgment, not replace it.
+
+Co-founder and Chief Innovation Officer Marcus Kurn adds that the ability to deliver two or three lighting variations alongside every final image is a real differentiator: “once you start delivering two or three lighting variations with every final image, your clients will never want to go back.”
+
+In its current iteration, the presets (sadly) do not provide a preview of your image(s) before you click go and use up your credits on the platform, and occasionally, the presets will make changes to the expression of the subject and/or the background environment, as seen in my own sample test image above. While I actually like the changes made in this particular image, I’d prefer the option to check a box to enable or disable this feature, as the results can sometimes be over the top. Apparently, a feature of this nature will eventually make its way onto the platform, but for now, users will have to go through some trial and error to get the results they prefer.
+
+Pricing and Availability
+
+Vividon is available now in early access at vividon.ai. The company is offering a free tier with 30 credits to try it out — no credit card required — which is a low enough barrier that there’s little reason not to give it a look. Paid plans are structured around a credit-based model and are currently offered at early access pricing for founding users who want to lock in their rate before the official launch. Plans start at $10 monthly with 130 credits per month and range up to $55 per month with 950 credits. Additional credits are available separately.
+
+Image credits: Sample Photographs provided by Vividon
+
+Become a PetaPixel Member and access our content ad-free.
+
+Follow PetaPixel on YouTube
+
+Follow PetaPixel on Facebook
+
+Follow PetaPixel on X
+
+Follow PetaPixel on Instagram
+
+RSS Feed
+
+Home
+
+Glossary
+
+About
+
+Contact
+
+Advertise
+
+Privacy Policy
+
+Full Disclosure
+
+© 2026 PetaPixel Inc. All rights reserved.

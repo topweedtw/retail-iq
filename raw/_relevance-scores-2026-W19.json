@@ -1,0 +1,564 @@
+{
+  "generated_at": "2026-05-06T13:16:06+0800",
+  "generated_by": "gate3_scoring_w19.py (v0.2 Gate 3 real-LLM)",
+  "chat_model": "gemini-2.5-flash-lite:latest",
+  "agents_version": "v1.9.4",
+  "total_time_seconds": 28.54,
+  "entries": {
+    "apple-com-tw/2026-W19/iphone-17_20260505": {
+      "slug": "apple-com-tw/2026-W19/iphone-17_20260505",
+      "source": "apple-com-tw",
+      "tier": "T1",
+      "title": "iphone-17",
+      "score": 10,
+      "status": "approved",
+      "reasoning": "文章詳細介紹 iPhone 17 系列，包含產品特色、技術與 iOS 26，具備高訓練潛力與時效性。",
+      "breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "entities": [
+        "iPhone 17",
+        "Apple Intelligence",
+        "iOS 26",
+        "A19 晶片",
+        "ProMotion 技術"
+      ],
+      "latency": 1.5040080547332764
+    },
+    "apple-newsroom-en/2026-W19/apple-introduces-a-new-pride-collection_20260505": {
+      "slug": "apple-newsroom-en/2026-W19/apple-introduces-a-new-pride-collection_20260505",
+      "source": "apple-newsroom-en",
+      "tier": "T1",
+      "title": "Apple introduces a new Pride Collection",
+      "score": 6,
+      "status": "pending-review",
+      "reasoning": "文章提及多款 Apple 產品，但訓練素材潛力與時效性較低，生態系連結有限。",
+      "breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Apple Watch",
+        "iPhone",
+        "iPad",
+        "watchOS",
+        "iOS"
+      ],
+      "latency": 1.0157229900360107
+    },
+    "apple-newsroom-en/2026-W19/apple-reports-second-quarter-results_20260505": {
+      "slug": "apple-newsroom-en/2026-W19/apple-reports-second-quarter-results_20260505",
+      "source": "apple-newsroom-en",
+      "tier": "T1",
+      "title": "Apple reports second quarter results",
+      "score": 6,
+      "status": "pending-review",
+      "reasoning": "文章提及多款 Apple 產品和部分生態系統，但訓練潛力與時效性較低。",
+      "breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "iPhone",
+        "iPad",
+        "Mac",
+        "Apple Watch",
+        "Apple Vision Pro"
+      ],
+      "latency": 0.989642858505249
+    },
+    "ars-technica/2026-W19/apple-may-take-several-months-to-catch-up-to-mac-mini-and-st_20260504": {
+      "slug": "ars-technica/2026-W19/apple-may-take-several-months-to-catch-up-to-mac-mini-and-st_20260504",
+      "source": "ars-technica",
+      "tier": "T2",
+      "title": "Apple may take \"several months\" to catch up to Mac mini and Studio demand",
+      "score": 8,
+      "status": "approved",
+      "reasoning": "文章聚焦於 Mac mini 和 Mac Studio 的供貨短缺，並提及 AI 需求和新機預期，具備訓練潛力。",
+      "breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 2,
+        "d4_timeliness": 2
+      },
+      "entities": [
+        "Mac mini",
+        "Mac Studio",
+        "Apple M5",
+        "AI",
+        "Tim Cook"
+      ],
+      "latency": 0.9795241355895996
+    },
+    "ars-technica/2026-W19/mac-mini-starting-price-goes-up-to-799-may-be-hard-to-get-fo_20260505": {
+      "slug": "ars-technica/2026-W19/mac-mini-starting-price-goes-up-to-799-may-be-hard-to-get-fo_20260505",
+      "source": "ars-technica",
+      "tier": "T2",
+      "title": "Mac mini starting price goes up to $799, may be hard to get for \"months\"",
+      "score": 8,
+      "status": "approved",
+      "reasoning": "文章主要討論 Mac mini 的價格和供貨問題，並提及 AI 應用，時效性高。",
+      "breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 2,
+        "d4_timeliness": 2
+      },
+      "entities": [
+        "Mac mini",
+        "Mac Studio",
+        "M4 chip",
+        "Apple Silicon",
+        "AI agents"
+      ],
+      "latency": 1.305495023727417
+    },
+    "ars-technica/2026-W19/six-things-i-ll-remember-when-i-think-about-tim-cook-s-versi_20260504": {
+      "slug": "ars-technica/2026-W19/six-things-i-ll-remember-when-i-think-about-tim-cook-s-versi_20260504",
+      "source": "ars-technica",
+      "tier": "T2",
+      "title": "Six things I'll remember when I think about Tim Cook's version of Apple",
+      "score": 5,
+      "status": "pending-review",
+      "reasoning": "文章主要回顧 Tim Cook 時期 Apple 的產品策略與成功，提及部分產品但非最新款，訓練素材潛力有限。",
+      "breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Apple Watch",
+        "AirPods",
+        "MacBook Neo",
+        "iPhone",
+        "iPad"
+      ],
+      "latency": 0.9967281818389893
+    },
+    "cined/2026-W19/a-mighty-cut-and-how-it-drives-the-story-new-storytelling-se_20260504": {
+      "slug": "cined/2026-W19/a-mighty-cut-and-how-it-drives-the-story-new-storytelling-se_20260504",
+      "source": "cined",
+      "tier": "T2",
+      "title": "A Mighty Cut and How it Drives the Story – New Storytelling Sessions Webinar on May 13th",
+      "score": 1,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章與 Apple 產品無關，但探討的敘事技巧可能適用於任何影片製作訓練。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 1,
+        "d4_timeliness": 0
+      },
+      "entities": [
+        "GoPro Mission 1 Pro ILS",
+        "Kinefinity Vista",
+        "NAB 2026",
+        "MZed",
+        "Alfred Hitchcock"
+      ],
+      "latency": 1.0657110214233398
+    },
+    "cined/2026-W19/boris-fx-acquires-vegas-pro-sound-forge-and-acid-pro-a-month_20260504": {
+      "slug": "cined/2026-W19/boris-fx-acquires-vegas-pro-sound-forge-and-acid-pro-a-month_20260504",
+      "source": "cined",
+      "tier": "T2",
+      "title": "Boris FX Acquires Vegas Pro, Sound Forge, and Acid Pro – A Month Later, the Industry Consolidation Picture Sharpens",
+      "score": 2,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章與 Apple 產品無關，但提及了軟體收購，有潛在的訓練素材價值。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Boris FX",
+        "Vegas Pro",
+        "Sound Forge",
+        "Acid Pro",
+        "MAGIX Software GmbH"
+      ],
+      "latency": 1.1754179000854492
+    },
+    "engadget/2026-W19/gamestop-is-reportedly-preparing-an-offer-to-buy-ebay_20260504": {
+      "slug": "engadget/2026-W19/gamestop-is-reportedly-preparing-an-offer-to-buy-ebay_20260504",
+      "source": "engadget",
+      "tier": "T2",
+      "title": "GameStop is reportedly preparing an offer to buy eBay",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品、生態或訓練素材無關。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 0.8677170276641846
+    },
+    "engadget/2026-W19/sony-will-soon-settle-a-playstation-store-class-action-lawsu_20260504": {
+      "slug": "engadget/2026-W19/sony-will-soon-settle-a-playstation-store-class-action-lawsu_20260504",
+      "source": "engadget",
+      "tier": "T2",
+      "title": "Sony will soon settle a PlayStation Store class action lawsuit for $7.8 million",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品或訓練無關，主要討論 PlayStation 訴訟。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 1.0347108840942383
+    },
+    "macstories/2026-W19/apple-releases-watch-band-watch-face-and-wallpapers-to-celeb_20260505": {
+      "slug": "macstories/2026-W19/apple-releases-watch-band-watch-face-and-wallpapers-to-celeb_20260505",
+      "source": "macstories",
+      "tier": "T2",
+      "title": "Apple Releases Watch Band, Watch Face, and Wallpapers to Celebrate Pride Month",
+      "score": 5,
+      "status": "pending-review",
+      "reasoning": "文章提及 Apple Watch、iPhone、iPad，但訓練潛力有限，時效性為當代產品。",
+      "breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Apple Watch",
+        "iPhone",
+        "iPad",
+        "watchOS",
+        "iOS"
+      ],
+      "latency": 1.144705057144165
+    },
+    "macstories/2026-W19/coming-soon-what-s-next-on-apple-tv-and-apple-arcade-in-may-_20260504": {
+      "slug": "macstories/2026-W19/coming-soon-what-s-next-on-apple-tv-and-apple-arcade-in-may-_20260504",
+      "source": "macstories",
+      "tier": "T2",
+      "title": "Coming Soon: What’s Next on Apple TV and Apple Arcade in May 2026",
+      "score": 5,
+      "status": "pending-review",
+      "reasoning": "文章提及多款 Apple 產品和服務，但時效性為 2026 年，非當前產品。",
+      "breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 0
+      },
+      "entities": [
+        "Apple TV",
+        "Apple Arcade",
+        "iPhone",
+        "iPad",
+        "Mac"
+      ],
+      "latency": 0.9479110240936279
+    },
+    "macstories/2026-W19/podcast-rewind-app-gaps-filled-gamecubes-emulated-quick-read_20260504": {
+      "slug": "macstories/2026-W19/podcast-rewind-app-gaps-filled-gamecubes-emulated-quick-read_20260504",
+      "source": "macstories",
+      "tier": "T2",
+      "title": "Podcast Rewind: App Gaps Filled, GameCubes Emulated, Quick Reads Released, Holidays Bridged, and Craig Hockenberry Interviewed",
+      "score": 5,
+      "status": "pending-review",
+      "reasoning": "文章提及多款 Apple 產品與服務，但訓練素材潛力與時效性較低。",
+      "breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Apple Frames",
+        "iOS",
+        "Mac",
+        "HomeKit",
+        "Apple TV+"
+      ],
+      "latency": 1.3113760948181152
+    },
+    "macworld/2026-W19/this-is-the-last-day-to-get-the-full-office-suite-on-mac-for_20260504": {
+      "slug": "macworld/2026-W19/this-is-the-last-day-to-get-the-full-office-suite-on-mac-for_20260504",
+      "source": "macworld",
+      "tier": "T2",
+      "title": "This is the last day to get the full Office suite on Mac for $45",
+      "score": 7,
+      "status": "approved",
+      "reasoning": "文章主要關於 Mac 上的 Office 軟體，但提及多款 Apple 產品，具備訓練潛力，時效性普通。",
+      "breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 2,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Mac",
+        "iPhone",
+        "iPad",
+        "Apple Watch",
+        "AirPods"
+      ],
+      "latency": 0.937140941619873
+    },
+    "macworld/2026-W19/voibe-turns-your-mac-into-a-private-offline-dictation-machin_20260504": {
+      "slug": "macworld/2026-W19/voibe-turns-your-mac-into-a-private-offline-dictation-machin_20260504",
+      "source": "macworld",
+      "tier": "T2",
+      "title": "Voibe turns your Mac into a private, offline dictation machine for $50",
+      "score": 5,
+      "status": "pending-review",
+      "reasoning": "文章主要關於 Mac 的第三方軟體，但提及了 Apple Silicon 的優勢。",
+      "breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Mac",
+        "Apple Silicon",
+        "Voibe"
+      ],
+      "latency": 0.9213511943817139
+    },
+    "no-film-school/2026-W19/5-incredible-movies-quentin-tarantino-helped-create-but-didn_20260504": {
+      "slug": "no-film-school/2026-W19/5-incredible-movies-quentin-tarantino-helped-create-but-didn_20260504",
+      "source": "no-film-school",
+      "tier": "T2",
+      "title": "5 Incredible Movies Quentin Tarantino Helped Create but Didn’t Direct",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品、生態或訓練無關，時效性也非當代產品。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 0.8285670280456543
+    },
+    "no-film-school/2026-W19/7-best-spaghetti-westerns-ranked_20260504": {
+      "slug": "no-film-school/2026-W19/7-best-spaghetti-westerns-ranked_20260504",
+      "source": "no-film-school",
+      "tier": "T2",
+      "title": "7 Best Spaghetti Westerns, Ranked",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品、生態或訓練無關，主題為電影。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 0.9006199836730957
+    },
+    "petapixel/2026-W19/photography-lessons-from-the-lord-of-the-rings_20260504": {
+      "slug": "petapixel/2026-W19/photography-lessons-from-the-lord-of-the-rings_20260504",
+      "source": "petapixel",
+      "tier": "T2",
+      "title": "Photography Lessons From ‘The Lord of the Rings’",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品、生態系統或零售訓練無關，時效性也為零。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 0.8454601764678955
+    },
+    "petapixel/2026-W19/what-event-photography-is-really-like-behind-the-scenes_20260504": {
+      "slug": "petapixel/2026-W19/what-event-photography-is-really-like-behind-the-scenes_20260504",
+      "source": "petapixel",
+      "tier": "T2",
+      "title": "What Event Photography Is Really Like Behind the Scenes",
+      "score": 1,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章與 Apple 產品或生態系統無關，但可作為攝影師的通用訓練素材。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 1,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 1.2161290645599365
+    },
+    "six-colors/2026-W19/don-t-let-your-mac-s-storage-fill-up_20260505": {
+      "slug": "six-colors/2026-W19/don-t-let-your-mac-s-storage-fill-up_20260505",
+      "source": "six-colors",
+      "tier": "T2",
+      "title": "Don’t let your Mac’s storage fill up!",
+      "score": 5,
+      "status": "pending-review",
+      "reasoning": "文章主要討論 Mac 儲存空間問題，提及 iCloud 和 Photos，但訓練素材潛力有限。",
+      "breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Mac",
+        "iCloud",
+        "Photos",
+        "APFS snapshots",
+        "Time Machine"
+      ],
+      "latency": 0.837893009185791
+    },
+    "six-colors/2026-W19/my-tech-travel-experience-2026-edition_20260504": {
+      "slug": "six-colors/2026-W19/my-tech-travel-experience-2026-edition_20260504",
+      "source": "six-colors",
+      "tier": "T2",
+      "title": "My tech travel experience, 2026 edition",
+      "score": 4,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章提及 Apple Watch 和 MagSafe 電池，但重點在第三方充電器，訓練潛力有限。",
+      "breakdown": {
+        "d1_product_mention": 1,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "Apple Watch",
+        "MagSafe",
+        "Anker Nano Travel Adapter"
+      ],
+      "latency": 1.2143311500549316
+    },
+    "six-colors/2026-W19/podcast-downstream-117-love-to-your-mothers_20260504": {
+      "slug": "six-colors/2026-W19/podcast-downstream-117-love-to-your-mothers_20260504",
+      "source": "six-colors",
+      "tier": "T2",
+      "title": "(Podcast) Downstream 117: Love to Your Mothers",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品、生態或門市訓練無關，且無時效性。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 0.923748254776001
+    },
+    "six-colors/2026-W19/podcast-upgrade-614-100-billion-is-the-floor_20260505": {
+      "slug": "six-colors/2026-W19/podcast-upgrade-614-100-billion-is-the-floor_20260505",
+      "source": "six-colors",
+      "tier": "T2",
+      "title": "(Podcast) Upgrade 614: $100 Billion Is the Floor",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品、生態或訓練素材無關，且時效性不明。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 1.0309038162231445
+    },
+    "the-verge/2026-W19/reggie-fils-aim-says-amazon-once-asked-nintendo-to-break-the_20260504": {
+      "slug": "the-verge/2026-W19/reggie-fils-aim-says-amazon-once-asked-nintendo-to-break-the_20260504",
+      "source": "the-verge",
+      "tier": "T3",
+      "title": "Reggie Fils-Aimé says Amazon once asked Nintendo to break the law",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章內容與 Apple 產品、生態系統或零售訓練無關，且時效性低。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 0.901263952255249
+    },
+    "the-verge/2026-W19/shokz-s-bassy-openrun-pro-2-are-40-off-thanks-to-a-new-mothe_20260504": {
+      "slug": "the-verge/2026-W19/shokz-s-bassy-openrun-pro-2-are-40-off-thanks-to-a-new-mothe_20260504",
+      "source": "the-verge",
+      "tier": "T3",
+      "title": "Shokz’s bassy OpenRun Pro 2 are $40 off thanks to a new Mother’s Day promo",
+      "score": 0,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章與 Apple 產品、生態或訓練素材無關，且時效性不高。",
+      "breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "entities": [],
+      "latency": 1.1483728885650635
+    },
+    "toms-guide/2026-W19/i-m-stoked-for-the-iphone-fold-but-there-s-something-else-th_20260504": {
+      "slug": "toms-guide/2026-W19/i-m-stoked-for-the-iphone-fold-but-there-s-something-else-th_20260504",
+      "source": "toms-guide",
+      "tier": "T3",
+      "title": "I’m stoked for the iPhone Fold, but there’s something else that should be a much higher priority than a thin design",
+      "score": 5,
+      "status": "pending-review",
+      "reasoning": "文章提及 iPhone 和 Apple Watch，但重點在於對折疊手機的期望，訓練素材潛力有限。",
+      "breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "iPhone",
+        "Apple Watch",
+        "Apple Intelligence"
+      ],
+      "latency": 1.2360997200012207
+    },
+    "toms-guide/2026-W19/still-playing-a-ps4-this-simple-upgrade-changes-everything_20260504": {
+      "slug": "toms-guide/2026-W19/still-playing-a-ps4-this-simple-upgrade-changes-everything_20260504",
+      "source": "toms-guide",
+      "tier": "T3",
+      "title": "Still playing a PS4? This simple upgrade changes everything",
+      "score": 4,
+      "status": "skipped-low-relevance",
+      "reasoning": "文章主要討論 PS4 升級，僅零星提及 Apple 產品，訓練潛力低。",
+      "breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "entities": [
+        "iPhone",
+        "Airpods",
+        "Apple TV",
+        "macOS",
+        "Apple Intelligence"
+      ],
+      "latency": 1.2083079814910889
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.macrumors.com/review/aqara-w200-thermostat/",
+  "source_type": "macrumors",
+  "source_tier": "T2-filtered",
+  "source_title": "Aqara W200 Thermostat review",
+  "fetched_at": "2026-04-30T16:38:37+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:483917aed663b3b1b61459353eaf71774fe8cd306b9b66fc082ff504436257c9",
+  "content_type": "text/html",
+  "content_size_bytes": 132652,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

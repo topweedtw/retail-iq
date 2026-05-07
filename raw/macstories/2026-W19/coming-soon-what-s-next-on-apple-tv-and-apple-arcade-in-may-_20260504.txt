@@ -1,0 +1,195 @@
+ABOUT
+
+CLUB
+
+PODCASTS
+
+SHORTCUTS
+
+SETUPS
+
+iOS 26
+
+APPS
+
+STORIES
+
+SIGN IN
+
+DARK
+
+LIGHT
+
+AUTOMATIC
+
+Pedometer++ 8: Glimmers of an Apple Wrist Renaissance
+
+Introducing Apple Frames 4: A Revamped Shortcut, Support for Frame Colors, Proportional Scaling, and the Apple Frames CLI for Developers
+
+Hour by Hour: Reverse Engineering Your Schedule
+
+Coming Soon: What’s Next on Apple TV and Apple Arcade in May 2026
+
+It’s a new month and it’s F1 season, which means it’s time for a roundup of everything coming to Apple TV and Apple Arcade in May 2026.
+
+This month we’re adding F1 and other sports airing on Apple TV this month, starting with tomorrow’s Miami Grand Prix, and continuing below with the Canadian Grand Prix and Friday Night Baseball at the end of the month.
+
+Let’s dive in.
+
+F1: The Miami Grand Prix (Tomorrow, May 3)
+
+Source: Apple.
+
+Sunday will see the very first U.S.-based race of the 2026 Formula 1 season in Miami, Florida. In addition to Sunday’s race, Apple TV subscribers can watch qualifying round coverage beginning today at 3:25 PM Eastern U.S. time, with qualifying beginning at 4 PM and the race itself beginning at 4 PM Eastern Sunday.
+
+Apple has also created a 3D view of the race track in Apple Maps, a Maps Guide of local hot spots for race attendees, an Apple Music playlist that Apple says captures the energy and excitement of F1, and many other race weekend tie-ins you can check out in this Apple press release.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Apple Arcade
+
+Apple Arcade is debuting four games this month on Thursday, May 7:
+
+Perchang World (Release Date: May 7)
+
+The game I’m most excited about this month is Perchang World, an update to a classic indie game first released about a decade ago. The version debuting on Apple Arcade for iPhone, iPad, Mac, and Apple TV is an evolution of the original physics puzzler that requires you to use a variety of switches and platforms to guide balls through the game’s brightly-colored, playful environments. The game is narrated by British comedian James Acaster, who judging from the game’s trailer, adds a great sense of humor and fun.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Ultimate 8 Ball Pool+ (Release Date: May 7)
+
+Source: Apple.
+
+If you’re a fan of pool, Ultimate 8 Ball Pool+, an Arcade adaptation of the HypGames’ App Store version will be available for Arcade subscribers on May 7 too. The game features photorealistic graphics and 3D perspectives as well as one-on-one multiplayer, tournaments, trickshot challenges, and more.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Nick Jr. Replay! and Good Pizza, Great Pizza+
+
+Next Thursday, Apple Arcade will also release Nick Jr. Replay!, a family-friendly game starring characters from Nick Jr. shows like Dora the Explorer and Blue’s Clues & You! and over 50 minigames designed to help kids with math, reading, art, and other learning skills. Finally, Good Pizza, Great Pizza+ is an adaptation of an App Store game, but without In-App Purchases. The game is a cooking simulator where your goal is to take orders, bake pizzas and get them to customers.
+
+Apple TV Shows and Movies
+
+Unconditional (May 8, 2026)
+
+Unconditional promises to start May off with a bang. The brand new thriller follows Orna, whose daughter Gali is arrested for drug smuggling in Russia. The eight-episode show follows Orna as she fights for her daughter’s freedom, which pulls her into the dangerous criminal underground of Moscow.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Maximum Pleasure Guaranteed (May 20, 2026)
+
+Maximum Pleasure Guaranteed is a dark comedy/thriller starring Tatiana Maslany as a newly divorced mom who believes she witnesses a murder. Deciding to investigate what happened, Maslany’s character, Paula, is drawn into what appears to be a dangerous larger conspiracy, while also dealing with a battle over custody of her child.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Star City (May 29, 2026)
+
+Star City is Apple’s For All Mankind spinoff. Based on the same alternative history events where the Russians land on the moon before America, the show follows the story from the perspective of the Russians. The eight-episode show follows Russia’s cosmonauts, scientists, engineers, and government officials as they race to the moon.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Propeller One-Way Night Coach (May 29, 2026)
+
+Source: Apple.
+
+Propeller One-Way Night Coach is an Apple Original movie based on a 1997 children’s book of the same name. The film, which is John Travolta’s first directorial credit, follows Jeff, who loves airplanes, and his mother as they travel to Hollywood. Their one-way journey transforms everyday travel into an adventure filled with an unusual cast of characters.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Live Sports Events
+
+Canadian Grand Prix (May 22-24, 2026)
+
+Source: F1.
+
+Round 5 of the 2026 Formula 1 season will take place against the skyline of Montreal, Canada from May 22-24. The semi-permanent 4.36 km track is on Île Notre-Dame, a man-made island in the St. Lawrence River. F1 racing on Circuit Gilles Villeneuve began in the late 70s and has a reputation of unpredictable weather that can cause chaos on the track.
+
+Add to Your Calendar:
+
+iCal
+
+Google Calendar
+
+Friday Night Baseball
+
+Source: Apple.
+
+It’s hard to believe that Apple is in the midst of its fifth Friday Night Baseball season. In May, viewers will be treated with the following two game lineup every Friday:
+
+Minnesota Twins at Cleveland Guardians (7:00 PM Eastern)
+
+St. Louis Cardinals at San Diego Padres (9:30 PM Eastern)
+
+Toronto Blue Jays at Detroit Tigers (6:30 PM Eastern)
+
+New York Yankees at New York Mets (7:00 PM Eastern)
+
+Houston Astros at Chicago Cubs (2:00 PM Eastern)
+
+Detroit Tigers at Baltimore Orioles (7:00 PM Eastern)
+
+Minnesota Twins at Pittsburgh Pirates (6:30 PM Eastern)
+
+Philadelphia Phillies at Los Angeles Dodgers (10:00 PM Eastern)
+
+That’s it for May. I’m personally looking forward to Perchang World and Star City the most. If you’re a Club MacStories Plus or Premier member, drop by the TV and Movies channel in Discord to chat about what you’re looking forward to from Apple TV this month, and be sure to listen to MacStories Unwind, where I’m sure Federico and I will cover some of these shows and games, along with our other media recommendations every week.
+
+Access Extra Content and Perks
+
+Founded in 2015, Club MacStories has delivered exclusive content every week for nearly a decade.
+
+What started with weekly and monthly email newsletters has blossomed into a family of memberships designed for every MacStories fan.
+
+Learn more here and from our Club FAQs.
+
+Club MacStories: Weekly and monthly newsletters via email and the web that are brimming with apps, tips, automation workflows, longform writing, early access to the MacStories Unwind podcast, periodic giveaways, and more;
+
+Club MacStories+: Everything that Club MacStories offers, plus an active Discord community, advanced search and custom RSS features for exploring the Club’s entire back catalog, bonus columns, and dozens of app discounts;
+
+Club Premier: All of the above and AppStories+, an extended version of our flagship podcast that’s delivered early, ad-free, and in high-bitrate audio.
+
+Learn more here and from our Club FAQs.
+
+ABOUT
+
+CLUB
+
+ADVERTISE
+
+PRIVACY POLICY
+
+TERMS OF SERVICE
+
+Web Dev by Made with Fuel | Design by Silvia Gatta
+
+Copyright © 2026 MacStories, Inc. Find Federico on MastodonFind John on MastodonFind Alex on MastodonFind Silvia on MastodonFind MacStories on Mastodon All rights reserved.
+
+v4.6

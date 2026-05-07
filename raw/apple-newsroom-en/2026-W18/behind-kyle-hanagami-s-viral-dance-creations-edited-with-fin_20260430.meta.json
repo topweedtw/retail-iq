@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/newsroom/2026/01/behind-kyle-hanagamis-viral-dance-creations-edited-with-final-cut-pro/",
+  "source_type": "apple-newsroom-en",
+  "source_tier": "T1",
+  "source_title": "Behind Kyle Hanagami's viral dance creations edited with Final Cut Pro",
+  "fetched_at": "2026-04-30T16:40:47+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:260b6ec105c059bf2ac7e09a6076aafe9b382b5b9ab25eb328b19aad880f6bcd",
+  "content_type": "text/html",
+  "content_size_bytes": 222190,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

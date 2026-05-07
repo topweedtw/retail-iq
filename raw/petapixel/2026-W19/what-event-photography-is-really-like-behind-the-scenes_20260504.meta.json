@@ -1,0 +1,26 @@
+{
+  "source_url": "https://petapixel.com/2026/05/03/what-event-photography-is-really-like-behind-the-scenes/",
+  "source_type": "petapixel",
+  "source_tier": "T2",
+  "source_title": "What Event Photography Is Really Like Behind the Scenes",
+  "fetched_at": "2026-05-04T14:52:13+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:e15c94018c709d49bd32c01f811fdcaa64b783a19dbd75c39920825690c7769d",
+  "content_type": "text/html",
+  "content_size_bytes": 112180,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Sun, 03 May 2026 12:01:08 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 1,
+  "relevance_reasoning": "文章與 Apple 產品或生態系統無關，但可作為攝影師的通用訓練素材。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 1,
+    "d4_timeliness": 0
+  },
+  "key_entities": []
+}

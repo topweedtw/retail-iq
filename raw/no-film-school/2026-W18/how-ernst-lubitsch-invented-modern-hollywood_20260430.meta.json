@@ -1,0 +1,17 @@
+{
+  "source_url": "https://nofilmschool.com/ernst-lubitsch-invented-modern-hollywood",
+  "source_type": "no-film-school",
+  "source_tier": "T2",
+  "source_title": "How Ernst Lubitsch \"Invented Modern Hollywood\"",
+  "fetched_at": "2026-04-30T16:37:25+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:f81be49e6ca3f3f8d4ed16b9dc19db283e3b5ca408d3e10f868903678859e756",
+  "content_type": "text/html",
+  "content_size_bytes": 194936,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Wed, 29 Apr 2026 23:05:43 +0000; extracted via pre-w2-crawler"
+}

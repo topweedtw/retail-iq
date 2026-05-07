@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:  # 允許手動觸發
+
+jobs:
+  test:
+    name: Unit tests + lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 沒有 pip dependencies（yaml_mini 取代 PyYAML；全 stdlib）
+      # 未來若加依賴，在此補 `pip install -r requirements.txt`
+
+      - name: Run unit tests
+        run: python3 -m unittest discover tests/ -v
+
+      - name: Run lint (schema + raw/ compliance)
+        run: python3 scripts/lint.py
+        continue-on-error: true  # lint 現階段多為 warnings 不 blocking
+
+      - name: Smoke test — load sources-config.yaml
+        run: |
+          python3 -c "
+          import sys; sys.path.insert(0, 'scripts')
+          import yaml_mini
+          d = yaml_mini.load('wiki/sources-config.yaml')
+          sources = d['sources']
+          enabled = sum(1 for s in sources.values() if s and s.get('enabled'))
+          print(f'✅ {len(sources)} sources loaded, {enabled} enabled')
+          assert len(sources) >= 10, 'sources should be at least 10'
+          assert enabled >= 5, 'at least 5 enabled sources'
+          "
+
+      - name: Smoke test — ingest agent imports cleanly
+        run: |
+          python3 -c "
+          import sys; sys.path.insert(0, 'scripts')
+          from ingest_agent import SourceConfig, IngestPipeline, check_url, check_title, sha256_of
+          print('✅ ingest_agent imports clean')
+          "
+
+      - name: Smoke test — all regex patterns compile
+        run: |
+          python3 -c "
+          import re, sys; sys.path.insert(0, 'scripts')
+          import yaml_mini
+          d = yaml_mini.load('wiki/sources-config.yaml')
+          bad = []
+          for name, cfg in d['sources'].items():
+              if not cfg or not cfg.get('enabled'): continue
+              for field in ('allow_url_patterns', 'deny_url_patterns'):
+                  for pat in cfg.get(field) or []:
+                      try: re.compile(pat)
+                      except re.error as e: bad.append(f'{name}.{field}: {pat!r} — {e}')
+              for field in ('title_blocklist_regex', 'title_required_regex'):
+                  v = cfg.get(field)
+                  if v:
+                      try: re.compile(v)
+                      except re.error as e: bad.append(f'{name}.{field}: {v!r} — {e}')
+          if bad:
+              print('❌ 發現無效 regex:')
+              for b in bad: print(f'  {b}')
+              sys.exit(1)
+          print(f'✅ 所有 regex 合法')
+          "

@@ -1,0 +1,103 @@
+AI
+
+Biz & IT
+
+Cars
+
+Culture
+
+Gaming
+
+Health
+
+Policy
+
+Science
+
+Security
+
+Space
+
+Tech
+
+Feature
+
+Reviews
+
+AI
+
+Biz & IT
+
+Cars
+
+Culture
+
+Gaming
+
+Health
+
+Policy
+
+Science
+
+Security
+
+Space
+
+Tech
+
+HyperLight
+
+Day & Night
+
+Dark
+
+System
+
+Six things I’ll remember when I think about Tim Cook’s version of Apple
+
+Under Cook, Apple became hugely successful, if not always surprising.
+
+Apple CEO Tim Cook announced this week that he’s stepping down from his position in September and handing the reins to John Ternus, currently the company’s senior vice president of Hardware Engineering and a 25-year employee.
+
+This change had been telegraphed pretty far in advance, both by media reports (Bloomberg’s well-connected Mark Gurman flagged Ternus as a frontrunner in May 2024, and The New York Times gave him a glossy profile in January) and by Apple (when it announced the MacBook Neo last month, it was Ternus, not Cook, who delivered the prepared remarks).
+
+I’ve been covering Apple for various outlets throughout Cook’s tenure as CEO, and I’ve been thinking a lot about how Apple has changed in the 15 years since he formally took over from an ailing Steve Jobs in the summer of 2011. Under Cook, the company has become less surprising but massively financially successful; some of Apple’s newer products have flopped or underperformed, but far more have become and stayed excellent thanks to years of competent iteration.
+
+This isn’t a comprehensive list of everything Cook has done as CEO, but it’s my attempt at a big-picture, high-level summary and a snapshot of where Apple is now, to serve as a comparison point once Ternus kicks off his tenure.
+
+Quiet hardware successes: Apple Watch, headphones, and more
+
+The Tim Cook era can’t lay claim to any single hardware announcement as important or far-reaching as the iPhone, the iPod, or even the iPad. Apple has definitely introduced good—even great—hardware in the last 15 years, though.
+
+The main difference is that Apple products introduced during the Jobs era tended to belong at or near the center of your digital life. The Macintosh popularized the graphical user interface. The iPod was a constant musical companion on commutes, during workouts or study sessions, or when plugged into someone’s speaker at a party. The iPhone, obviously, became the most important personal computing device since the personal computer. And the iPad, as conceived by Jobs, was clearly intended to be a new kind of primary computing device (it was only under Cook that the iPad settled into its current in-betweener rut, computer-like but not computer-like enough to supplant the Mac’s mouse-and-pointer usage model).
+
+Hardware introduced during Cook’s tenure, on the other hand, tended to be at its best when it extended or sat atop those Jobs-era products in some way. The AirPods and the wider universe of Beats headphones are the archetypal example—wireless headphones with just enough proprietary Apple technology in them that they’re much easier and more pleasant to use with other Apple products than typical Bluetooth headphones.
+
+Similarly, the Apple Watch is a convenient way to tap into a tiny subset of your iPhone’s communication capabilities (plus fitness tracking). The HomePod is a speaker version of AirPods. I don’t know a kid with an iPad who doesn’t also have an Apple Pencil for doodling and sketching. Apple never released a TV set, but the Apple TV is the streaming box that makes the TV I already have feel the most like a TV and the least like a billboard. Apple never released a car, but it did introduce CarPlay, a useful add-on that is a prerequisite for me when I’m in the market for a car.
+
+None of these products changed the face of their industries the way the iPod, iPhone, or iPad did, but they’ve all become ubiquitous, succeeding on the strength of Apple’s other products and services. That’s the kind of thing Cook’s Apple was good at inventing—reasons to stick around in Apple’s ecosystem once you’d already been drawn in.
+
+Apple, the cloud services company
+
+Apple still makes the majority of its money from hardware, but especially in recent years, the steadiest growth has come from Apple’s services—things like iCloud, Apple Music, Apple TV (the service, not the box), and software subscriptions like the new Creator Studio bundle.
+
+The iCloud branding was introduced at the tail end of Jobs’ tenure, but its growth (and the growth of most Apple services and subscriptions) all happened on Cook’s watch. In 2011, Cook’s first year as CEO, Apple brought in a then-record $102.5 billion in annual revenue; in 2025, the Services division alone pulled down more than $109 billion in revenue. Not bad for a collection of features that rose from the ashes of the failed MobileMe service (and .Mac and iTools before it).
+
+I don’t think the rise and increasing importance of the Services division has been entirely good for Apple or its users. The need to convert customers into subscribers and to upsell current subscribers to higher service tiers means that Apple’s users are now subject to some of the same kinds of notifications and reminders that so richly annoy PC users in Windows 11.
+
+The new Creator Studio versions of Pages, Keynote, and Numbers, while still free to use, are now festooned with purple buttons encouraging users to become paid subscribers. If you buy a new Apple product, the Settings app on all your other Apple devices will light up with free trials and AppleCare+ reminders. Every once in a while, I see a push notification for a movie or TV show I do not care about and have never given any indication of caring about.
+
+Similar forces have led to ads that subtly clutter up Apple’s App Stores and some that occasionally expose users to low-quality and scammy apps. Similar ads will start showing up in the Maps app soon, and it remains to be seen how obtrusive and useful (or anti-useful) they’ll be.
+
+A penchant for iteration
+
+While it lacked somewhat in world-changing, all-new products, Cook’s Apple was also very good at relentlessly iterating on and improving Apple’s core products.
+
+The iPad’s hardware evolution is a textbook example. When he took over in 2011, Apple sold one iPad: the iPad 2, an updated version of the original. Then it got a Retina screen. Then Apple made a mini version. Then it decided to make an even nicer, more expensive one called the iPad Pro. Then it made a cheap one to appeal to people who just needed something basic and functional. Then it revived the iPad Air as an in-betweener model to cover the gap between the cheap one and the expensive one. Over a yearslong process, Apple went from having a single one-size-fits-all iPad to offering a different model for just about every conceivable niche. The iPhone and Mac lineups have morphed in similar ways.
+
+Calling all of these changes “iterative” can mask the impressiveness of the underlying achievements. Though it started under Jobs, the Apple Silicon initiative was a monumental accomplishment: taking low-power smartphone chips and relentless improving them, year after year, over the course of more than a decade, until they were power-efficient enough to power pocket-sized smartphones; cheap enough to build that they could go inside $99 smart speakers and $130 streaming boxes; and powerful enough to drive everything from the MacBook Pro to the Mac Studio desktop.
+
+But even this transition was relatively unassuming on its face. If you’re a regular non-tech-savvy consumer who just buys a new MacBook Air when your old one breaks, the biggest achievement of the Apple Silicon switch is that it was almost entirely invisible.
+
+Not every iteration has been a slam-dunk success. There’s an iPad for everyone, but the platform as a whole has felt stuck for a long time, with fast and capable hardware hampered by software that doesn’t take full advantage of it. The Mac went through a rough patch in the mid-to-late 2010s when the company neglected its desktops, and its laptops were saddled with unsatisfying a

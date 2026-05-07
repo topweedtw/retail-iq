@@ -1,0 +1,127 @@
+Apple, technology, and other stuff
+
+Archive
+
+Sign In
+
+Membership
+
+26 OS versions
+
+Help Me, Glenn!
+
+Reviews
+
+Apple Report Card
+
+E-readers
+
+Apple Photos
+
+20 Macs for 2020
+
+Merch
+
+Jason Snell
+
+Dan Moren
+
+Sponsorships
+
+Archive
+
+Sign In
+
+Membership
+
+26 OS versions
+
+Help Me, Glenn!
+
+Reviews
+
+Apple Report Card
+
+E-readers
+
+Apple Photos
+
+20 Macs for 2020
+
+Merch
+
+Jason Snell
+
+Dan Moren
+
+Sponsorships
+
+By 
+
+Dan Moren
+
+May 1, 2026 1:18 PM PT
+
+My tech travel experience, 2026 edition
+
+Once again, I have ventured out of my home country and winged my way overseas.
+
+This isn’t the first time I’ve written about my travel experiences. I detailed some wins and losses from my last international trip in 2024 and even wrote a post way back in 2015, in which I was considering not traveling with my Apple Watch out of fears it would get lost or stolen. Oh, how times have changed.
+
+That said, we were attempting to travel light this time: just two carry on bags and two backpacks for two adults and one small child. And part of that was minimizing the number of devices that we needed to carry and all their attendant cables.
+
+Overall, I think we did pretty well.
+
+Power to the people
+
+One of the things that I get most annoyed about when traveling is charging. I have a couple of super basic plug adapters for Europe and the UK that are fine, if bulky. But I’d been on the lookout for a nice universal power adapter—preferably one that would fit nicely in my go-bag of chargers and cables.
+
+This time around, I found it in the form of the Anker Nano Travel Adapter (affiliate link). What I like about the Nano is first, that it’s not a giant box: it’s only about an inch thick, two inches wide, and a little over three inches long. In that, it’s not too far off from my Anker MagSafe power battery, which means it fits perfectly into the aforementioned bag.
+
+While it doesn’t have every single power port known to humanity, it does at least cover some of the most common: Type A (US / Canada / Japan / China), Type C (Europe), Type G (UK / Singapore) and Type I (Australia). It also packs two USB-C ports and two USB-A ports, so you can charge your USB devices directly, as well offering a plug passthrough if you need to use a Type A or Type C plug.
+
+It’s not the beefiest of charges: just 20W max, or 15W for the USB ports when sharing them, but it was plenty to charge a phone and Apple Watch overnight. (I did run into one or two instances where it seems like something didn’t charge correctly, though I wasn’t able to figure out exactly why).
+
+I still ended up needing those extra power adapters for some additional electronics we brought for my kid, like his white noise machine and a baby monitor for our Airbnb. (We also lucked out, with the apartment we stayed at in Paris having a power strip that could accept US plugs.)
+
+One thing I ended up surprisingly not needing on this trip very much: backup batteries. I brought three: the Anker MagSafe model, an older Jackery one with Lightning and micro-USB connectors, and the beefy one included in my Away luggage. Of those, I think the MagSafe model got used once or twice, but only by my wife. The iPhone 17 Pro’s battery held out just fine for all-day usage, including plenty of wayfinding and picture taking.
+
+Make sure you’re connected
+
+As I mentioned in my 2024 piece, eSIMs have made it super easy to stay connected while you’re traveling internationally. Apple’s continued to try and smooth the experience: when I activated my Airalo-provided EU & UK eSIM—unlimited data for a week for about $20—after arriving in France, I was prompted to use it as a Travel SIM, which would allow me to still get FaceTime and iMessages via my U.S. phone number.
+
+That largely worked this time, though I did still run into a couple of weird glitches. For one thing, some contacts weren’t showing up in various places in iOS (Messages, Find My) with their names, but just their phone numbers. I eventually concluded it was because their U.S. phone numbers were not formatted correctly in Contacts for some reason.1
+
+And despite having my AT&T data roaming off, I did notice that my phone would download a kilobyte of data every once in a while—maybe 4KB total over my entire trip. This kind of “data leakage” is not unheard of, but I haven’t yet been able to find out whether the carrier is going to try to charge me their international rate—I suppose I’ll see when I get my next bill.
+
+But between my eSIM and plentiful Wi-Fi, I never lacked for connectivity. And, thanks to my Tailscale network, I was even able to access the U.S. version of streaming services so that I could download videos for my trip home.
+
+Tripping the light fantastic
+
+I remarked on it during my last overseas trip in 2024, but Apple Pay has truly changed the experience of going to other countries. Before I left this time around, I popped a few leftover UK pounds and some Euros into my wallet, just in case.
+
+I ended up never using them.
+
+In fact, I think I only took my credit card out once, when I thought Apple Pay had failed, though in retrospect, I think it was just because the terminal wasn’t ready yet. Otherwise, I used my phone and watch to pay for everything on the entire trip, from cafés to transit. The experience was just completely seamless—a far cry from days of yore where I used to worry about exchange rates or how to get cash in country.
+
+Tap-and-go transit remains the best experience; I was a little disappointed with Paris’s system, which still requires you buy tickets on its transit card, rather than just using a contactless payment. It meant I had to make sure to buy a ticket every time I was about to use the Metro—not especially onerous, as the Transit Card is supported by the Wallet app and you can buy tickets right from there with Apple Pay, but another point of friction. Especially compared to my trips on the London transit system, where I never had to do anything but tap my phone or watch on a gate or while boarding a bus and go.
+
+(My thanks, by the way, to my pal Jeremy Burge, whose excellent compendium, Express Transit, prepared me for what I would experience in both Paris and London.)
+
+And while we didn’t get to take total advantage of Wallet’s latest boarding pass features, I had an easy enough time on both our flights and our one long train journey storing all of our boarding passes digitally. Honestly, the only real challenge was physically juggling my phone and passport—hopefully some day those Digital IDs will be acceptable for international travel.
+
+Left to my devices
+
+I of course brought my iPhone 17 Pro and AirPods Pro 2—I rarely leave home without the two of those. I also packed my Apple Watch Series 7—no worries about it getting lost or stolen, 2015-era me—and the Apple Watch Series 10 I use for sleep tracking.2
+
+I also packed my M1 iPad Pro because an iPad is a great device for watching video on the plane. And I was very glad that my kid had his own iPad (an old 10.5-inch iPad Pro that will, at least, run iOS 17 and, therefore, many—but not all—of the modern streaming apps and games).3
+
+But beyond pulling out my iPad for the plane and train trips, I didn’t end up using it at all. I got far more mileage from my Kobo Libra 2 and even from—gasp—paper books. Though the iPad itself is not particularly heavy or bulky, I did find myself wondering what if I didn’t have to bring it. I mostly got by just fine with my phone—all I would miss is having a larger screen for watching videos.
+
+You probably see where I’m going with this. What if I could just unfold my iPhone into a larger screen for those few occasions, but the rest of the time just have a phone? Hmm. It’s a compelling idea. I especially like the idea of reducing the number of devices I carry that require charging. Maybe one day I can truly get away with one device to rule them all.
+
+Connected perhaps to John Gruber’s recent post about Contacts’s phone number formatting. ↩
+
+Yes, I’m still living the dual watch lifestyle. ↩
+
+The only real downsid

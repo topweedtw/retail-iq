@@ -1,0 +1,59 @@
+#!/bin/bash
+# Pre-push hook — PIE Actions 不可用時的本地 CI 替身
+# 安裝：git config core.hooksPath .githooks
+
+set -e
+echo "🧪 Running pre-push checks..."
+echo ""
+
+# 1. Unit tests
+echo "── Unit tests ──"
+if ! python3 -m unittest discover tests/ -v 2>&1 | tail -10; then
+  echo ""
+  echo "❌ Tests failed — push 取消"
+  echo "   用 --no-verify 可強制 push（不建議）"
+  exit 1
+fi
+
+echo ""
+echo "── Smoke: load sources-config.yaml ──"
+python3 -c "
+import sys; sys.path.insert(0, 'scripts')
+import yaml_mini
+d = yaml_mini.load('wiki/sources-config.yaml')
+enabled = sum(1 for s in d['sources'].values() if s and s.get('enabled'))
+print(f'  ✅ {len(d[\"sources\"])} sources, {enabled} enabled')
+"
+
+echo ""
+echo "── Smoke: ingest_agent imports ──"
+python3 -c "
+import sys; sys.path.insert(0, 'scripts')
+from ingest_agent import SourceConfig, check_url, check_title, sha256_of
+print('  ✅ imports clean')
+"
+
+echo ""
+echo "── Smoke: all regex patterns compile ──"
+python3 -c "
+import re, sys; sys.path.insert(0, 'scripts')
+import yaml_mini
+d = yaml_mini.load('wiki/sources-config.yaml')
+bad = []
+for name, cfg in d['sources'].items():
+    if not cfg or not cfg.get('enabled'): continue
+    for field in ('allow_url_patterns', 'deny_url_patterns'):
+        for pat in cfg.get(field) or []:
+            try: re.compile(pat)
+            except re.error as e: bad.append(f'{name}.{field}: {pat!r}')
+    for field in ('title_blocklist_regex', 'title_required_regex'):
+        v = cfg.get(field)
+        if v:
+            try: re.compile(v)
+            except re.error as e: bad.append(f'{name}.{field}')
+if bad: print('❌', bad); sys.exit(1)
+print('  ✅ all regex valid')
+"
+
+echo ""
+echo "✅ Pre-push checks passed"

@@ -1,0 +1,99 @@
+Apple
+
+Store
+
+Mac
+
+iPad
+
+iPhone
+
+Watch
+
+Vision
+
+AirPods
+
+TV & Home
+
+Entertainment
+
+Accessories
+
+Support
+
+0+
+
+Apple Services
+
+Apple Stories
+
+Mapping the future with 3D‑printed titanium Apple Watch cases
+
+A close-up of Apple Watch Ultra 3.
+
+A close-up of Apple Watch Series 11.
+
+previous
+
+next
+
+We’re extraordinarily committed to systems change. We’re never doing something just to do it once — we’re doing it so it becomes the way the whole system then works.
+
+Sarah Chandler, Apple’s vice president of Environment and Supply Chain Innovation
+
+Media
+
+Text of this article
+
+November 18, 2025
+
+UPDATE
+
+Mapping the future with 3D‑printed titanium Apple Watch cases
+
+It started with a pie-in-the-sky idea: What if 3D printing — historically used to create prototypes — could be leveraged to produce millions of identical enclosures to Apple’s exact design standards, with high-quality recycled metal?
+
+“It wasn’t just an idea — it was an idea that wanted to become a reality,” says Kate Bergeron, Apple’s vice president of Product Design. “Once we asked the question, we immediately started testing it. We had to prove, with continuous prototyping, process optimization, and a tremendous amount of data gathering, that this technology was capable of meeting the high standard of quality we demand.”
+
+This year, all Apple Watch Ultra 3 and titanium Apple Watch Series 11 cases are 3D-printed with 100 percent recycled aerospace-grade titanium powder, an achievement not previously considered possible at scale. Every team at Apple rallied behind a shared ambition. The polished mirror finish on Series 11 had to be pristine. Ultra 3 had to maintain its durability and lightweight form to meet the demands of everyday adventurers. They both also had to be better for the planet without compromising performance, and use the same or better-quality materials.
+
+“At Apple, every team holds environment as a core value,” says Sarah Chandler, Apple’s vice president of Environment and Supply Chain Innovation. “We knew 3D-printing was a technology with so much potential for material efficiency, which is critical for getting to Apple 2030.”
+
+Apple 2030 is the company’s ambitious goal to be carbon neutral across its entire footprint by the end of this decade, which includes the manufacturing supply chain and lifetime use of its products. Already, all of the electricity used to manufacture Apple Watch comes from renewable energy sources like wind and solar.
+
+Using the additive process of 3D printing, layer after layer gets printed until an object is as close to the final shape needed as possible. Historically, machining forged parts is subtractive, requiring large portions of material to be shaved off. This shift enables Ultra 3 and titanium cases of Series 11 to use just half the raw material compared to their previous generations.
+
+“A 50 percent drop is a massive achievement — you’re getting two watches out of the same amount of material used for one,” Chandler explains. “When you start mapping that back, the savings to the planet are tremendous.”
+
+In total, Apple estimates more than 400 metric tons of raw titanium will be saved this year alone thanks to this new process.
+
+Over the past decade, Apple has been experimenting with 3D printing while the industry itself was starting to take off. In hospital labs, doctors were using the first 3D-printed prosthetics and artificial organs, and even beyond Earth’s atmosphere, astronauts discovered the speed and ease of 3D-printing vital tools while aboard the International Space Station.
+
+“We’ve watched this technology mature for a long time and seen its prototypes become more representative of our designs,” says Dr. J Manjunathaiah, Apple’s senior director of Manufacturing Design for Apple Watch and Vision. “Using less material to make our products has always been the intention. Previously, we hadn’t been able to make cosmetic parts at scale with 3D printing. So we started to experiment with 3D-printing metal to make cosmetic parts.”
+
+For Apple, functionality, beauty, and durability are table stakes. Add on scalability, along with rigorous reliability testing, performance, and even breakthroughs in materials science, all while ensuring Apple doesn’t lose any ground in its 2030 decarbonization goals.
+
+Looking down from above, rows of blocks protrude from the ground like white Lego skyscrapers, whirring day and night. These are the 3D printers hard at work building the titanium cases for Apple Watch Ultra 3 and Series 11.
+
+Each machine features a galvanometer that houses six lasers, all working simultaneously to build layer after layer — over 900 times — to complete a single case. But even before the printers can start, the raw titanium needs to be atomized into powder, a process that involves fine-tuning its oxygen content to decrease the qualities of titanium that become explosive when exposed to heat.
+
+“This was cutting-edge materials science,” says Bergeron.
+
+“The powder had to be 50 microns in diameter, which is like very fine sand,” Manjunathaiah explains. “When you hit it with a laser, it behaves differently if it has oxygen versus not. So we had to figure out how to keep the oxygen content low.”
+
+“Dialing in that thickness so that each layer is exactly 60 microns means very finely squeegeeing this powder,” Bergeron adds. “We have to go as fast as we possibly can to make this scalable, while going as slow as we possibly can to be precise. This allowed us to be efficient, while still hitting the goals of the design.”
+
+Once the printers are done working, an operator vacuums excess powder off the build plate in a process called rough depowdering. Because the builds are printed to the near-final shape for all of the interlocks needed on the enclosure, powder can still sit in the nooks and crannies of the cases. An ultrasonic shaker ensures this remaining powder is removed during the fine depowdering phase.
+
+During the singulation process, a thin electrified wire saws between each case, while a liquid coolant is sprayed simultaneously to keep the heat from the cutting process low. An automated optical inspection system then measures each case, checking that its dimensions and cosmetics are accurate. This is the final quality check to ensure the enclosures are ready for final processing.
+
+“The mechanical engineers have to be the most skilled puzzle solvers in the entire world,” Bergeron says. “They take the circuitboard, the display, the battery — all of the things that go inside the case during final assembly — and make them fit. We test along the way to make sure the watch is functional; then add software and run it for a period of time to check that all the functionality meets our requirements.”
+
+Another key design enhancement 3D-printing unlocked: printing textures in locations that were historically inaccessible in the forging process. For Apple Watch, this meant being able to improve the waterproofing process for the antenna housing in cellular models. Within the case, cellular models have a split filled with plastic to enable antenna functionality, and 3D-printing a specific texture on the inner surface of the metal enabled Apple to achieve better bonding between plastic and metal.
+
+Putting the puzzle pieces together was a multiyear journey that started with a series of demos and proofs of concept to fine-tune the recipe, from the specific alloy composition, to the printing process itself. After testing it out on a much smaller scale in previous product generations, the team was confident in its ability to solve for the unique challenges of working with titanium.
+
+“We always try to take those incremental steps to allow us to take the next step,” says Bergeron. “This has now opened up the opportunity for even more design flexibility than what we had before. Now that we’ve achieved this breakthrough at scale, in a truly sustainable way, and at the cosmetic and structural level that we need, the possibilities are endless.”
+
+That design flexibility unl

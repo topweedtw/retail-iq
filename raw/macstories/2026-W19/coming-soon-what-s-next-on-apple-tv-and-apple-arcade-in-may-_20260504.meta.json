@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.macstories.net/news/coming-soon-whats-next-on-apple-tv-and-apple-arcade-in-may-2026/",
+  "source_type": "macstories",
+  "source_tier": "T2",
+  "source_title": "Coming Soon: What’s Next on Apple TV and Apple Arcade in May 2026",
+  "fetched_at": "2026-05-04T14:52:12+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:e43a490b07eeafa8356f92ad9413c319e90dc6fec261ee9be8207af1dc808d0e",
+  "content_type": "text/html",
+  "content_size_bytes": 65341,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending-review",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Sat, 02 May 2026 17:42:32 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 5,
+  "relevance_reasoning": "文章提及多款 Apple 產品和服務，但時效性為 2026 年，非當前產品。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 0
+  },
+  "key_entities": [
+    "Apple TV",
+    "Apple Arcade",
+    "iPhone",
+    "iPad",
+    "Mac"
+  ]
+}

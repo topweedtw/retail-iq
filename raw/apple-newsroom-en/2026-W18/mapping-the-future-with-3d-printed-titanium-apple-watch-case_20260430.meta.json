@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/newsroom/2025/11/mapping-the-future-with-3d-printed-titanium-apple-watch-cases/",
+  "source_type": "apple-newsroom-en",
+  "source_tier": "T1",
+  "source_title": "Mapping the future with 3D-printed titanium Apple Watch cases",
+  "fetched_at": "2026-04-30T16:40:48+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:6de9df59b90a17206ca165d47cffe1f7235e97507756a60dd40feef83d760321",
+  "content_type": "text/html",
+  "content_size_bytes": 216873,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

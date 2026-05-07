@@ -1,0 +1,17 @@
+{
+  "source_url": "https://support.apple.com/en-us/121029",
+  "source_type": "apple-support",
+  "source_tier": "T1",
+  "source_title": "iPhone 17 Pro tech specs",
+  "fetched_at": "2026-04-30T16:42:01+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:b02618402507840c700a1c7184737dd4371cac9acaec11bef81c9c74ab155918",
+  "content_type": "text/html",
+  "content_size_bytes": 182297,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

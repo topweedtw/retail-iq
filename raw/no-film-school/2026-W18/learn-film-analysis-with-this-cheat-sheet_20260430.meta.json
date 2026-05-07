@@ -1,0 +1,17 @@
+{
+  "source_url": "https://nofilmschool.com/film-analysis",
+  "source_type": "no-film-school",
+  "source_tier": "T2",
+  "source_title": "Learn Film Analysis With This Cheat Sheet",
+  "fetched_at": "2026-04-30T16:37:24+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:8500d51c4bd4b9c12d9aaf9e52b18c64cd423f8f7ec14941a7c553eaf01d44ec",
+  "content_type": "text/html",
+  "content_size_bytes": 196482,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Thu, 30 Apr 2026 04:52:00 +0000; extracted via pre-w2-crawler"
+}

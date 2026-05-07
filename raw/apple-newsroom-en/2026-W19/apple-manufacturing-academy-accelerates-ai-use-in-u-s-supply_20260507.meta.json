@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/newsroom/2026/05/apple-manufacturing-academy-accelerates-ai-use-in-us-supply-chains/",
+  "source_type": "apple-newsroom-en",
+  "source_tier": "T2",
+  "source_title": "Apple Manufacturing Academy accelerates AI use in U.S. supply chains",
+  "fetched_at": "2026-05-07T11:15:30+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:5c353497ed8892a636ca958f37b97443e877960fd93cf4a139193f93c7582869",
+  "content_type": "text/html",
+  "content_size_bytes": 176121,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: 2026-05-05T12:59:35.638Z"
+}

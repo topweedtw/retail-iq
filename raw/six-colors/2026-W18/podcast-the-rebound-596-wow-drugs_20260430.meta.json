@@ -1,0 +1,17 @@
+{
+  "source_url": "https://sixcolors.com/podcast/2026/04/the-rebound-596-wow-drugs/",
+  "source_type": "six-colors",
+  "source_tier": "T2",
+  "source_title": "(Podcast) The Rebound 596: Wow, Drugs",
+  "fetched_at": "2026-04-30T16:37:16+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:d341eb07b4c80f7ca29393a0dfd7c3cbcc9f106748bf6fe43dd1f9ab14a66910",
+  "content_type": "text/html",
+  "content_size_bytes": 42884,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Wed, 29 Apr 2026 14:00:00 +0000; extracted via pre-w2-crawler"
+}

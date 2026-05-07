@@ -1,0 +1,26 @@
+{
+  "source_url": "https://nofilmschool.com/tarantino-movies-not-directed-by-him",
+  "source_type": "no-film-school",
+  "source_tier": "T2",
+  "source_title": "5 Incredible Movies Quentin Tarantino Helped Create but Didn’t Direct",
+  "fetched_at": "2026-05-04T14:52:20+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:c87210abbd93767b2bf0859a01eacda998b1875ce52e7d5c031c48031eeb69b6",
+  "content_type": "text/html",
+  "content_size_bytes": 203416,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Mon, 04 May 2026 03:45:01 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 0,
+  "relevance_reasoning": "文章內容與 Apple 產品、生態或訓練無關，時效性也非當代產品。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 0
+  },
+  "key_entities": []
+}

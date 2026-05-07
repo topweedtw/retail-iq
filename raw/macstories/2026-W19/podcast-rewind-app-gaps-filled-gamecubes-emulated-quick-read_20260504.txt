@@ -1,0 +1,281 @@
+ABOUT
+
+CLUB
+
+PODCASTS
+
+SHORTCUTS
+
+SETUPS
+
+iOS 26
+
+APPS
+
+STORIES
+
+SIGN IN
+
+DARK
+
+LIGHT
+
+AUTOMATIC
+
+Pedometer++ 8: Glimmers of an Apple Wrist Renaissance
+
+Introducing Apple Frames 4: A Revamped Shortcut, Support for Frame Colors, Proportional Scaling, and the Apple Frames CLI for Developers
+
+Hour by Hour: Reverse Engineering Your Schedule
+
+Podcast Rewind: App Gaps Filled, GameCubes Emulated, Quick Reads Released, Holidays Bridged, and Craig Hockenberry Interviewed
+
+Enjoy the latest episodes from MacStories’ family of podcasts:
+
+AppStories
+
+This week, John and Federico cover Apple’s executive transition, follow up on OpenAI’s super app, share the apps they’re looking for, and give each other suggestions on how to fill their app gaps.
+
+On AppStories+, we round up the tools we’ve built for ourselves that fill gaps we haven’t found apps for.
+
+NPC: Next Portable Console
+
+This week, OnePlus makes a phone controller with only triggers, Tico 0.7.0 brings GameCube and Wii emulation to the Switch, Ayn raises prices, and Steam comes to Android via ROCKNIX.
+
+On NPC XL, Brendon shares his experience installing ROCKNIX and Steam on the Ayn Odin 2 M
+
+First, Last, Everything
+
+Jonathan is joined by Craig Hockenberry, a longtime software designer and developer at The Iconfactory, known for building influential Mac and iOS apps like Twitterific, Tapestry, and Tot.
+
+Comfort Zone
+
+Matt has released Quick Reads, Niléane has entered her M5 (and Jonny Ive) era, and the whole gang throws their monitors away in favor of that laptop life.
+
+On Cozy Zone, the gang tier lists the Olympic logos from 2000 through 2036. (Yes, 2036!)
+
+MacStories Unwind
+
+This week, Federico and John get ready for the summer with a conversation about vacation bridging, bringing your dog to the beach, and cooling off in the mountains. Then, John shares a blockbuster movie recommendation and a movie bundle deal.
+
+AppStories, Episode 482, ‘Filling the App Gap’ Show Notes
+
+This episode is sponsored by:
+
+Steamclock: We make great apps. Design and development, from demos to details.
+
+Claude: For problems worth solving — get started with Claude today.
+
+Apple Leadership Transition
+
+Apple’s Executive Leadership Transition Announced
+
+Community Letter from Tim
+
+OpenAI Codex and Computer Use Follow-Up
+
+OpenAI Codex
+
+Claude Code
+
+Filling the App Gap
+
+Controller for HomeKit
+
+Home Assistant
+
+CleanShot X
+
+macOS Screen Sharing utility
+
+Workspaces+
+
+Workspaces
+
+Notion Calendar
+
+Fantastical
+
+Calendar 366
+
+Dot
+
+Shiori, by Brian Lovin
+
+Readwise Reader
+
+Matter
+
+AppStories+: Self-Built Tools and the Services Behind Them
+
+ElevenLabs
+
+Buffer
+
+Google Gemini
+
+Kokoro TTS
+
+Defuddle
+
+CrossPost (John’s cross-platform social media posting tool)
+
+Research Feed (John’s ranked, filtered social media reader)
+
+Dialog (John’s article-to-podcast converter using Defuddle, Claude, and Kokoro TTS)
+
+Daily Star (John’s twice-daily magazine-style digest from Notion, RSS, and Matter)
+
+Notion Daily Notes Appender (Federico’s quick-capture web app)
+
+Notion Daily Notes Viewer (Federico’s horizontal tray viewer for open daily notes)
+
+Ghost Reader (Federico’s Readwise Reader audio-preview tool using ElevenLabs)
+
+CLI Chats (Federico’s session-log viewer for Claude Code and Codex)
+
+Subscribe to AppStories+
+
+Visit AppStories.net to learn more about the extended, high bitrate audio version of AppStories that is delivered early each week and subscribe.
+
+NPC, Episode 78, ‘Triggers, Tico, and the Thor Tax’ Show Notes
+
+The Latest Portable Gaming News
+
+OnePlus reveals Marksman Gaming Controller alongside Ace 6 Ultra smartphone.
+
+Tico 0.7.0 brings experimental GameCube and Wii emulation to Nintendo Switch via Dolphin.
+
+AYN raises Thor Max price and downgrades storage to UFS 3.1.
+
+Valve’s Proton 11 beta enables Steam on ARM-based Android handhelds via ROCKNIX.
+
+Subscribe to NPC XL
+
+NPC XL is a weekly members-only version of NPC with extra content, available exclusively through our new Patreon for $5/month. Each week on NPC XL, Federico, Brendon, and John record a special segment or deep dive about a particular topic that is released alongside the “regular” NPC episodes. You can subscribe here.
+
+First, Last, Everything, Season 2, Episode 7, ‘Craig Hockenberry - Principal, The Iconfactory’ Show Notes
+
+This Episode’s Links
+
+Icon Dropper
+
+Twitterific
+
+Delicious Library
+
+Withings scales
+
+Tapestry
+
+Tot
+
+Tyke
+
+Ollie’s Arcade
+
+Craig’s Picks
+
+Craig’s ‘First’: Teletype Model 33 ASR using a 300 baud modem connected to a PDP-11
+
+Craig’s ‘Last’: Apple Watch and Health
+
+Craig’s ‘Everything’: iPhone and iOS
+
+‘Something’
+
+Moog Synthesizer
+
+Bob Moog Foundation
+
+Follow Craig
+
+Website
+
+Mastodon
+
+The Iconfactory
+
+GitHub
+
+Comfort Zone, Episode 98, ‘Dinosaurs Are From Space’ Show Notes
+
+Things Discussed
+
+Quick Reads
+
+TinyStart
+
+Async
+
+brrr
+
+Resend
+
+Cozy Zone
+
+For even more from the Comfort Zone crew, you can subscribe to Cozy Zone. Cozy Zone is a weekly bonus episode of Comfort Zone where Matt, Niléane, and Chris invite listeners to join them in the Cozy Zone where they’ll cover extra topics, invent wilder challenges and games, and share all their great (and not so great) takes on tech. You can subscribe to Cozy Zone for $5 per month here or $50 per year here.
+
+MacStories Unwind, ‘Bridges, Beaches, and Blockbusters’ Show Notes
+
+Unplugged Segment
+
+Holiday bridging
+
+Liberation Day — Festa della Liberazione (Italy)
+
+International Workers’ Day — May 1
+
+Dog Friendly Beaches in Italy
+
+Wilmington and Beaches
+
+One Tree Hill
+
+John’s Pick
+
+Mission: Impossible – The Final Reckoning
+
+Unwind Deal
+
+Godzilla x Kong: 5 Film Bundle for $19.99 in the TV app
+
+MacStories Unwind+
+
+We deliver MacStories Unwind+ to Club MacStories subscribers ad-free with high bitrate audio every week. To learn more about the benefits of a Club MacStories subscription, visit our Plans page.
+
+MacStories launched its first podcast in 2017 with AppStories. Since then, the lineup has expanded to include a family of weekly shows that also includes MacStories Unwind, Magic Rays of Light, Comfort Zone, NPC: Next Portable Console, and First, Last, Everything that collectively, cover a broad range of the modern media world from Apple’s streaming service and videogame hardware to apps for a growing audience that appreciates our thoughtful, in-depth approach to media.
+
+If you’re interested in advertising on our shows, you can learn more here or by contacting our Managing Editor, John Voorhees.
+
+Access Extra Content and Perks
+
+Founded in 2015, Club MacStories has delivered exclusive content every week for nearly a decade.
+
+What started with weekly and monthly email newsletters has blossomed into a family of memberships designed for every MacStories fan.
+
+Learn more here and from our Club FAQs.
+
+Club MacStories: Weekly and monthly newsletters via email and the web that are brimming with apps, tips, automation workflows, longform writing, early access to the MacStories Unwind podcast, periodic giveaways, and more;
+
+Club MacStories+: Everything that Club MacStories offers, plus an active Discord community, advanced search and custom RSS features for exploring the Club’s entire back catalog, bonus columns, and dozens of app discounts;
+
+Club Premier: All of the above and AppStories+, an extended version of our flagship podcast that’s delivered early, ad-free, and in high-bitrate audio.
+
+Learn more here and from our Club FAQs.
+
+ABOUT
+
+CLUB
+
+ADVERTISE
+
+PRIVACY POLICY
+
+TERMS OF SERVICE
+
+Web Dev by Made with Fuel | Design by Silvia Gatta
+
+Copyright © 2026 MacStories, Inc. Find Federico on MastodonFind John on MastodonFind Alex on MastodonFind Silvia on MastodonFind MacStories on Mastodon All rights reserved.
+
+v4.6

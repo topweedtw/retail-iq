@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.cined.com/boris-fx-acquires-vegas-pro-sound-forge-and-acid-pro-a-month-later-the-industry-consolidation-picture-sharpens/",
+  "source_type": "cined",
+  "source_tier": "T2",
+  "source_title": "Boris FX Acquires Vegas Pro, Sound Forge, and Acid Pro – A Month Later, the Industry Consolidation Picture Sharpens",
+  "fetched_at": "2026-05-04T14:52:23+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:ddbc930cad7b1e7d6bb993fbc046092b179170f1a32730506b97d07c81e354ec",
+  "content_type": "text/html",
+  "content_size_bytes": 561120,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Fri, 01 May 2026 08:15:55 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 2,
+  "relevance_reasoning": "文章與 Apple 產品無關，但提及了軟體收購，有潛在的訓練素材價值。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Boris FX",
+    "Vegas Pro",
+    "Sound Forge",
+    "Acid Pro",
+    "MAGIX Software GmbH"
+  ]
+}

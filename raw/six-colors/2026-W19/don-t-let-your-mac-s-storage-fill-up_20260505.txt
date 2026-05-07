@@ -1,0 +1,131 @@
+Apple, technology, and other stuff
+
+Archive
+
+Sign In
+
+Membership
+
+26 OS versions
+
+Help Me, Glenn!
+
+Reviews
+
+Apple Report Card
+
+E-readers
+
+Apple Photos
+
+20 Macs for 2020
+
+Merch
+
+Jason Snell
+
+Dan Moren
+
+Sponsorships
+
+Archive
+
+Sign In
+
+Membership
+
+26 OS versions
+
+Help Me, Glenn!
+
+Reviews
+
+Apple Report Card
+
+E-readers
+
+Apple Photos
+
+20 Macs for 2020
+
+Merch
+
+Jason Snell
+
+Dan Moren
+
+Sponsorships
+
+By 
+
+Glenn Fleishman
+
+May 4, 2026 12:27 PM PT
+
+Don’t let your Mac’s storage fill up!
+
+Macs don’t do well when they start to approach full storage. The operating system doesn’t provide enough safeguards and backoff options to help you cope with what can become a disaster, requiring a full drive restore! I wrote about this happening with my younger child’s MacBook two years ago. That article was about the abject failure of attempts to get a Mac working after it had reached maximum Mr. Creosote levels. What about avoiding this altogether?
+
+Six Colors reader John wrote in with this particular problem, which has been plaguing him across multiple Mac laptops but doesn’t occur on his Mac mini. John pays Apple for 6 TB of storage and is using nearly 4 TB. Logging in and out of iCloud seems to resolve his full-storage issue, but it comes with a lot of wasted time and some syncing problems.
+
+I suspect one or more things in his case:
+
+iCloud eviction delays: iCloud isn’t properly evicting data (deleting the local copy, as there’s a cloud copy), or doing so rapidly enough, as the drive starts to fill. The nature of iCloud Drive and iCloud storage for apps and the system is that only as much is cached locally as needed, and the oldest, least-used data is evicted with no user involvement. See below for help on that.
+
+Aggressive Photos iCloud syncing: Photos is aggressively retrieving data in such a way that, even with Photos: Settings > iCloud > Optimize Mac Storage enabled, it’s filling up the drive. (John has over 100,000 items in Photos, so it’s a likely suspect.)
+
+Local temporary backup caches: Some form of locally cached backup might be filling his drive before it uploads or transfers the files. Both Time Machine and Backblaze use local caching as a technique, and if you have slow Internet service or haven’t backed up to Time Machine in a while (more common with a laptop, if you attach a drive for this purpose), it can get out of hand.
+
+APFS snapshots: You can also wind up with what are called “APFS snapshots” that correspond to Time Machine backups that take up space on a drive. These are managed by Time Machine, and the oldest should be deleted automatically over time, but I found in 2021 that some people were having issues with these snapshots growing to occupy an ever-larger portion of their storage. (See “How to manage Time Machine snapshots using Disk Utility in macOS Monterey” at Macworld. And see the DaisyDisk discussion, next.)
+
+After reviewing the above, if none of that explains the problem or helps, I’ve got more advice ahead.
+
+Diagnose what you’re storing
+
+You can use System Settings: General: Storage to get a look at what’s using storage across your drive, but I find it both unreliable—it crashed while testing—and frustrating, as the granularity isn’t high enough.
+
+Instead, I turn to one of my all-time favorite utilities: DaisyDisk ($10, lifetime license), an app that scans your drives and reveals the kinds of data stored by category, including the important “hidden space” section. I don’t need it often, but when I do, it’s usually the only tool that can diagnose unsolvable problems.
+
+DaisyDisk lets you peer into the innards of your drive with color-coding to help you visualize how your usage is distributed among file types. One extremely useful feature is that you can drag and drop at any level of the navigable directory hierarchy to a “collector” spot in the lower-left corner to target items for deletion. Then click Delete and confirm, and it’s gone. This is particularly helpful with the APFS snapshots discussed above.
+
+Manually evict files from iCloud
+
+Apple does offer a manual tool to dump files from local storage without deleting them from iCloud. In the Finder, Control/right-click any item in iCloud Drive, and choose Remove Download. This only works for files that are currently downloaded.1 You can use it on folders, too, but every item in a folder must be downloaded to evict the folder and its contents.
+
+Monitor storage levels
+
+If you, like reader John, see this filling-up issue regularly, installing an app that warns in advance can be critical. The easiest and cheapest way I’ve found for this kind of monitoring is via iStat Menus ($12). While its primary purpose is to provide a live visual display of the state of various hardware (CPUs, drives, sensors) and other information (time, weather), it can also notify you when any of several conditions are met.
+
+One of these is whether a chosen volume has less than a specified amount of storage remaining or has exceeded an entered percentage of storage used. But this isn’t integrated with email or text, so you need to be in front of your device to know the drive is about to start bulging.
+
+I felt, however, that there was a gap for an on-device monitoring app that could email or text you when something is on the verge of going wrong.2 So I wrote one! Welcome to Mister Plimsoll, a simple, free Mac monitoring app currently in beta that lets you set which internal or external volumes to monitor, the percentage above which you should be notified, and choose to get a Mac alert, an email, an iMessage—or all three. You can set the refresh rate for checking and the number of notifications you get each day when the percentage is exceeded. (Please send your feedback.)
+
+[Got a question for the column? You can email glenn@sixcolors.com or use /glenn in our subscriber-only Discord community.]
+
+You can also choose Keep Downloaded to mark files or folders in either state—currently downloaded or evicted to the cloud—to prevent future eviction. ↩
+
+If you use Keyboard Maestro, you can set up a shell script that runs at an interval, checks the disk size, and emails you or uses Messages to alert you. I started down this path, but the process wound up requiring too many steps for this modest column. If you don’t use Keyboard Maestro, it’s a great app, but silly for me to recommend for this one task. ↩
+
+[Glenn Fleishman is a printing and comics historian, Jeopardy champion, and serial Kickstarterer. His latest book, which you can pre-order, is Flong Time, No See. Recent books are Six Centuries of Type & Printing and How Comics Are Made.]
+
+Report a typo
+
+Discuss in members Discord (app)
+
+If you appreciate articles like this one, support us by becoming a Six Colors subscriber. Subscribers get access to an exclusive podcast, members-only stories, and a special community.
+
+Search Six Colors
+
+Sponsor
+
+Mastodon
+
+Merch
+
+Report a mistake
+
+RSS Feed
+
+JSON Feed
+
+Privacy Policy

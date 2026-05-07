@@ -1,0 +1,452 @@
+{
+  "generated_at": "2026-04-30T22:00:00+08:00",
+  "generated_by": "backfill_relevance.py (LLM-curated, pre-W2)",
+  "scored_by": "manual-llm-curation",
+  "agents_version": "v1.7",
+  "note": "Sandbox prevents overwriting existing .meta.json files; this is a companion file. W2 Ingest Agent should merge these fields into each .meta.json on first run.",
+  "entries": {
+    "apple-com-tw/macbook-neo-apple_20260430": {
+      "relevance_score": 10,
+      "relevance_reasoning": "T1 官方來源，預設滿分",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "key_entities": [],
+      "ingest_status_override": "approved"
+    },
+    "apple-com-tw/iphone-17-pro-apple_20260430": {
+      "relevance_score": 10,
+      "relevance_reasoning": "T1 官方來源，預設滿分",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "key_entities": [],
+      "ingest_status_override": "approved"
+    },
+    "apple-newsroom-en/behind-kyle-hanagami-s-viral-dance-creations-edited-with-fin_20260430": {
+      "relevance_score": 10,
+      "relevance_reasoning": "T1 官方來源，預設滿分",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "key_entities": [],
+      "ingest_status_override": "approved"
+    },
+    "apple-newsroom-en/mapping-the-future-with-3d-printed-titanium-apple-watch-case_20260430": {
+      "relevance_score": 10,
+      "relevance_reasoning": "T1 官方來源，預設滿分",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "key_entities": [],
+      "ingest_status_override": "approved"
+    },
+    "apple-support/about-apple-intelligence_20260430": {
+      "relevance_score": 10,
+      "relevance_reasoning": "T1 官方來源，預設滿分",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "key_entities": [],
+      "ingest_status_override": "approved"
+    },
+    "apple-support/iphone-17-pro-tech-specs_20260430": {
+      "relevance_score": 10,
+      "relevance_reasoning": "T1 官方來源，預設滿分",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "key_entities": [],
+      "ingest_status_override": "approved"
+    },
+    "ars-technica/six-things-i-ll-remember-when-i-think-about-tim-cook-s-versi_20260430": {
+      "relevance_score": 7,
+      "relevance_reasoning": "Tim Cook 時代回顧分析，觀點間接相關",
+      "relevance_breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 2,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "Tim Cook",
+        "Apple",
+        "iPhone"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "ars-technica/why-are-the-mac-mini-and-mac-studio-gradually-becoming-impos_20260430": {
+      "relevance_score": 7,
+      "relevance_reasoning": "Mac 供貨議題，可用於客戶詢問 Mac mini 時",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 1,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "Mac mini",
+        "Mac Studio",
+        "RAM"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "six-colors/podcast-clockwise-654-i-love-the-clanker-slang_20260430": {
+      "relevance_score": 3,
+      "relevance_reasoning": "podcast 閒聊內容，無明確產品訓練價值",
+      "relevance_breakdown": {
+        "d1_product_mention": 1,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "Clockwise",
+        "podcast"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "six-colors/podcast-the-rebound-596-wow-drugs_20260430": {
+      "relevance_score": 2,
+      "relevance_reasoning": "娛樂 podcast 內容",
+      "relevance_breakdown": {
+        "d1_product_mention": 1,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "The Rebound",
+        "podcast"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "macstories/cronos-the-new-dawn-showcases-the-mac-s-metalfx-and-ray-trac_20260430": {
+      "relevance_score": 9,
+      "relevance_reasoning": "Mac 3A 大作實測，MetalFX + 光線追蹤是銷售素材",
+      "relevance_breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 3,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "Mac",
+        "MetalFX",
+        "Ray Tracing",
+        "Cronos"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "macstories/gamehub-s-desktop-beta-promises-to-expand-mac-gaming_20260430": {
+      "relevance_score": 7,
+      "relevance_reasoning": "Mac 遊戲生態擴展，可作為「Mac 沒遊戲」反對處理素材",
+      "relevance_breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 2,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "Mac",
+        "GameHub",
+        "Steam"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "petapixel/these-protective-wraps-are-designed-to-keep-your-camera-gear_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "第三方相機配件，與 iPhone 無關",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "Spider",
+        "camera wraps"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "petapixel/vividon-s-new-photoshop-plugin-uses-ai-to-change-photo-light_20260430": {
+      "relevance_score": 4,
+      "relevance_reasoning": "攝影工作流 AI 工具，攝影客群感興趣但非 Apple",
+      "relevance_breakdown": {
+        "d1_product_mention": 1,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 1,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "Photoshop",
+        "Vividon",
+        "AI lighting"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "engadget/mark-zuckerberg-says-meta-is-working-on-ai-agents-for-person_20260430": {
+      "relevance_score": 4,
+      "relevance_reasoning": "Meta AI 競爭，週報產業動態素材",
+      "relevance_breakdown": {
+        "d1_product_mention": 1,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 1,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "Meta",
+        "AI agents",
+        "Zuckerberg"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "engadget/sony-says-your-playstation-won-t-check-for-game-licenses-eve_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "Sony PS5 議題，完全非 Apple",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "Sony",
+        "PlayStation",
+        "DRM"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "macworld/exclusive-all-babbel-language-courses-available-for-one-life_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "廣告業配，Babbel 語言課程",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "Babbel"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "macworld/let-ai-handle-the-repetitive-stuff-ms-visual-studio-makes-co_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "廣告業配，MS Visual Studio 特價",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "MS Visual Studio",
+        "AI coding"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "no-film-school/how-ernst-lubitsch-invented-modern-hollywood_20260430": {
+      "relevance_score": 0,
+      "relevance_reasoning": "電影史內容，與器材訓練無關",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 0
+      },
+      "key_entities": [
+        "Ernst Lubitsch",
+        "Hollywood"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "no-film-school/learn-film-analysis-with-this-cheat-sheet_20260430": {
+      "relevance_score": 2,
+      "relevance_reasoning": "電影分析教學，可能間接提升內容創作者共鳴",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 1,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "film analysis"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "cined/dji-power-1000-mini-released-compact-1kwh-power-station-with_20260430": {
+      "relevance_score": 2,
+      "relevance_reasoning": "DJI 電源配件，非 Apple 主題",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "DJI",
+        "Power Station"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "cined/tech-talk-with-michael-cioni-fujifilm-gfx-eterna-55-and-how-_20260430": {
+      "relevance_score": 6,
+      "relevance_reasoning": "業界電影機比較，iPhone ProRes 定位反對處理素材",
+      "relevance_breakdown": {
+        "d1_product_mention": 1,
+        "d2_ecosystem": 1,
+        "d3_training_potential": 2,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "FUJIFILM",
+        "ARRI",
+        "ProRes",
+        "cinema"
+      ],
+      "ingest_status_override": "pending-review"
+    },
+    "macrumors/switchbot-s20-and-k11-review_20260430": {
+      "relevance_score": 7,
+      "relevance_reasoning": "HomeKit 配件實測，生態系素材",
+      "relevance_breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 1,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "HomeKit",
+        "SwitchBot",
+        "Matter"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "macrumors/aqara-w200-thermostat-review_20260430": {
+      "relevance_score": 7,
+      "relevance_reasoning": "HomeKit 溫控器實測，智慧家居生態",
+      "relevance_breakdown": {
+        "d1_product_mention": 2,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 1,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "HomeKit",
+        "Aqara",
+        "Matter"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "9to5mac/speakon-ai-dictation-review_20260430": {
+      "relevance_score": 9,
+      "relevance_reasoning": "iPhone AI 聽寫配件，商務 persona 素材",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 2,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "iPhone",
+        "AI dictation",
+        "SpeakOn"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "9to5mac/aulumu-m10-3-in-1-review_20260430": {
+      "relevance_score": 9,
+      "relevance_reasoning": "iPhone MagSafe + Watch + AirPods 三合一充電，差旅素材",
+      "relevance_breakdown": {
+        "d1_product_mention": 3,
+        "d2_ecosystem": 2,
+        "d3_training_potential": 2,
+        "d4_timeliness": 2
+      },
+      "key_entities": [
+        "iPhone",
+        "MagSafe",
+        "Apple Watch",
+        "AirPods"
+      ],
+      "ingest_status_override": "approved"
+    },
+    "the-verge/elon-musk-s-worst-enemy-in-court-is-elon-musk_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "Musk 訴訟報導，與 Apple 無關",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "Elon Musk",
+        "OpenAI"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "the-verge/grindr-yes-grindr-won-the-whcd-party-circuit_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "社群 app 白宮晚宴報導",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "Grindr",
+        "WHCD"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "toms-guide/3-classic-hbo-dramas-that-deserve-a-rewatch_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "娛樂內容推薦，HBO 節目",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "HBO"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    },
+    "toms-guide/expert-reveals-the-one-solar-panel-mistake-costing-you-money_20260430": {
+      "relevance_score": 1,
+      "relevance_reasoning": "太陽能家居建議，與 Apple 無關",
+      "relevance_breakdown": {
+        "d1_product_mention": 0,
+        "d2_ecosystem": 0,
+        "d3_training_potential": 0,
+        "d4_timeliness": 1
+      },
+      "key_entities": [
+        "solar panel"
+      ],
+      "ingest_status_override": "skipped-low-relevance"
+    }
+  }
+}

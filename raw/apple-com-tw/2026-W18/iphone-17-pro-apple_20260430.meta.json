@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/tw/iphone-17-pro/",
+  "source_type": "apple-com-tw",
+  "source_tier": "T1",
+  "source_title": "iPhone 17 Pro - Apple (台灣)",
+  "fetched_at": "2026-04-30T16:39:34+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:b71c8ec6bacf4b7a6732c729e37f61ba4ec3c4e701e403e1aa7a30057c9de79c",
+  "content_type": "text/html",
+  "content_size_bytes": 769944,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

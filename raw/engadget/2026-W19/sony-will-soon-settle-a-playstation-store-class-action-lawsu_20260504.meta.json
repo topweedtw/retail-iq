@@ -1,0 +1,26 @@
+{
+  "source_url": "https://www.engadget.com/2163227/sony-will-soon-settle-playstation-store-class-action-lawsuit/",
+  "source_type": "engadget",
+  "source_tier": "T2",
+  "source_title": "Sony will soon settle a PlayStation Store class action lawsuit for $7.8 million",
+  "fetched_at": "2026-05-04T14:52:14+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:d1a7e5aebde9714e6e91ceb79252c060ca91124ace38498cc17db0fc81fde328",
+  "content_type": "text/html",
+  "content_size_bytes": 58010,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Sun, 03 May 2026 19:18:40 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 0,
+  "relevance_reasoning": "文章內容與 Apple 產品或訓練無關，主要討論 PlayStation 訴訟。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 0
+  },
+  "key_entities": []
+}

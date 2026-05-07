@@ -1,0 +1,45 @@
+# RetailIQ CODEOWNERS
+# 每個路徑的預設審核者（PR 自動指派）
+# 格式見 https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/customizing-your-repository/about-code-owners
+#
+# 🚧 階段 1（目前）：所有路徑都指定 @willer，不存在的 team 以 TODO 註解保留
+# 🚧 階段 2（團隊建立後）：把下方 TODO 的 team handle 加回實際 owner 行
+# 復原前請先於 github.pie.apple.com 建好 team 並邀請成員
+
+# ─── 預設：所有變更都要 @willer 過目 ──────────────────
+*   @willer
+
+# ─── Schema 核心：動到 AGENTS.md 需 schema reviewer ──
+/wiki/AGENTS.md                 @willer
+# TODO(team): 待 @retailiq-schema-reviewers team 建立後加回
+
+# ─── 來源設定：影響 ingest 內容品質 ───────────────────
+/wiki/sources-config.yaml       @willer
+# TODO(team): 待 @retailiq-content-reviewers 建立後加回
+
+# ─── 產品頁 human-owned 段落改動：需 sales playbook owner ─
+/wiki/products/                 @willer
+/wiki/sales-playbook/           @willer
+# TODO(team): 待 @retailiq-sales-reviewers 建立後加回
+
+# ─── 腳本生成範例：文案審核 ───────────────────────────
+/generated-scripts/             @willer
+# TODO(team): 待 @retailiq-sales-reviewers
+
+# ─── Ingest / Agent 程式碼：工程審核 ──────────────────
+/scripts/                       @willer
+# TODO(team): 待 @retailiq-engineering 建立後加回
+
+# ─── 前端設計 ────────────────────────────────────────
+/frontend-designs/              @willer
+# TODO(team): 待 @retailiq-design 建立後加回
+
+# ─── 法務敏感區 ──────────────────────────────────────
+LICENSE.md                      @willer
+CONTRIBUTING.md                 @willer
+# TODO(team): 待 @retailiq-legal 建立後加回
+
+# ─── Handover / 管理文件：僅 PM 可改 ──────────────────
+HANDOVER.md                     @willer
+CRAWL-STATUS.md                 @willer
+TEST-REPORT-*.md                @willer

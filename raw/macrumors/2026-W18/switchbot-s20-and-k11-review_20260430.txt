@@ -1,0 +1,191 @@
+a. Send us an email
+
+b. Anonymous form
+
+close
+
+Front Page
+
+Roundups Show Roundups
+
+Guides
+
+How Tos
+
+Reviews
+
+Buyer's Guide
+
+Login
+
+Register
+
+New Posts
+
+Visit Forums
+
+New Posts
+
+Login
+
+Register
+
+Visit Forums
+
+Alerts
+
+Direct messages
+
+Watched
+
+New Posts
+
+Visit Forums
+
+iPhone 18 Pro
+
+iPhone Fold
+
+iOS 27
+
+MacBook Neo
+
+iPhone 17e
+
+AirTag
+
+iPhone 18
+
+iOS 26
+
+macOS Tahoe
+
+iPad Pro
+
+iPhone 17
+
+iPhone 17 Pro
+
+MacBook Pro
+
+iPadOS 26
+
+iMac
+
+Mac mini
+
+HomePod
+
+Apple TV
+
+iPad Pro
+
+iPhone Air
+
+WWDC 2026
+
+macOS 27
+
+Apple Vision Pro
+
+iPhone 16
+
+AirPods 4
+
+Apple Watch Ultra 3
+
+HomePod mini
+
+MacBook Air
+
+iPad
+
+AirPods Max 2
+
+AirPods Pro 3
+
+Apple Deals
+
+Apple Watch 11
+
+Apple Watch SE 3
+
+Mac Studio
+
+Studio Display
+
+iPad Air
+
+iPad mini
+
+CarPlay
+
+Apple Pay
+
+watchOS 26
+
+Front Page
+
+Roundups
+
+Guides
+
+How Tos
+
+Reviews
+
+Buyer's Guide
+
+Upcoming Products
+
+Forums
+
+Archives
+
+Tips / Contact Us
+
+SwitchBot S20 Review: A Budget-Friendly Robot Vacuum and Mop With Matter Support
+
+SwitchBot makes some of the most affordable HomeKit-compatible robot vacuums on the market. I've been testing the SwitchBot S20 and the K11+ for the last several months to see how they measure up to some of the more expensive models that I've reviewed.
+
+SwitchBot S20
+
+The MSRP for the S20 is $799, but SwitchBot runs sales often that drop the price to under $500, so it's competitive with some of the more affordable robot vacuums that don't have Matter integration.
+
+I've noticed some clear differences between the SwitchBot vacuums and higher-end vacuums I've tested, but the S20 has impressed me with its cleaning ability. It is a vacuum and a mop, so it can vacuum up crumbs and mop the floors at the same time.
+
+For vacuuming, it has a 10,000Pa suction, but I've never been able to tell a real difference in suction power between the vacuums I've tested. They're all able to do a good job with dust, fur, dirt, and other debris on the floor. There is an anti-tangle system, and I've never seen the SwitchBot S20 have a problem with hair or fur, and there are rubber ridges on the vacuum brush that seem to help it pick up lightweight messes. A brush on the side sweeps along baseboards, and while I don't think it's as good at getting into small crevices as the Roborock vacuum I have, it does a passable job. You might have to do a perimeter sweep with a regular vacuum every once in a while.
+
+The S20 has a roller mop, and that's my favorite robot vacuum mopping design. A lot of companies use rotating mopping pads, but the roller gets washed continually as the robot cleans, so it's not spreading a mess around. It also just feels more hygienic to me because it's scrubbing grime off of the mop as it goes. No robot vacuum is able to get crusty, dried-on stains off in one pass, but the S20 did a good job on dried ketchup with two passes. Robot vacuums aren't ideal for deep cleaning, but with multiple cleans per week or even every day, my floor is cleaner than when I do it manually.
+
+I have wood flooring and tile, but no carpet, so I can't test carpet extensively. I have a few larger-sized rugs that it has done fine vacuuming, and it's done no damage to my wood floors.
+
+All robot vacuums have a base station, and the S20 is no exception. In fact, it has the option for a base station that hooks up to your plumbing so it can automatically empty waste water and refill with clean water. For a review, I didn't want to hook it up to my house permanently so I opted for tanks that I refill and empty manually, but it's nice to have the option. The SwitchBot S20 base station has a simple, unobtrusive design, and it's not overly large.
+
+There's a 2.7L clean water tank and a 2.5L dirty water tank, which I have to refill/empty around once a week depending on how often the robot runs. The base station also has a spot for adding floor cleaner, and there are cleaners that are for robot vacuums. The tanks are easy to access, simple to open, and quick to refill or empty.
+
+Dust and dirt are collected in a bag that needs to be replaced every three months, so that is an ongoing expense. You'll also need to do some light cleaning and maintenance of the robot vacuum every so often because the mop and other components don't last forever, but that usually only needs to be done once a year or so. The base station uses hot air (50°C) to dry the mop after cleaning, and that keeps it from growing mold or smelling mildewy.
+
+Those are all the good things about the SwitchBot, and now I'll go over the not-so-good and the bad. The base station has a thin plastic mat to protect the floor from the wheels, which SwitchBot wants you to attach to the floor with adhesive. I am not going to attach plastic to my floor, and I was disappointed there wasn't a snap-in floor protector like most robot vacuums have for the base station. Without the adhesive, the plastic moves around and is useless, so I just deal with some drips and dirt on my kitchen floor.
+
+Compared to Ecovacs and Roborock vacuums I've tested, the S20 is loud. I would not be able to sleep or work through its vacuuming noise, though it does have a mode to reduce suction and make it quieter. It's still not quiet enough. It sounds like a vacuum when the vacuum is running, but it's not the worst tradeoff for a lower price.
+
+The S20 has modes for vacuuming, vacuuming and then mopping, or vacuuming and mopping at the same time, but if you just want it to mop, SwitchBot doesn't have an option for that.
+
+As far as the AI goes, it's not as good as some of the other vacuums I've used, and in some ways that's a good thing. It doesn't get stuck on my kitchen rugs because it just flat out ignores them. If one is stuck on the wheel, it drags the rug along until it gets unstuck. I don't necessarily mind, because I don't have to get up and save it. It's able to operate independently for the most part, and I don't have to intervene often.
+
+It is able to avoid cords almost entirely, and I haven't had it suck up anything that it shouldn't except for a cat toy and a sock. The Ecovacs robot I tested would sometimes err too far on the side of caution, misidentifying objects and staying away from them for a less thorough clean. The S20 cares less, and that could be an issue if you have a lot of items on the floor.
+
+The AI mapping isn't as capable as some more expensive robots, but the S20 was able to identify every room in my house and it navigates them well for the most part. It is not great at thresholds, especially taller thresholds. It gets stuck in my bathroom, and instead of realizing it's stuck and alerting me, it will keep trying to get out until its battery is exhausted.
+
+I can edit maps to create no-go areas, label rooms and objects, and make other edits to make sure that it's only cleaning where I want it to clean, and the edits are a must with the SwitchBot vacuums.
+
+The S20 can go for around 100 minutes before it needs to charge (in vacuum and mopping mode), and can clean approximately 1,000 square feet in my house before that point. It isn't able to do my entire house on a single charge, but in-app scheduling lets me have it clean a room or an area a day on a cycle. The battery lasts closer to three hours in vacuum-only mode.
+
+SwitchBot K11+
+
+The SwitchBot K11+ is a much smaller, vacuum-only robot. It's best for small spaces and it's a robot I'd consider in an apartment. With three attempts, I wasn't able to get it to accurately map my entire house, and the AI seems to be limited.
+
+I can isolate it in a room and get an accurate map, so it's okay in a smaller area, but it's still not particularly intelligent. Like the S20, if it can't get to an area, it doesn't give up and move on. It continues to try to get there until it dies and I have to go hunt it down, and that's inconvenient when I'm not home.
+
+The suction is decent at 6,000Pa per SwitchBot, but it doesn't pick up as much as quickly as the S20. What I like best about the K11+ is the small size. It's able to get in smaller nooks and crannies than bigger robot vac

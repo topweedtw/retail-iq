@@ -1,0 +1,26 @@
+{
+  "source_url": "https://nofilmschool.com/best-spaghetti-westerns-ranked",
+  "source_type": "no-film-school",
+  "source_tier": "T2",
+  "source_title": "7 Best Spaghetti Westerns, Ranked",
+  "fetched_at": "2026-05-04T14:52:20+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:a686f06baae310aaf5adcbf871201b4d8bdbe4504ac6e3cbe13bf30fe458b5ea",
+  "content_type": "text/html",
+  "content_size_bytes": 208763,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Mon, 04 May 2026 03:30:01 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 0,
+  "relevance_reasoning": "文章內容與 Apple 產品、生態或訓練無關，主題為電影。",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 0
+  },
+  "key_entities": []
+}

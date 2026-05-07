@@ -1,0 +1,124 @@
+AI
+
+Biz & IT
+
+Cars
+
+Culture
+
+Gaming
+
+Health
+
+Policy
+
+Science
+
+Security
+
+Space
+
+Tech
+
+Feature
+
+Reviews
+
+AI
+
+Biz & IT
+
+Cars
+
+Culture
+
+Gaming
+
+Health
+
+Policy
+
+Science
+
+Security
+
+Space
+
+Tech
+
+HyperLight
+
+Day & Night
+
+Dark
+
+System
+
+Why are the Mac mini and Mac Studio gradually becoming impossible to buy?
+
+Pending refresh? RAM shortage? AI agents? There are many possible explanations.
+
+It’s a good time to be in the market for a MacBook, between the affordability of the MacBook Neo, the power of the M5 Pro and M5 Max MacBook Pros, and the all-around appeal of the M5 MacBook Air. But Apple’s desktop computers are another story, and not just because they’re all about due for their own M5 upgrades.
+
+Over the last few months, the Mac mini and the Mac Studio have gradually become harder to buy. The 512GB M3 Ultra Mac Studio was removed from Apple’s website, and other models of both desktops have seen their ship times slip from days to weeks to months. In the last couple of weeks, several other configurations of Mac mini and Studio have begun showing up as “currently unavailable” on Apple’s website, which virtually never happens even when Apple is planning an imminent hardware refresh.
+
+This week (as spotted by MacRumors), the baseline $599 M4 Mac mini, which offers 16GB of RAM and 256GB of storage, earned the “currently unavailable” label for the first time.
+
+You can still place orders for most Mac mini models. An M4 Mac mini with 512GB or more of storage and either 16 or 24GB of RAM will take between 5 and 12 weeks to arrive, depending on the specific configuration you buy. M4 Pro Mac minis with any storage configuration and either 24GB or 48GB of RAM will take a similar amount of time to arrive, with most models showing availability within 10 to 12 weeks.
+
+All M4 Mac minis with 256GB of storage, all M4 minis with 32GB of RAM, and all M4 Pro Mac minis with 64GB of RAM are listed as “currently unavailable.” Mac Studio models with 128GB or 256GB of RAM are also listed as “currently unavailable.” Other Studio configurations list the same five- to 12-week wait times as the minis.
+
+This does not seem to be an issue specific to the M4 chip generation; most M4 iMac configurations, including those with 32GB of RAM, will arrive at your door within a week or two of being ordered. It’s also not being caused exclusively by ongoing RAM and shortage storages—new MacBook Pros with 128GB of RAM and large SSDs will arrive within two or three weeks of being ordered.
+
+The stock situation for the Mac mini and Studio is also different from the longer-than-usual ship times affecting the MacBook Neo. The Neo’s popularity pushed its ship times on Apple’s website into the two- to three-week range shortly after it went on sale. But the shipping window has also stayed within that two-to-three-week range through all of March and April rather than slipping further. And the Neo is still readily available from third-party retailers like Amazon and Best Buy; most Mac mini and Mac Studio configurations are also sold out on these third-party sites.
+
+Why the delays?
+
+So why are these Macs, specifically, becoming so difficult to buy? It’s likely a confluence of factors.
+
+The main one is that, again, we’re expecting refreshes for all of this hardware later this year, based on reporting from people with reliable track records. Historically, slipping ship times have been a pretty good indicator that a refresh is coming soon, as Apple winds down manufacturing for one device and ramps up production for another. Apple usually tries to limit the amount of manufactured-but-unsold inventory in its retail channels, at least partly because it doesn’t want to have tons of outdated stock on hand when it decides to update its hardware.
+
+This “pretty normal for Apple” situation is likely being compounded by the ongoing AI craze. Data center demand for RAM and storage chips is one aspect; the other is that the Mac mini and Studio are both fast and cost-effective options for people trying to run locally hosted AI agents like OpenClaw. This is partly because of Apple Silicon’s unified memory architecture, which gives both CPU and GPU access to a 16GB-or-larger pool of RAM; Apple’s hardware is also generally faster and more power-efficient than similarly priced mini PCs.
+
+Whatever the reason for the current shortages, we’d advise holding off on any Mac desktop purchase for now if you can. Based on the availability of Apple’s other Macs, iPads, and iPhones, we’d expect the stock situation to improve soon after new models are introduced. The biggest question is whether these updates are imminent or if we’ll be stuck waiting until this summer or fall.
+
+1.
+                A Falcon 9 rocket will hit the Moon this summer at seven times the speed of sound
+
+2.
+                OpenAI Codex system prompt includes explicit directive to "never talk about goblins"
+
+3.
+                Flesh-eating bacteria devour man's arm and leg in just three days
+
+4.
+                Anti-Trump Instagram pic of seashells now enough to indict ex-FBI directors
+
+5.
+                School-shooting lawsuits accuse OpenAI of hiding violent ChatGPT users
+
+Ars Technica has been separating the signal from
+          the noise for over 25 years. With our unique combination of
+          technical savvy and wide-ranging interest in the technological arts
+          and sciences, Ars is the trusted source in a sea of information. After
+          all, you don’t need to know everything, only what’s important.
+
+About Us
+
+Staff Directory
+
+Ars Newsletters
+
+General FAQ
+
+Posting Guidelines
+
+AI Policy
+
+RSS Feeds
+
+Contact us
+
+Advertise with us
+
+Reprints

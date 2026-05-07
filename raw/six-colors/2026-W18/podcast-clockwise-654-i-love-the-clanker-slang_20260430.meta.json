@@ -1,0 +1,17 @@
+{
+  "source_url": "https://sixcolors.com/podcast/2026/04/clockwise-654-i-love-the-clanker-slang/",
+  "source_type": "six-colors",
+  "source_tier": "T2",
+  "source_title": "(Podcast) Clockwise 654: I Love the Clanker Slang",
+  "fetched_at": "2026-04-30T16:37:16+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:a152f3484461a89aafd4528c02d942effb02185fba50a8e9767ffd7e5001317e",
+  "content_type": "text/html",
+  "content_size_bytes": 43388,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Wed, 29 Apr 2026 20:06:24 +0000; extracted via pre-w2-crawler"
+}

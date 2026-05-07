@@ -1,0 +1,83 @@
+ABOUT
+
+CLUB
+
+PODCASTS
+
+SHORTCUTS
+
+SETUPS
+
+iOS 26
+
+APPS
+
+STORIES
+
+SIGN IN
+
+DARK
+
+LIGHT
+
+AUTOMATIC
+
+Introducing Apple Frames 4: A Revamped Shortcut, Support for Frame Colors, Proportional Scaling, and the Apple Frames CLI for Developers
+
+On This Day: My New Favorite Way to Revisit Old Photos
+
+Moods Faster: Effortless Mood Tracking
+
+Cronos: The New Dawn Showcases the Mac’s MetalFX and Ray Tracing
+
+Source: Bloober Team.
+
+Top-tier games continue to roll out on Apple’s platforms at a steady clip. Recently, Crimson Desert landed on the Mac on the same day as other platforms, and then last week, Control: Ultimate Edition added support for the iPhone and iPad, joining the Mac version that was released last year.
+
+Today, Cronos: The New Dawn, a survival horror game by Bloober Team, joins the Mac gaming scene via Steam. In a post-apocalyptic, retro-tech setting, you play as the Traveller, who has been sent on a mysterious mission by a group called The Collective. Not long after you set out on your quest, you realize you aren’t alone. The landscape is littered with corpses that merge into mutant, zombie-like enemies that you have to fight off with a combination of weapons and melee attacks.
+
+Cronos debuted on the Xbox, PlayStation 5, Switch, PC, and Linux last September, but I didn’t play it on any of those platforms. Instead, I dove in fresh when I got the chance to try it on the Mac, thanks to a few days’ early access. I haven’t played very far into the story yet, but despite not being a huge fan of horror games, I was immediately captivated by the game’s incredible sound design, retro tech vibe, and creepy story.
+
+With limited time, I focused on the game’s performance on two Macs: my M1 Mac Studio connected to a 4K ASUS display and an M4 Max MacBook Pro, both on its own and connected to a BenQ 5K display I’ve been testing. As I expected, the difference between the two Macs was noticeable, showing just how far Apple silicon has come in terms of gaming. My Mac Studio may still pull its weight when it comes to productivity tasks, but the M4 Max MacBook Pro operates on an entirely different level.
+
+Bloober Team is no stranger to Apple silicon, having released The Medium with Metal 3 support for Apple silicon in 2023. The experience shows in the studio’s incorporation of both MetalFX upscaling and hardware-accelerated ray tracing in Cronos.
+
+By default, Cronos’ MetalFX and ray tracing settings are turned off, but both are worth trying along with frame generation because they make a big difference. After some experimentation on my M1 Max Mac Studio, I landed on a pretty consistent 70-75 FPS at 1440p with the help of MetalFX and frame generation. Hardware-accelerated ray tracing isn’t supported by Apple’s M1 family of chips, so that wasn’t an option at all.
+
+As you’d expect, performance was much better on the M4 Max MacBook Pro, which does support hardware-accelerated ray tracing. Starting with the default settings and playing on the MacBook Pro’s display, I turned on ray tracing, MetalFX, and frame generation and got a consistent 55-65 FPS, and turning off ray tracing bumped that more consistently into the 60s. The game struggled a little bit when I connected to an external 5K display, but with a few more tweaks, it was running well, too.
+
+What’s clear is that Cronos pushes the Mac’s hardware hard and that Apple’s latest gaming technologies make a big difference in performance. On the MacBook Pro, the fans spin up loudly soon after starting the game; plus, if you don’t have your laptop plugged in, you may be prompted to switch to Low Power Mode pretty quickly. However, the overall experience on Apple’s most recent hardware has come a long way since the M1 chipset, and with every hardware revision, more games like Cronos become viable. And whether you play it on the Mac or not, Cronos: The New Dawn is worth checking out for a creepy futuristic good time.
+
+Cronos: The New Dawn is available on Steam and is 30% off until May 1.
+
+Access Extra Content and Perks
+
+Founded in 2015, Club MacStories has delivered exclusive content every week for nearly a decade.
+
+What started with weekly and monthly email newsletters has blossomed into a family of memberships designed for every MacStories fan.
+
+Learn more here and from our Club FAQs.
+
+Club MacStories: Weekly and monthly newsletters via email and the web that are brimming with apps, tips, automation workflows, longform writing, early access to the MacStories Unwind podcast, periodic giveaways, and more;
+
+Club MacStories+: Everything that Club MacStories offers, plus an active Discord community, advanced search and custom RSS features for exploring the Club’s entire back catalog, bonus columns, and dozens of app discounts;
+
+Club Premier: All of the above and AppStories+, an extended version of our flagship podcast that’s delivered early, ad-free, and in high-bitrate audio.
+
+Learn more here and from our Club FAQs.
+
+ABOUT
+
+CLUB
+
+ADVERTISE
+
+PRIVACY POLICY
+
+TERMS OF SERVICE
+
+Web Dev by Made with Fuel | Design by Silvia Gatta
+
+Copyright © 2026 MacStories, Inc. Find Federico on MastodonFind John on MastodonFind Alex on MastodonFind Silvia on MastodonFind MacStories on Mastodon All rights reserved.
+
+v4.6

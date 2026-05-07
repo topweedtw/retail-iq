@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RetailIQ — Pro Dashboard 風</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --bg: #0b0d10;
+    --surface: #111418;
+    --surface-2: #181c21;
+    --border: #23272e;
+    --text: #e6e8eb;
+    --text-dim: #8b949e;
+    --accent: #7aa2ff;
+    --green: #3fb950;
+    --orange: #f0883e;
+    --red: #f85149;
+  }
+  body {
+    font-family: "SF Mono", "JetBrains Mono", -apple-system, "Helvetica Neue", monospace;
+    background: var(--bg); color: var(--text);
+    font-size: 13px;
+  }
+  .prose-body { font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  .panel {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  }
+  .panel-2 {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px;
+  }
+  .kbd {
+    font-family: "SF Mono", monospace; font-size: 11px;
+    padding: 2px 6px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px;
+    color: var(--text-dim);
+  }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; }
+  .btn-accent {
+    background: var(--accent); color: #0b0d10; padding: 6px 14px; border-radius: 6px; font-weight: 600;
+    font-family: -apple-system, sans-serif;
+  }
+  .btn-ghost {
+    background: transparent; color: var(--text); padding: 6px 14px; border-radius: 6px;
+    border: 1px solid var(--border); font-family: -apple-system, sans-serif;
+  }
+  .btn-ghost:hover { background: var(--surface-2); }
+  table th {
+    text-transform: uppercase; font-size: 11px; font-weight: 600; color: var(--text-dim);
+    letter-spacing: 0.05em; text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border);
+  }
+  table td { padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  table tr:hover { background: var(--surface-2); }
+  .badge-sm {
+    display:inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;
+    border: 1px solid var(--border); color: var(--text-dim);
+  }
+  .badge-sm.t1 { color: #7ee787; border-color: #2ea043; }
+  .badge-sm.t2 { color: #79c0ff; border-color: #388bfd; }
+  .badge-sm.t3 { color: #d2a8ff; border-color: #8957e5; }
+  .badge-sm.warn { color: #f0883e; border-color: #bd561d; }
+  .sparkline { height: 24px; width: 80px; }
+  .nav-item {
+    display: flex; align-items: center; gap: 10px; padding: 6px 10px; border-radius: 6px;
+    color: var(--text-dim); cursor: pointer; font-size: 13px;
+  }
+  .nav-item:hover { background: var(--surface-2); color: var(--text); }
+  .nav-item.active { background: var(--surface-2); color: var(--accent); }
+  .command-bar {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px;
+    padding: 6px 12px; display: flex; align-items: center; gap: 8px; color: var(--text-dim);
+    font-family: "SF Mono", monospace; font-size: 12px;
+  }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- 設計註解 -->
+<div class="bg-yellow-900 text-yellow-100 text-xs py-2 px-6 text-center" style="font-family: 'SF Mono', monospace;">
+  <strong>Style 3 · Pro Dashboard</strong> · 靈感：Linear / Raycast / Vercel Dashboard · 暗色底 + sidebar + 表格 + 鍵盤快捷鍵 · 適合重度使用者（管理員 / 資深店員）、數據稽核、後台管理
+</div>
+
+<div class="flex h-screen">
+
+  <!-- Sidebar -->
+  <aside class="w-60 border-r flex flex-col" style="background: var(--surface); border-color: var(--border);">
+    <div class="px-4 py-4 border-b" style="border-color: var(--border);">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-6 h-6 rounded bg-gradient-to-br from-blue-400 to-purple-500"></div>
+        <span class="font-semibold text-sm prose-body">RetailIQ</span>
+        <span class="badge-sm ml-auto">v0.1</span>
+      </div>
+      <div class="command-bar">
+        <span>🔍</span>
+        <span class="flex-1">搜尋產品、腳本...</span>
+        <span class="kbd">⌘K</span>
+      </div>
+    </div>
+
+    <nav class="flex-1 p-2 space-y-0.5 prose-body">
+      <div class="text-[10px] uppercase text-neutral-600 px-2 py-2 font-semibold tracking-wider">主要</div>
+      <div class="nav-item"><span>📊</span><span>儀表板</span></div>
+      <div class="nav-item active"><span>🎤</span><span>腳本生成器</span><span class="kbd ml-auto">G</span></div>
+      <div class="nav-item"><span>🎯</span><span>測驗遊戲</span><span class="kbd ml-auto">Q</span></div>
+      <div class="nav-item"><span>📰</span><span>週報</span><span class="kbd ml-auto">D</span></div>
+
+      <div class="text-[10px] uppercase text-neutral-600 px-2 py-2 mt-3 font-semibold tracking-wider">知識庫</div>
+      <div class="nav-item"><span>📱</span><span>產品（3）</span></div>
+      <div class="nav-item"><span>💡</span><span>概念（0）</span></div>
+      <div class="nav-item"><span>⚖️</span><span>比較（0）</span></div>
+      <div class="nav-item"><span>🎯</span><span>銷售話術</span></div>
+
+      <div class="text-[10px] uppercase text-neutral-600 px-2 py-2 mt-3 font-semibold tracking-wider">管理</div>
+      <div class="nav-item"><span>📥</span><span>Ingest 任務</span></div>
+      <div class="nav-item"><span>📊</span><span>資料來源（15）</span></div>
+      <div class="nav-item"><span>⚠️</span><span>NEEDS REVIEW <span class="text-orange-400">5</span></span></div>
+      <div class="nav-item"><span>📝</span><span>log.md</span></div>
+    </nav>
+
+    <div class="p-3 border-t" style="border-color: var(--border);">
+      <div class="flex items-center gap-2 p-2 rounded hover:bg-[var(--surface-2)] cursor-pointer prose-body">
+        <div class="w-7 h-7 rounded-full bg-gradient-to-br from-purple-400 to-pink-400"></div>
+        <div class="flex-1 min-w-0">
+          <div class="text-xs font-medium truncate">Willer Chen</div>
+          <div class="text-[10px] text-neutral-500">moderator · 信義店</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="flex-1 overflow-y-auto">
+
+    <!-- Header -->
+    <header class="px-6 py-3 border-b flex items-center justify-between" style="border-color: var(--border);">
+      <div class="flex items-center gap-2 text-xs" style="color: var(--text-dim);">
+        <span>腳本生成器</span>
+        <span>/</span>
+        <span class="text-[var(--text)]">新增</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="kbd">⌘ S</span>
+        <span class="text-xs" style="color: var(--text-dim);">儲存草稿</span>
+        <button class="btn-ghost">分享</button>
+        <button class="btn-accent">生成 →</button>
+      </div>
+    </header>
+
+    <!-- 3 column layout: Inputs / Preview / Sources -->
+    <div class="grid grid-cols-[360px_1fr_320px] h-[calc(100vh-48px-40px)]">
+
+      <!-- Left: Input Form -->
+      <section class="border-r overflow-y-auto p-6 space-y-6 prose-body" style="border-color: var(--border); background: var(--surface);">
+        <div>
+          <div class="text-[11px] uppercase tracking-wider mb-2" style="color: var(--text-dim);">產品</div>
+          <select class="w-full bg-[var(--surface-2)] border border-[var(--border)] rounded px-3 py-2 text-sm">
+            <option>iPhone 17 Pro</option>
+            <option>iPad Air (M3)</option>
+            <option>MacBook Neo</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="text-[11px] uppercase tracking-wider mb-2" style="color: var(--text-dim);">客戶輪廓</div>
+          <div class="grid grid-cols-2 gap-1.5 text-xs">
+            <div class="panel-2 px-3 py-2 cursor-pointer">🎓 學生</div>
+            <div class="panel-2 px-3 py-2 cursor-pointer" style="border-color:var(--accent); background:rgba(122,162,255,0.1);">💼 商務</div>
+            <div class="panel-2 px-3 py-2 cursor-pointer">📸 攝影</div>
+            <div class="panel-2 px-3 py-2 cursor-pointer">🎬 創作者</div>
+            <div class="panel-2 px-3 py-2 cursor-pointer">👨‍👩‍👧 家庭</div>
+            <div class="panel-2 px-3 py-2 cursor-pointer">🎮 遊戲</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text-[11px] uppercase tracking-wider mb-2" style="color: var(--text-dim);">展示時長</div>
+          <div class="flex gap-1.5 text-xs">
+            <div class="flex-1 panel-2 px-3 py-2 cursor-pointer text-center">1 min</div>
+            <div class="flex-1 panel-2 px-3 py-2 cursor-pointer text-center">3 min</div>
+            <div class="flex-1 panel-2 px-3 py-2 cursor-pointer text-center" style="border-color:var(--accent); background:rgba(122,162,255,0.1);">5 min</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text-[11px] uppercase tracking-wider mb-2" style="color: var(--text-dim);">重點訴求</div>
+          <div class="space-y-1 text-xs">
+            <label class="flex items-center gap-2 p-1.5 rounded hover:bg-[var(--surface-2)] cursor-pointer">
+              <input type="checkbox" checked> 📸 相機
+            </label>
+            <label class="flex items-center gap-2 p-1.5 rounded hover:bg-[var(--surface-2)] cursor-pointer">
+              <input type="checkbox" checked> ⚡ 效能
+            </label>
+            <label class="flex items-center gap-2 p-1.5 rounded hover:bg-[var(--surface-2)] cursor-pointer">
+              <input type="checkbox" checked> 🌐 生態系
+            </label>
+            <label class="flex items-center gap-2 p-1.5 rounded hover:bg-[var(--surface-2)] cursor-pointer">
+              <input type="checkbox"> 🔋 電池
+            </label>
+            <label class="flex items-center gap-2 p-1.5 rounded hover:bg-[var(--surface-2)] cursor-pointer">
+              <input type="checkbox"> 🤖 AI 功能
+            </label>
+            <label class="flex items-center gap-2 p-1.5 rounded hover:bg-[var(--surface-2)] cursor-pointer">
+              <input type="checkbox"> 🎨 設計
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <div class="text-[11px] uppercase tracking-wider mb-2" style="color: var(--text-dim);">模式</div>
+          <div class="space-y-1.5 text-xs">
+            <div class="panel-2 px-3 py-2 flex items-center gap-2" style="border-color:var(--accent);">
+              <span class="dot" style="background:var(--accent);"></span>
+              <span class="flex-1">草稿 → 時間版（推薦）</span>
+            </div>
+            <div class="panel-2 px-3 py-2 flex items-center gap-2 cursor-pointer">
+              <span class="dot" style="background:var(--text-dim);"></span>
+              <span class="flex-1">直接時間版</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t pt-4" style="border-color: var(--border);">
+          <div class="text-[10px] uppercase tracking-wider mb-2" style="color: var(--text-dim);">估算</div>
+          <div class="text-xs space-y-1" style="color: var(--text-dim);">
+            <div class="flex justify-between"><span>字數</span><span class="text-[var(--text)]">~750 字</span></div>
+            <div class="flex justify-between"><span>FAB 段落</span><span class="text-[var(--text)]">3 組</span></div>
+            <div class="flex justify-between"><span>引用 T1 來源</span><span class="text-[var(--text)]">2 筆</span></div>
+            <div class="flex justify-between"><span>生成時間</span><span class="text-[var(--text)]">~8s</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Middle: Preview -->
+      <section class="overflow-y-auto p-8 prose-body">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <div class="flex items-center gap-2 text-[11px] uppercase tracking-wider" style="color: var(--text-dim);">
+              <span class="dot" style="background: var(--green);"></span>
+              <span>Pass 1 · Narrative Draft</span>
+            </div>
+            <h1 class="text-xl font-semibold mt-1">iPhone 17 Pro × 商務 × 5min</h1>
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="badge-sm">v1 · draft</span>
+            <span class="kbd">⌘ ↩</span>
+            <span style="color: var(--text-dim);">接受</span>
+          </div>
+        </div>
+
+        <div class="panel p-6 text-sm leading-[1.8]" style="color: var(--text);">
+          <p class="mb-4">
+            我會先從「您工作上怎麼用手機、出差多不多」這個簡單問句起手，不急著講規格。聽客戶答 10 秒左右建立連結，然後直接切到三件事：<strong class="text-white">熱鍛造鋁金屬 + 均溫板散熱</strong>、<strong class="text-white">Pro 融合相機系統</strong>、<strong class="text-white">跟 Mac 的無縫工作流</strong>。
+          </p>
+          <p class="mb-4">
+            接著做第一個 demo — <strong class="text-[var(--accent)]">8 倍光學變焦</strong>。打開展示機預載的變焦範例相簿，從 0.5x 一路滑到 8x，讓客戶看光學畫質在每個焦段都沒糊。收尾金句「8 倍不是規格數字，是您在後排也能拍清楚的差別」。
+          </p>
+          <p class="mb-4">
+            第二個 demo 切到 <strong class="text-[var(--accent)]">Apple Intelligence</strong>。挑商務情境 — 打開預載的白板或名片照，長按相機控制按鈕啟動視覺智慧...
+          </p>
+        </div>
+
+        <!-- Feedback actions -->
+        <div class="mt-6 grid grid-cols-4 gap-2 text-xs">
+          <button class="btn-ghost">🔄 換 Demo</button>
+          <button class="btn-ghost">🎯 換角度</button>
+          <button class="btn-ghost">💬 換開場</button>
+          <button class="btn-ghost">✏️ 自由指示</button>
+        </div>
+
+        <!-- FAB Preview -->
+        <div class="mt-8">
+          <div class="text-[11px] uppercase tracking-wider mb-2" style="color: var(--text-dim);">預覽 Pass 2 的 FAB+P 話術</div>
+          <div class="panel-2 p-4 text-xs leading-relaxed space-y-2">
+            <div><span class="badge-sm" style="border-color:var(--green); color:var(--green);">F</span> 最高 8 倍光學品質變焦</div>
+            <div><span class="badge-sm" style="border-color:var(--accent); color:var(--accent);">A</span> iPhone 歷來最長，業界罕見</div>
+            <div><span class="badge-sm" style="border-color:var(--orange); color:var(--orange);">B</span> 會議白板、展場看板，後排也能拍清楚</div>
+            <div><span class="badge-sm warn">P</span> <span style="color: var(--text-dim); font-style:italic;">&lt;店員自填真實故事&gt;</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Sources & Lint -->
+      <aside class="border-l overflow-y-auto p-5 prose-body" style="border-color: var(--border); background: var(--surface);">
+        <div class="mb-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-[11px] uppercase tracking-wider" style="color: var(--text-dim);">引用 wiki 素材</div>
+            <span class="badge-sm">7 項</span>
+          </div>
+          <div class="space-y-1 text-xs">
+            <div class="panel-2 px-3 py-2">
+              <div class="flex items-center gap-2">
+                <span class="badge-sm t1">T1</span>
+                <span class="flex-1 truncate">iphone-17-pro.md § 五大賣點 #1</span>
+              </div>
+            </div>
+            <div class="panel-2 px-3 py-2">
+              <div class="flex items-center gap-2">
+                <span class="badge-sm t1">T1</span>
+                <span class="flex-1 truncate">§ Signature Demo 1</span>
+              </div>
+            </div>
+            <div class="panel-2 px-3 py-2">
+              <div class="flex items-center gap-2">
+                <span class="badge-sm t1">T1</span>
+                <span class="flex-1 truncate">§ Q&A #5</span>
+              </div>
+            </div>
+            <div class="panel-2 px-3 py-2">
+              <div class="flex items-center gap-2">
+                <span class="badge-sm t1">T1</span>
+                <span class="flex-1 truncate">§ 反對處理</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="text-[11px] uppercase tracking-wider mb-3" style="color: var(--text-dim);">合規檢查</div>
+          <div class="space-y-1.5 text-xs">
+            <div class="flex items-center gap-2"><span style="color:var(--green);">✓</span> 無折扣／促銷</div>
+            <div class="flex items-center gap-2"><span style="color:var(--green);">✓</span> 無未公開功能</div>
+            <div class="flex items-center gap-2"><span style="color:var(--green);">✓</span> 無競品貶低</div>
+            <div class="flex items-center gap-2"><span style="color:var(--green);">✓</span> 官方術語遵循</div>
+            <div class="flex items-center gap-2"><span style="color:var(--orange);">⚠</span> 起售價占位（NEEDS REVIEW）</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text-[11px] uppercase tracking-wider mb-3" style="color: var(--text-dim);">版本歷史</div>
+          <div class="space-y-2 text-xs" style="color: var(--text-dim);">
+            <div><span style="color:var(--text);">v1 · draft</span> · 10 秒前</div>
+            <div>v0 · 初始化 · 1 分鐘前</div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- Bottom: Footer with live lint & data freshness -->
+    <footer class="px-6 py-2 border-t flex items-center justify-between text-xs" style="border-color: var(--border); background: var(--surface); color: var(--text-dim); font-family: 'SF Mono', monospace;">
+      <div class="flex items-center gap-4">
+        <span><span class="dot" style="background: var(--green);"></span> synced</span>
+        <span>wiki @ v1.6</span>
+        <span>last ingest: 2026-04-30 03:15</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span>⚠ 5 NEEDS_REVIEW</span>
+        <span>✅ 0 CONFLICTS</span>
+        <span>15 sources active</span>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>

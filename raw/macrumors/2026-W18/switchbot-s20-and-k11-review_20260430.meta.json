@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.macrumors.com/review/switchbot-s20-and-k11-plus/",
+  "source_type": "macrumors",
+  "source_tier": "T2-filtered",
+  "source_title": "SwitchBot S20 and K11+ review",
+  "fetched_at": "2026-04-30T16:38:37+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:90e7d2c12d97b6718d40e93aa62450c99b26d76055dcbe80124990d4c3204726",
+  "content_type": "text/html",
+  "content_size_bytes": 145703,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

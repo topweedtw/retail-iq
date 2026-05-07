@@ -1,0 +1,17 @@
+{
+  "source_url": "https://support.apple.com/en-us/121115",
+  "source_type": "apple-support",
+  "source_tier": "T1",
+  "source_title": "About Apple Intelligence",
+  "fetched_at": "2026-04-30T16:42:03+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:11725e9431c3900b7a512b00f3b5ad0d861468247ea582f8b24d8b186a7ebecb",
+  "content_type": "text/html",
+  "content_size_bytes": 140845,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: ; extracted via pre-w2-crawler"
+}

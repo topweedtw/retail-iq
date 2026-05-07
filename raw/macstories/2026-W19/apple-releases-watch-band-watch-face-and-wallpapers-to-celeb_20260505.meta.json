@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.macstories.net/news/apple-releases-watch-band-watch-face-and-wallpapers-to-celebrate-pride-month/",
+  "source_type": "macstories",
+  "source_tier": "T2",
+  "source_title": "Apple Releases Watch Band, Watch Face, and Wallpapers to Celebrate Pride Month",
+  "fetched_at": "2026-05-05T13:28:36+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:3a1c8701a424cd6d0e731e43f7099b74118041077815efb336acef171dae0eef",
+  "content_type": "text/html",
+  "content_size_bytes": 46438,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending-review",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Mon, 04 May 2026 13:28:47 +0000",
+  "relevance_score": 5,
+  "relevance_reasoning": "文章提及 Apple Watch、iPhone、iPad，但訓練潛力有限，時效性為當代產品。",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Apple Watch",
+    "iPhone",
+    "iPad",
+    "watchOS",
+    "iOS"
+  ]
+}

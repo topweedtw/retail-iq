@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/",
+  "source_type": "apple-newsroom-en",
+  "source_tier": "T2",
+  "source_title": "Apple reports second quarter results",
+  "fetched_at": "2026-05-05T13:28:32+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:b7de2eb541dd1d3623be798a4d65f9ce166c11ba0c5cc7cabae6e09fb9bd4ca4",
+  "content_type": "text/html",
+  "content_size_bytes": 129684,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending-review",
+  "ingest_log_ref": null,
+  "notes": "pubDate: 2026-04-30T20:30:59.836Z",
+  "relevance_score": 6,
+  "relevance_reasoning": "文章提及多款 Apple 產品和部分生態系統，但訓練潛力與時效性較低。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "iPhone",
+    "iPad",
+    "Mac",
+    "Apple Watch",
+    "Apple Vision Pro"
+  ]
+}

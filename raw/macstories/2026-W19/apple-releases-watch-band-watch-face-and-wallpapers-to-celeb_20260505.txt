@@ -1,0 +1,79 @@
+ABOUT
+
+CLUB
+
+PODCASTS
+
+SHORTCUTS
+
+SETUPS
+
+iOS 26
+
+APPS
+
+STORIES
+
+SIGN IN
+
+DARK
+
+LIGHT
+
+AUTOMATIC
+
+Pedometer++ 8: Glimmers of an Apple Wrist Renaissance
+
+Introducing Apple Frames 4: A Revamped Shortcut, Support for Frame Colors, Proportional Scaling, and the Apple Frames CLI for Developers
+
+Hour by Hour: Reverse Engineering Your Schedule
+
+Apple Releases Watch Band, Watch Face, and Wallpapers to Celebrate Pride Month
+
+Source: Apple.
+
+Apple has released its annual Pride Collection, including a new Apple Watch Pride Edition Sport Loop band, watch face, and iPhone and iPad wallpapers celebrating LGBTQ+ communities.
+
+The commemorative Sport Loop uses 11 colors of nylon thread that blend the colors together in a unique way. As Apple’s press release puts it:
+
+The intricate weaving blends one color into the next, creating depth and movement across the band. The resulting design is joyful and vibrant, showcasing a full spectrum of colors that reflect the unique identities that shape LGBTQ+ communities worldwide.
+
+Source: Apple.
+
+The watch face and wallpapers share a similar style of gradient strips of bright colors radiating out from the watch face’s analog clock design and in vertical strips on the wallpapers.
+
+As usual, Apple’s designers have done great work with the band, watch face, and wallpapers. There’s a vibrancy and energy to them that brings them to life.
+
+The Apple Sport Loop is available to order today online and in the Apple Store app for $49 and will be in retail stores later this week. The watch face and wallpapers will be available as soon as the 26.5 releases of watchOS, iOS, and iPadOS are released to the public.
+
+Access Extra Content and Perks
+
+Founded in 2015, Club MacStories has delivered exclusive content every week for nearly a decade.
+
+What started with weekly and monthly email newsletters has blossomed into a family of memberships designed for every MacStories fan.
+
+Learn more here and from our Club FAQs.
+
+Club MacStories: Weekly and monthly newsletters via email and the web that are brimming with apps, tips, automation workflows, longform writing, early access to the MacStories Unwind podcast, periodic giveaways, and more;
+
+Club MacStories+: Everything that Club MacStories offers, plus an active Discord community, advanced search and custom RSS features for exploring the Club’s entire back catalog, bonus columns, and dozens of app discounts;
+
+Club Premier: All of the above and AppStories+, an extended version of our flagship podcast that’s delivered early, ad-free, and in high-bitrate audio.
+
+Learn more here and from our Club FAQs.
+
+ABOUT
+
+CLUB
+
+ADVERTISE
+
+PRIVACY POLICY
+
+TERMS OF SERVICE
+
+Web Dev by Made with Fuel | Design by Silvia Gatta
+
+Copyright © 2026 MacStories, Inc. Find Federico on MastodonFind John on MastodonFind Alex on MastodonFind Silvia on MastodonFind MacStories on Mastodon All rights reserved.
+
+v4.6

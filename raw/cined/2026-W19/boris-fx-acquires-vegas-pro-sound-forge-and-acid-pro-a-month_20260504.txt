@@ -1,0 +1,361 @@
+NEW PODCAST!  Is the GoPro Mission 1 Pro ILS an action cam or mirrorless? NAB 2026 Best-of-Show Winners – Focus Check ep114  →🎙️ WATCH/LISTEN Now
+
+GoPro Mission 1 Pro ILS, Kinefinity Vista, and much more from NAB 2026🎙️ NEW PODCAST: Watch/Listen Now
+
+All categories
+
+News
+
+Reviews
+
+Lab Tests
+
+Courses
+
+How To
+
+Podcast
+
+In the Spotlight
+
+Gear Guides
+
+Education for Filmmakers
+
+Language
+
+English
+
+Español
+
+日本語
+
+Log In
+
+Register
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Language
+
+English
+
+Español
+
+日本語
+
+Log In
+
+Register
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+MZed
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Education for Filmmakers
+
+The CineD Channels
+
+Info
+
+About Us
+
+Unbiased reviews – our principles
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Language
+
+English
+
+Español
+
+日本語
+
+Log In
+
+Register
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+MZed
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Education for Filmmakers
+
+Language
+
+English
+
+Español
+
+日本語
+
+The CineD Channels
+
+Info
+
+About Us
+
+Unbiased reviews – our principles
+
+Boris FX Acquires Vegas Pro, Sound Forge, and Acid Pro – A Month Later, the Industry Consolidation Picture Sharpens
+
+Log in to subscribe to this category.
+
+New to CineD?
+
+Connect with
+
+You are logged in as
+
+You are now subscribed to this category:
+
+We will send you notifications in your browser, every time a new article is published in this category.
+
+You can change which notifications you are subscribed to in your notification settings.
+
+Boris FX has acquired Vegas Pro, Sound Forge, and Acid Pro from MAGIX Software GmbH, picking up a long-running Windows NLE and two veteran audio tools, along with the AI technology behind them. A month into the new ownership, with Vegas Pro 2026 already shipping and NAB 2026 freshly wrapped, the deal looks less like an isolated headline and more like another chapter in the broader reshuffling of post-production software ownership.
+
+We held off on covering this when the announcement first surfaced in late March, partly because it lived in a strange middle ground: a deal that mattered enormously to a specific user base, but did not change the daily workflow of editors on Avid, Premiere Pro, Final Cut Pro, or DaVinci Resolve overnight. With a few weeks of distance, the new product tiers visible, pricing settled, and Vegas Pro 2026 actually in users’ hands, the picture is clearer, and the way it slots into a wider industry pattern is harder to ignore.
+
+Vegas Pro’s third home in a decade
+
+For longtime CineD readers, this is a familiar saga. Vegas began life at Sonic Foundry in 1999, was bought by Sony in 2003, then acquired by MAGIX in 2016. MAGIX kept it on a steady release cadence through versions 19, 20, 21, 22, and 23, with a string of updates covering ProRes support, AI masking, color grading, and cloud workflows. Then, in March 2024, MAGIX filed for insolvency, citing a confusing product portfolio (four versions of Video deluxe, three of Vegas Pro), shrinking revenue, and the punishing economics of a paid NLE market dominated by free DaVinci Resolve.
+
+Russmedia Equity Partners, based in Liechtenstein, took over MAGIX in early 2025 following that self-administered insolvency process. Boris FX has now acquired the  VEGAS Creative Software product line outright, while MAGIX itself continues as a separate company selling its consumer products. Financial terms of the Boris FX deal were not disclosed.
+
+The development teams behind Vegas Pro, Sound Forge, and Acid Pro, based in Madison, Wisconsin and in Germany, remain with the products under Boris FX. Founder and President Boris Yamnitsky framed the acquisition as a continuation of the company’s multi-host plug-in philosophy, saying Boris FX intends to keep supporting every major NLE host while sharing AI technology across the combined portfolio. Gary Rebholz, the longtime Vegas Chief Product Officer, stays on as a consultant.
+
+A plug-in company that no longer is one
+
+This deal also marks a real change in what Boris FX is. The company built its reputation as the maker of Sapphire, Continuum, and Mocha Pro, with free standalone tools like Particle Illusion joining over the years. Through a steady run of acquisitions, it has added Silhouette, SynthEyes, Sequoia, Samplitude, CrumplePop, and Music Studio. With Vegas Pro now in the family, Boris FX owns a host application for the first time, and notably the same NLE that already serves as a host for Continuum, Sapphire, and Mocha Pro.
+
+That is a non-trivial structural change. A plug-in vendor has every incentive to remain neutral across hosts; an NLE owner has incentives to favor its own platform, even when it claims otherwise. So far, Boris FX is going on the record with the opposite message, promising continued support for Adobe, Avid, Apple, Blackmagic Design, and OFX hosts. How that holds up across the next two or three release cycles is the real question, and it is the part of this story that cannot be answered yet.
+
+Vegas Pro 2026 is already shipping with the changes
+
+Boris FX did not wait to put its stamp on the product. Vegas Pro 2026 was released alongside the acquisition announcement, and it is a substantive update by any measure. The headline addition is the Continuum Title Pack, a set of 2D and 3D motion graphics and titling tools lifted directly from the Continuum plug-in suite, with 70 drag-and-drop presets, extrusion, deformation, and animation, all running inside Vegas Pro. This is precisely the kind of cross-pollination the acquisition was supposed to enable, delivered on day one.
+
+On the codec side, Vegas Pro 2026 adds native, Apple-certified ProRes RAW support on Windows, with in-application control over color space, ISO, and white balance. Hardware-accelerated AVC and HEVC 4:2:2 decoding is now available on NVIDIA Blackwell GPUs, removing the need for software decoding for 4:2:2 footage on supported systems and improving playback, compositing, and rendering more broadly. There is also an Enhanced Z-Depth Effect, an AI-based depth model trained by the Boris FX in-house machine learning team, aimed at compositing tasks like placing text behind moving subjects without manual rotoscoping.
+
+Local AI, with a subscription catch
+
+The transcription and voice-over tools deserve attention because of how they are positioned. Vegas Pro 2026 includes offline Speech-to-Text supporting more than 100 languages, with text-based editing and automatic subtitle creation, and offline Text-to-Speech across 9 languages and 54 voices. Both run locally, with no cloud connection required and no usage limits, which is genuinely useful for journalists, documentary editors, and anyone working under flaky connections or strict NDAs.
+
+The catch, and it is a significant one, is that both offline AI features are subscription-only. Perpetual license holders do not get them. This is a meaningful pivot from the MAGIX era, and it puts Vegas Pro on the same path Adobe walked years ago: keep the perpetua

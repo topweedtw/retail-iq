@@ -1,0 +1,57 @@
+ABOUT
+
+CLUB
+
+PODCASTS
+
+SHORTCUTS
+
+SETUPS
+
+iOS 26
+
+APPS
+
+STORIES
+
+SIGN IN
+
+DARK
+
+LIGHT
+
+AUTOMATIC
+
+Introducing Apple Frames 4: A Revamped Shortcut, Support for Frame Colors, Proportional Scaling, and the Apple Frames CLI for Developers
+
+On This Day: My New Favorite Way to Revisit Old Photos
+
+Moods Faster: Effortless Mood Tracking
+
+GameHub’s Desktop Beta Promises to Expand Mac Gaming→
+
+If you follow our show NPC: Next Portable Console, you probably know about GameHub, an app from controller maker GameSir. GameHub first appeared on Android, where it has become one of the hottest recent developments in handheld gaming because it lets you play Windows PC games on Android devices. That’s not something that’s possible on iOS or iPadOS, which Apple tightly controls through the App Store, but macOS is a different story altogether, which is why GameSir is bringing GameHub to the Mac.
+
+Currently in beta, GameHub isn’t the first to bring PC games to the Mac using a software compatibility layer, but it’s one of the more user-friendly implementations, thanks to tight integration with Steam and the Epic Games Store. In fact, GameHub itself is a fork of the Winlator open-source project. And, while it’s still early days for PC games on Android and even earlier for PC games on the Mac, GameHub’s beta is making steady progress as Russ Crandall of Retro Game Corps showed off in his most recent YouTube video:
+
+Of the 20 games Crandall tried, none of which are otherwise available on the Mac, about 60% were playable. As on Android, some games required some tweaking to get them working, but overall, the results were impressive, especially when it comes to games like Pragmata, which has only been out for about a week.
+
+What GameHub for Mac demonstrates is just how capable Apple silicon is. The compatibility layers built to run Windows games on Android, and now the Mac, are complex, but at its core, it’s the sheer horsepower of ARM-based processors that makes this possible, regardless of the OS they run. It also makes me wonder why Apple doesn’t turn its Game Porting Toolkit that helps developers translate PC games to the Mac into a consumer product. It’s been done before with Whisky, a SwiftUI wrapper around the Game Porting Toolkit and Wine, but that project is no longer maintained. It strikes me as a great way to expand the gaming universe on the Mac and encourage more developers to support macOS directly. Maybe we’ll hear something from Apple on the topic at WWDC in June.
+
+In the meantime, you can visit the GameHub website and join its Discord server where you’ll find instructions on joining the beta. And, if you’re interested in learning more about how GameHub and similar solutions work on Android and Mac, a good place to start is with NPC, Episode 48, Steam Emulation on Android Gets Real.
+
+ABOUT
+
+CLUB
+
+ADVERTISE
+
+PRIVACY POLICY
+
+TERMS OF SERVICE
+
+Web Dev by Made with Fuel | Design by Silvia Gatta
+
+Copyright © 2026 MacStories, Inc. Find Federico on MastodonFind John on MastodonFind Alex on MastodonFind Silvia on MastodonFind MacStories on Mastodon All rights reserved.
+
+v4.6

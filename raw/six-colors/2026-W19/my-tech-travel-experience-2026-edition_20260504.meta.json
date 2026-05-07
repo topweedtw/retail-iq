@@ -1,0 +1,30 @@
+{
+  "source_url": "https://sixcolors.com/post/2026/05/my-tech-travel-experience-2026-edition/",
+  "source_type": "six-colors",
+  "source_tier": "T2",
+  "source_title": "My tech travel experience, 2026 edition",
+  "fetched_at": "2026-05-04T14:52:07+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:5b370cbb03062fb067fd5accf6e60c5cb7eca2a390b3284baca95e6810e75900",
+  "content_type": "text/html",
+  "content_size_bytes": 50470,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Fri, 01 May 2026 20:18:53 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 4,
+  "relevance_reasoning": "文章提及 Apple Watch 和 MagSafe 電池，但重點在第三方充電器，訓練潛力有限。",
+  "relevance_breakdown": {
+    "d1_product_mention": 1,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Apple Watch",
+    "MagSafe",
+    "Anker Nano Travel Adapter"
+  ]
+}

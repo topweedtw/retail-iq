@@ -1,0 +1,300 @@
+# sources-config.yaml
+# RetailIQ Ingest Agent 唯一的機器可讀來源設定。
+# 規則定義於 wiki/AGENTS.md §8.8–§8.10。
+
+version: "1.1.1"
+last_updated: "2026-05-05"  # hotfix v0.1.1
+
+# ═══════════════════════════════════════════════════════════════
+# T1 — Apple 官方來源（事實與定價的唯一依據）
+# ═══════════════════════════════════════════════════════════════
+
+sources:
+
+  apple-com-tw:
+    tier: T1
+    enabled: true
+    display_name: "Apple 台灣官網"
+    base_url: "https://www.apple.com/tw/"
+    locale: zh-TW
+    fetch_method: http
+    fetch_interval: weekly
+    seed_urls:
+      - "https://www.apple.com/tw/iphone-17-pro/"
+      - "https://www.apple.com/tw/iphone-17/"
+      - "https://www.apple.com/tw/iphone-air/"
+      - "https://www.apple.com/tw/ipad-air/"
+      - "https://www.apple.com/tw/ipad-pro/"
+      - "https://www.apple.com/tw/macbook-neo/"
+      - "https://www.apple.com/tw/macbook-air/"
+      - "https://www.apple.com/tw/macbook-pro/"
+      - "https://www.apple.com/tw/apple-intelligence/"
+    allow_url_patterns:
+      - "^https://www\\.apple\\.com/tw/"
+    deny_url_patterns: []
+
+  apple-support:
+    tier: T1
+    enabled: true
+    display_name: "Apple Support 支援文件"
+    base_url: "https://support.apple.com/zh-tw/"
+    locale: zh-TW
+    fetch_method: http
+    fetch_interval: weekly
+    # 🔧 v1.1.1: pilot 階段以 seed_urls 直接抓已知高價值頁面
+    # 未來 v0.3 實作 sitemap parser 後可改為 seed_strategy: sitemap
+    seed_urls:
+      - "https://support.apple.com/en-us/121029"   # iPhone 17 Pro tech specs
+      - "https://support.apple.com/en-us/121115"   # About Apple Intelligence
+    allow_url_patterns:
+      - "^https://support\\.apple\\.com/(zh-tw|en-us)/"
+
+  apple-newsroom-en:
+    tier: T2  # 2026-05-07 Issue #14 Option D: content mix of CSR/financial, not pure product → re-tiered
+    enabled: true
+    display_name: "Apple Newsroom (English)"
+    base_url: "https://www.apple.com/newsroom/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.apple.com/newsroom/rss-feed.rss"
+    fetch_interval: daily
+
+  sales-coach:
+    tier: T1
+    enabled: false   # 待 internal API 建立
+    display_name: "Apple Sales Coach"
+    base_url: "internal://"
+    locale: zh-TW
+    fetch_method: json_api
+
+# ═══════════════════════════════════════════════════════════════
+# T2 — 高信度第三方（通用）
+# ═══════════════════════════════════════════════════════════════
+
+  ars-technica:
+    tier: T2
+    enabled: true
+    display_name: "Ars Technica"
+    base_url: "https://arstechnica.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://feeds.arstechnica.com/arstechnica/apple"
+    fetch_interval: daily
+    allow_url_patterns:
+      - "^https://arstechnica\\.com/(gadgets|apple)/"
+
+  # 🔧 v1.1: 加 deny 擋 podcast 路徑（podcast 閒聊相關性低）
+  six-colors:
+    tier: T2
+    enabled: true
+    display_name: "Six Colors"
+    base_url: "https://sixcolors.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://sixcolors.com/feed/"
+    fetch_interval: daily
+    deny_url_patterns:
+      - "sixcolors\\.com/podcast/"          # 🔧 v1.1.1: 新式 /podcast/ 路徑
+      - "sixcolors\\.com/post/.*/podcast-"  # 舊式 /post/.../podcast-* slug
+
+  macstories:
+    tier: T2
+    enabled: true
+    display_name: "MacStories"
+    base_url: "https://www.macstories.net/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.macstories.net/feed/"
+    fetch_interval: daily
+
+  # 🔧 v1.1: 新欄位 title_required_regex — 標題須含 Apple 關鍵字
+  engadget:
+    tier: T2
+    enabled: true
+    display_name: "Engadget"
+    base_url: "https://www.engadget.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.engadget.com/rss.xml"
+    fetch_interval: daily
+    title_required_regex: "(?i)\\b(apple|iphone|ipad|mac|macbook|airpods|vision|watchos|ios|macos|apple intelligence)\\b"
+
+  wired:
+    tier: T2
+    enabled: false   # RSS 當前 HTTP 400；待修
+    display_name: "Wired"
+    base_url: "https://www.wired.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.wired.com/feed/tag/apple/rss"
+
+  # 🔧 v1.1: 標題黑名單加 Exclusive: 擋業配
+  macworld:
+    tier: T2
+    enabled: true
+    display_name: "Macworld"
+    base_url: "https://www.macworld.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.macworld.com/feed"
+    fetch_interval: weekly
+    allow_url_patterns:
+      - "^https://www\\.macworld\\.com/article/.*/(review|reviewed|guide)"
+    title_blocklist_regex: "(?i)(^exclusive:|lifetime price|best deals?$|\\$\\d+ off)"
+
+  rtings:
+    tier: T2
+    enabled: false   # RSS 404；待找替代
+    display_name: "Rtings"
+    base_url: "https://www.rtings.com/"
+
+# ═══════════════════════════════════════════════════════════════
+# T2 攝影專業
+# ═══════════════════════════════════════════════════════════════
+
+  # 🔧 v1.1: URL slug 需含 Apple 產品關鍵字
+  petapixel:
+    tier: T2
+    enabled: true
+    display_name: "PetaPixel"
+    base_url: "https://petapixel.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://petapixel.com/feed/"
+    fetch_interval: daily
+    allow_url_patterns:
+      - "^https://petapixel\\.com/\\d{4}/\\d{2}/[^/]*(iphone|ipad|mac|apple|airpods|vision|airdrop)"
+
+  # 🔧 v1.1: 暫下線（平均 1.0 分，電影史內容無訓練價值）
+  no-film-school:
+    tier: T2
+    enabled: false   # 🔴 disabled due to low relevance (1.0 avg in 2026-W18)
+    display_name: "No Film School"
+    base_url: "https://nofilmschool.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://nofilmschool.com/rss.xml"
+    notes: "2026-W18 平均分 1.0，兩篇皆為電影史主題。暫下線，等找到更相關 RSS 分類再恢復。"
+
+  austin-mann:
+    tier: T2
+    enabled: false   # RSS 404；待找正確 URL
+    display_name: "Austin Mann"
+    base_url: "https://austinmann.com/"
+
+  halide-blog:
+    tier: T2
+    enabled: false   # RSS 無法連；待修
+    display_name: "Halide Blog"
+    base_url: "https://blog.halide.cam/"
+
+  cined:
+    tier: T2
+    enabled: true
+    display_name: "CineD"
+    base_url: "https://www.cined.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.cined.com/feed/"
+    fetch_interval: weekly
+    allow_url_patterns:
+      - "^https://www\\.cined\\.com/(review|test|lab|comparison)/"   # 🔧 v1.1: 縮緊到評測類
+
+# ═══════════════════════════════════════════════════════════════
+# T2-filtered — 內容混合站點
+# ═══════════════════════════════════════════════════════════════
+
+  macrumors:
+    tier: T2-filtered
+    enabled: true
+    display_name: "MacRumors"
+    base_url: "https://www.macrumors.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://feeds.macrumors.com/MacRumors-All"
+    fetch_interval: daily
+    allow_url_patterns:
+      - "^https://www\\.macrumors\\.com/review/"
+      - "^https://www\\.macrumors\\.com/roundup/"
+      - "^https://www\\.macrumors\\.com/how-to/"
+    deny_url_patterns:
+      - "^https://www\\.macrumors\\.com/(rumors|news)/"
+    title_blocklist_regex: "(?i)(leak|leaked|rumor|rumour|expected|reportedly|allegedly|may launch|might launch|coming soon|unveiled ahead|analyst predicts|supply chain says|tipster)"
+    require_apple_newsroom_cross_ref: true
+
+  9to5mac:
+    tier: T2-filtered
+    enabled: true
+    display_name: "9to5Mac"
+    base_url: "https://9to5mac.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://9to5mac.com/feed/"
+    fetch_interval: daily
+    allow_url_patterns:
+      - "^https://9to5mac\\.com/category/review/"
+      - "^https://9to5mac\\.com/category/guides/"
+    deny_url_patterns:
+      - "^https://9to5mac\\.com/category/rumors/"
+    title_blocklist_regex: "(?i)(leak|leaked|rumor|rumour|expected|reportedly|allegedly|may launch|might launch|coming soon|unveiled ahead|analyst predicts|supply chain says|tipster)"
+    require_apple_newsroom_cross_ref: true
+
+# ═══════════════════════════════════════════════════════════════
+# T3 — 主流消費者視角
+# ═══════════════════════════════════════════════════════════════
+
+  # 🔧 v1.1: allow 縮到 /apple/ 或 /tech/
+  the-verge:
+    tier: T3
+    enabled: true
+    display_name: "The Verge (Apple)"
+    base_url: "https://www.theverge.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.theverge.com/rss/index.xml"
+    fetch_interval: daily
+    allow_url_patterns:
+      - "^https://www\\.theverge\\.com/apple/"
+      - "^https://www\\.theverge\\.com/tech/"
+    title_required_regex: "(?i)\\b(apple|iphone|ipad|mac|macbook|airpods|vision|watchos|ios|macos)\\b"
+
+  # 🔧 v1.1: URL 限 /reviews/、/buying-guide/，標題須含 Apple
+  toms-guide:
+    tier: T3
+    enabled: true
+    display_name: "Tom's Guide"
+    base_url: "https://www.tomsguide.com/"
+    locale: en-US
+    fetch_method: rss
+    rss_url: "https://www.tomsguide.com/feeds/all"
+    fetch_interval: daily
+    allow_url_patterns:
+      - "^https://www\\.tomsguide\\.com/(reviews|buying-guide|phones/iphones|computing/macbooks)/"
+    title_required_regex: "(?i)\\b(apple|iphone|ipad|mac|macbook|airpods|vision)\\b"
+
+# ═══════════════════════════════════════════════════════════════
+# 管理員上傳
+# ═══════════════════════════════════════════════════════════════
+
+  admin-upload:
+    tier: T1
+    enabled: true
+    display_name: "管理員上傳"
+    base_url: "upload://"
+    fetch_method: manual
+
+# ═══════════════════════════════════════════════════════════════
+# 全域設定
+# ═══════════════════════════════════════════════════════════════
+
+global:
+  default_user_agent: "RetailIQ-IngestBot/1.0 (+contact@retail-iq.example)"
+  respect_robots_txt: true
+  max_fetch_depth: 1
+  timeout_seconds: 30
+  retry_on_failure: 2
+  weekly_cron_schedule: "0 3 * * 1"
+  daily_cron_schedule: "0 4 * * *"
+
+  # 🔧 v1.1: 跳過 enabled: false 的來源
+  skip_disabled_sources: true

@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.engadget.com/2160792/mark-zuckerberg-says-meta-is-working-on-ai-agents-for-personal-and-business-use/",
+  "source_type": "engadget",
+  "source_tier": "T2",
+  "source_title": "Mark Zuckerberg says Meta is working on AI agents for personal and business use",
+  "fetched_at": "2026-04-30T16:37:22+08:00",
+  "fetched_by": "pre-w2-crawler-v0",
+  "content_hash": "sha256:584697daddec7eee0448fd8b0b19fa3c0b805534f146025edfd0476e30c14854",
+  "content_type": "text/html",
+  "content_size_bytes": 57219,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Wed, 29 Apr 2026 23:00:36 +0000; extracted via pre-w2-crawler"
+}

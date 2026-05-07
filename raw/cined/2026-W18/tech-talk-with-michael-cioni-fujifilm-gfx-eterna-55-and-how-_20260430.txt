@@ -1,0 +1,365 @@
+NEW PODCAST!  NAB 2026 Wrap-Up & ARRI Under Riedel – Focus Check ep113  →🎙️ WATCH/LISTEN Now
+
+NAB 2026 Wrap-Up & ARRI Under Riedel 🎙️ NEW PODCAST: Watch/Listen Now
+
+All categories
+
+News
+
+Reviews
+
+Lab Tests
+
+Courses
+
+How To
+
+Podcast
+
+In the Spotlight
+
+Gear Guides
+
+Education for Filmmakers
+
+Language
+
+English
+
+Español
+
+日本語
+
+Log In
+
+Register
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Language
+
+English
+
+Español
+
+日本語
+
+Log In
+
+Register
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+MZed
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Education for Filmmakers
+
+The CineD Channels
+
+Info
+
+About Us
+
+Unbiased reviews – our principles
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Language
+
+English
+
+Español
+
+日本語
+
+Log In
+
+Register
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+Industry
+
+Cameras
+
+Lenses
+
+Accessories
+
+Lighting
+
+Audio
+
+Software
+
+MZed
+
+Lab Tests
+
+Camera Database
+
+Lens Coverage Tool
+
+Lens Database
+
+Courses
+
+Gear Guides by Type
+
+Recommended Kits
+
+Gear Guides by Budget
+
+Deals
+
+Cameras of the Year
+
+How To
+
+Videos
+
+Podcast
+
+FUJIFILM
+
+Canon
+
+Education for Filmmakers
+
+Language
+
+English
+
+Español
+
+日本語
+
+The CineD Channels
+
+Info
+
+About Us
+
+Unbiased reviews – our principles
+
+Tech Talk With Michael Cioni: FUJIFILM GFX ETERNA 55 and How It Compares to ARRI ALEXA 35
+
+Log in to subscribe to this category.
+
+New to CineD?
+
+Connect with
+
+You are logged in as
+
+You are now subscribed to this category:
+
+We will send you notifications in your browser, every time a new article is published in this category.
+
+You can change which notifications you are subscribed to in your notification settings.
+
+At NAB 2026, Johnnie spoke with Strada CEO Michael Cioni at the FUJIFILM booth to revisit the most-debated camera comparison video of the year, his head-to-head between the FUJIFILM GFX ETERNA 55 and the ARRI ALEXA 35. His answers explain what the video was actually trying to do, why he skipped a chart-based dynamic range evaluation, and where he sees large-format digital cinema heading next.
+
+The video, which Michael published on the Strada YouTube channel and which we covered in detail at the time, drew strong reactions from cinematographers who felt the pairing was unfair, the dynamic range evaluation was missing, and the conclusions were too generous toward FUJIFILM’s first dedicated cinema camera. We covered the original video in detail at the link above. Sitting down at the show, Michael walked us through his reasoning and the methodology behind what he calls “a comparison, not a test.”
+
+Why the ALEXA 35 and not the ALEXA 65
+
+With the GFX ETERNA 55’s 44 x 33mm sensor sitting closer in size to the ALEXA 65 than to the ALEXA 35 (Super 35 camera), the obvious objection was that Michael picked the wrong ARRI to compare. According to him, accessibility was the deciding factor. The ALEXA 65 is roughly a quarter of a million dollars and exists in a different commercial universe, while the ALEXA 35, at around $100,000 ($76,610 to be exact), is the digital cinema reference most working professionals know.
+
+He calls the ALEXA 35 a “control” rather than a like-for-like benchmark. The point, he says, was not to declare a winner but to ask whether a camera roughly six times cheaper than the ALEXA 35 produces an image six times worse. In his view, it does not. He is also unapologetic about the democratization framing, arguing that frustration over a more affordable camera approaching the imagery of an expensive one says more about the industry’s relationship to access than about the cameras themselves.
+
+Worth underlining: Michael is explicit that the video was never meant to compare the FUJIFILM and the ARRI on sensors, color science, or dynamic range. His view is that every modern cinema camera is capable of producing great images, so those axes are not the interesting question. What he wanted to isolate was the 55mm sensor itself, what it unlocks, and how it behaves in a real production pipeline.
+
+Dynamic range, but not the way you expect
+
+Many viewers tuned in expecting a stop-by-stop dynamic range test on a chart. They didn’t get one, and Michael explains why.
+
+He says he is willing to trust the manufacturers’ published figures (FUJIFILM rates the ETERNA 55 at 14+ stops; the ALEXA 35 sits higher) and was instead interested in how that range behaves under controlled lighting. With colorist Nick Lareau grading the same setup across FUJIFILM ProRes HQ, FUJIFILM ProRes RAW via an Atomos recorder, and ARRI RAW, Michael argues there was nothing meaningfully missing from the FUJIFILM file that the ARRI file had on tap. He goes further, pointing out that 35mm motion picture film has less dynamic range than the ALEXA 35, yet continues to dominate cinematography awards. In his view, dynamic range is not the only axis that matters, and audiences over-index on it. His bridge claim is that when a scene is lit and exposed properly, the ARRI’s extra stops are essentially unused or invisible, which is why all three sources graded to a comparable result.
+
+His shorthand for what he experienced grading the ETERNA 55 footage is that the files “came to us easy,” meaning the camera responded to color moves the way he expects a well-behaved cinema camera to respond. For Michael, that’s the dynamic range result that matters, the one experienced on set and in the suite rather than read off a chart.
+
+For our part, we still favor the standard, chart-based approach to dynamic range evaluation as part of our broader lab methodology, and we will share those results with our audience when ready.
+
+On RAW versus ProRes HQ
+
+The GFX ETERNA 55 records ProRes HQ internally and only outputs RAW (ProRes RAW or Blackmagic RAW) through an external recorder. For Michael, this is a smaller limitation than the discourse suggests, and it leads him to a technical claim worth stating plainly: dynamic range is captured at the sensor, so the in-camera debayer to a 10-bit ProRes container does not cost you stops. Recording ProRes HQ internally and recording ProRes RAW or ARRI RAW externally yield the same dynamic range, in his view, because nothing is being thrown away in the RGB conversion that wasn’t going to be reconstructed in post anyway. (To be clear, this is a claim about codec choice within a single shot, not about the FUJIFILM matching the ARRI on total dynamic range — the ALEXA 35 still captures more stops at the sensor level.)
+
+What you do give up with ProRes HQ, he says, is some color-precision headroom for high-end DCP grading on theatrical screens, which is generally not the use case for this camera. He describes ProRes HQ as “16-bit source processing into a 10-bit container,” and notes that on his own RED cameras, he debayers to ProRes HQ internally roughly 90% of the time. It is a position that broadly aligns with what cinematographer Oren Soffer told us about shooting the GFX ETERNA 55 launch film “Okay”.
+
+He does, however, agree that internal RAW would be welcome on a hypothetical smaller-bodied FUJIFILM cinema camera, particularly for solo documentary operators who need a post-production safety net.
+
+A niche within a niche
+
+The GFX ETERNA 55 is not a cheap camera, and its 44 x 33mm sensor sits in a peculiar middle grou

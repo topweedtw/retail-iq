@@ -1,6 +1,6 @@
 # RetailIQ — 門市銷售訓練系統
 
-> 銷售訓練用 LLM-maintained 知識平台
+> 一個由 LLM 自動維護的 Wiki 知識平台，人類的角色是確保內容正確合規，同時確保使用者體驗。
 > **Status**: 🎯 **v0.5beta** — Full 5-gate pipeline + Gate 4 structural diff-merge（Schema v2.0）
 
 一套以 Karpathy LLM Wiki 模式建構的內部訓練系統，讓門市人員學習產品知識、玩測驗遊戲、生成展示腳本。知識層由 LLM 從官方與精選第三方來源自動維護；管理層由人類透過 PR 審核把關。

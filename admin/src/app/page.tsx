@@ -1,65 +1,237 @@
-import Image from "next/image";
+import { fetchAPI, IngestStatus, ProductsResponse, ReviewStats } from "@/lib/api";
 
-export default function Home() {
+async function getDashboardData() {
+  const [ingest, products, review] = await Promise.all([
+    fetchAPI<IngestStatus>("/api/ingest/status"),
+    fetchAPI<ProductsResponse>("/api/products"),
+    fetchAPI<ReviewStats>("/api/review-queue/stats"),
+  ]);
+  return { ingest, products, review };
+}
+
+export default async function DashboardPage() {
+  const { ingest, products, review } = await getDashboardData();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="p-6 space-y-6">
+      {/* Header */}
+      <div className="flex items-center justify-between">
+        <h1 className="text-xl font-semibold">儀表板</h1>
+        <span className="text-xs text-text-dim font-mono">
+          last refresh: {new Date().toLocaleString("zh-TW")}
+        </span>
+      </div>
+
+      {/* KPI Cards */}
+      <div className="grid grid-cols-4 gap-4">
+        <KPICard
+          label="文章總數"
+          value={ingest.total_articles}
+          sub="raw/ 全部"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <KPICard
+          label="已通過"
+          value={ingest.by_status["approved"] || 0}
+          sub="approved"
+          color="text-success"
+        />
+        <KPICard
+          label="產品頁"
+          value={products.total}
+          sub="wiki/products/"
+        />
+        <KPICard
+          label="Review Queue"
+          value={review.total_items}
+          sub={`${review.total_proposals} proposals`}
+          color={review.total_items > 20 ? "text-warning" : undefined}
+        />
+      </div>
+
+      {/* Status Distribution */}
+      <div className="grid grid-cols-2 gap-4">
+        <Panel title="Ingest 狀態分布">
+          <table className="w-full text-sm">
+            <thead>
+              <tr>
+                <th className="text-left text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                  Status
+                </th>
+                <th className="text-right text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                  Count
+                </th>
+                <th className="text-right text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                  %
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(ingest.by_status)
+                .sort(([, a], [, b]) => b - a)
+                .map(([status, count]) => (
+                  <tr key={status} className="border-t border-border">
+                    <td className="py-2">
+                      <StatusBadge status={status} />
+                    </td>
+                    <td className="py-2 text-right font-mono">{count}</td>
+                    <td className="py-2 text-right text-text-dim font-mono">
+                      {((count / ingest.total_articles) * 100).toFixed(0)}%
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </Panel>
+
+        <Panel title="來源分布（Top 10）">
+          <table className="w-full text-sm">
+            <thead>
+              <tr>
+                <th className="text-left text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                  Source
+                </th>
+                <th className="text-right text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                  Articles
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(ingest.by_source)
+                .sort(([, a], [, b]) => b - a)
+                .slice(0, 10)
+                .map(([source, count]) => (
+                  <tr key={source} className="border-t border-border">
+                    <td className="py-2 font-mono text-xs">{source}</td>
+                    <td className="py-2 text-right font-mono">{count}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </Panel>
+      </div>
+
+      {/* Week Distribution */}
+      <Panel title="每週 Ingest 量">
+        <div className="flex items-end gap-2 h-32">
+          {Object.entries(ingest.by_week)
+            .sort(([a], [b]) => a.localeCompare(b))
+            .map(([week, count]) => {
+              const maxCount = Math.max(...Object.values(ingest.by_week));
+              const height = maxCount > 0 ? (count / maxCount) * 100 : 0;
+              return (
+                <div key={week} className="flex-1 flex flex-col items-center gap-1">
+                  <div
+                    className="w-full bg-accent/30 rounded-t"
+                    style={{ height: `${height}%` }}
+                  >
+                    <div
+                      className="w-full bg-accent rounded-t"
+                      style={{ height: "100%" }}
+                    />
+                  </div>
+                  <span className="text-[10px] text-text-dim font-mono">
+                    {week.replace("2026-", "")}
+                  </span>
+                  <span className="text-[10px] font-mono">{count}</span>
+                </div>
+              );
+            })}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </Panel>
+
+      {/* Products */}
+      <Panel title="產品頁一覽">
+        <table className="w-full text-sm">
+          <thead>
+            <tr>
+              <th className="text-left text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                Product
+              </th>
+              <th className="text-left text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                Category
+              </th>
+              <th className="text-right text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                Sources
+              </th>
+              <th className="text-right text-[11px] uppercase tracking-wider text-text-dim pb-2">
+                Updated
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.products.map((p) => (
+              <tr key={p.slug} className="border-t border-border">
+                <td className="py-2 font-medium">{p.title}</td>
+                <td className="py-2 text-text-dim">{p.product_category}</td>
+                <td className="py-2 text-right font-mono">{p.source_count}</td>
+                <td className="py-2 text-right text-text-dim font-mono text-xs">
+                  {p.last_updated}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </Panel>
     </div>
+  );
+}
+
+// Components
+
+function KPICard({
+  label,
+  value,
+  sub,
+  color,
+}: {
+  label: string;
+  value: number;
+  sub: string;
+  color?: string;
+}) {
+  return (
+    <div className="bg-surface border border-border rounded-lg p-4">
+      <div className="text-[11px] uppercase tracking-wider text-text-dim mb-1">
+        {label}
+      </div>
+      <div className={`text-2xl font-semibold font-mono ${color || ""}`}>
+        {value}
+      </div>
+      <div className="text-xs text-text-dim mt-1">{sub}</div>
+    </div>
+  );
+}
+
+function Panel({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="bg-surface border border-border rounded-lg p-5">
+      <h2 className="text-sm font-semibold mb-4">{title}</h2>
+      {children}
+    </div>
+  );
+}
+
+function StatusBadge({ status }: { status: string }) {
+  const colors: Record<string, string> = {
+    approved: "text-success border-success/40",
+    "pending-review": "text-warning border-warning/40",
+    pending: "text-text-dim border-border",
+    "skipped-low-relevance": "text-danger border-danger/40",
+    "skipped-duplicate": "text-text-dim border-border",
+    "skipped-filtered": "text-text-dim border-border",
+  };
+  const cls = colors[status] || "text-text-dim border-border";
+  return (
+    <span
+      className={`inline-block px-2 py-0.5 rounded text-[11px] font-mono border ${cls}`}
+    >
+      {status}
+    </span>
   );
 }

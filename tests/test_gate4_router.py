@@ -5,9 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-from gate4_router import (  # noqa: E402
+from scripts.gate4_router import (  # noqa: E402
     Product, compute_idf, entity_matches_tag, load_products,
     normalize_token, route,
 )

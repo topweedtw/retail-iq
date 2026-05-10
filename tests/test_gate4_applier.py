@@ -6,15 +6,13 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-from gate4_applier import (  # noqa: E402
+from scripts.gate4_applier import (  # noqa: E402
     DEFAULT_HUMAN_OWNED_SECTIONS, DEFAULT_MANAGED_SECTIONS,
     _append_new_section, _append_to_section, _excerpt_matches, _replace_section,
     apply_proposals_to_body, apply_to_page, classify_section, filter_proposals,
     serialize_frontmatter, update_frontmatter, write_product_page,
 )
-from gate4_proposer import Proposal, ProposalSet  # noqa: E402
+from scripts.gate4_proposer import Proposal, ProposalSet  # noqa: E402
 
 
 def P(section, action, current=None, new="updated", reason="r"):

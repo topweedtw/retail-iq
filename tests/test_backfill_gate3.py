@@ -7,9 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-import backfill_gate3 as bg  # noqa: E402
+import scripts.backfill_gate3 as bg  # noqa: E402
 
 
 class TestStatusForScore(unittest.TestCase):

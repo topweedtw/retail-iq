@@ -11,13 +11,10 @@ import sys
 import unittest
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "scripts"))
-
 # 強制開 mock 模式（防止 test 意外打真實 API）
 os.environ["APPLE_GENAI_MOCK"] = "1"
 
-from llm_client import LLMClient, LLMError  # noqa: E402
+from scripts.llm_client import LLMClient, LLMError  # noqa: E402
 
 
 class TestLLMClientDefaults(unittest.TestCase):

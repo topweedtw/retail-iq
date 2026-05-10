@@ -6,9 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-from embedding_index import EmbeddingIndex, cosine_similarity, INDEX_VERSION  # noqa: E402
+from scripts.embedding_index import EmbeddingIndex, cosine_similarity, INDEX_VERSION  # noqa: E402
 
 
 # ─────────────────────────────────────────────────────────────────────
@@ -158,7 +156,7 @@ class TestWithRealClientMock(unittest.TestCase):
     """Verify EmbeddingIndex works with the actual LLMClient in mock mode."""
 
     def setUp(self):
-        from llm_client import LLMClient
+        from scripts.llm_client import LLMClient
         self.client = LLMClient(mock=True)
         self.tmpdir = tempfile.TemporaryDirectory()
         self.path = Path(self.tmpdir.name) / "idx.json"

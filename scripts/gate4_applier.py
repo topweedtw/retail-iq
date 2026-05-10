@@ -29,12 +29,11 @@ from pathlib import Path
 from typing import Optional
 
 SCRIPTS = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPTS))
-from yaml_mini import loads as yloads   # noqa: E402
-from gate4_proposer import (            # noqa: E402
+from .yaml_mini import loads as yloads   # noqa: E402
+from .gate4_proposer import (            # noqa: E402
     Proposal, ProposalSet, split_frontmatter, extract_sections,
 )
-from utils import sandbox_safe_write    # noqa: E402
+from .utils import sandbox_safe_write    # noqa: E402
 
 REPO_ROOT = SCRIPTS.parent
 PRODUCTS_DIR = REPO_ROOT / "wiki" / "products"
@@ -481,7 +480,7 @@ def sandbox_safe_write(path: Path, content: str) -> None:
     so callers that import this symbol directly (e.g. review_queue.py) continue
     to work without changes.
     """
-    from utils import sandbox_safe_write as _ssw
+    from .utils import sandbox_safe_write as _ssw
     _ssw(path, content, repo_root=REPO_ROOT)
 
 

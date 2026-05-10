@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "retail-iq"
+version = "0.5.0"
+description = "Apple 門市銷售訓練系統 — LLM Wiki + Ingest Pipeline"
+requires-python = ">=3.10"
+# Zero runtime dependencies — stdlib only.
+# Dev/test dependencies are also stdlib-only; no extras needed.
+dependencies = []
+
+[project.scripts]
+# CLI entry points — allows `retail-iq-ingest` instead of `python3 -m scripts.ingest_agent`
+retail-iq-ingest   = "scripts.ingest_agent:main"
+retail-iq-review   = "scripts.review_queue:main"
+retail-iq-digest   = "scripts.generate_weekly_digest:main"
+retail-iq-lint     = "scripts.gate4_lint:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scripts*"]
+
+[tool.setuptools.package-data]
+"scripts" = ["*.py"]

@@ -20,7 +20,7 @@ SCRIPTS = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPTS.parent
 QUEUE_DIR = REPO_ROOT / "wiki" / "ingest-queue"
 
-from utils import sandbox_safe_write    # noqa: E402
+from .utils import sandbox_safe_write    # noqa: E402
 
 
 def iso_week(when: Optional[dt.datetime] = None) -> str:

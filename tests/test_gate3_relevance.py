@@ -8,12 +8,9 @@ import sys
 import unittest
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "scripts"))
-
 os.environ["APPLE_GENAI_MOCK"] = "1"
 
-from relevance_scorer import (  # noqa: E402
+from scripts.relevance_scorer import (  # noqa: E402
     score_article,
     status_for_score,
     _parse_score,

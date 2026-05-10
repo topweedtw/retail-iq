@@ -10,10 +10,7 @@ import sys
 import unittest
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "scripts"))
-
-from ingest_agent import SourceConfig, check_url, check_title, sha256_of, slugify  # noqa: E402
+from scripts.ingest_agent import SourceConfig, check_url, check_title, sha256_of, slugify  # noqa: E402
 
 
 def mk(name="test", **kwargs) -> SourceConfig:

@@ -8,14 +8,12 @@ import sys
 import unittest
 from pathlib import Path
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-from gate4_applier import (  # noqa: E402
+from scripts.gate4_applier import (  # noqa: E402
     MIN_PRESERVATION_RATIO,
     _extract_tables, _merge_tables, _strip_tables, _table_to_markdown,
     filter_proposals, is_safe_update, merge_section_update,
 )
-from gate4_proposer import Proposal  # noqa: E402
+from scripts.gate4_proposer import Proposal  # noqa: E402
 
 
 class TestExtractTables(unittest.TestCase):
@@ -194,7 +192,7 @@ class TestIsSafeUpdate(unittest.TestCase):
 class TestFilterProposalsWithMerge(unittest.TestCase):
     """Integration: filter_proposals now uses merge + safety."""
 
-    def _proposal(self, new_content, current="fact", section="核心規格"):
+    def _proposal(self, new_content, current="More details here", section="核心規格"):
         return Proposal(section=section, action="update",
                         current_excerpt=current, new_content=new_content,
                         reason="r")
@@ -211,7 +209,7 @@ More details here."""
         llm_new = """| item | value |
 |---|---|
 | cpu | A19 Pro |"""
-        proposals = [self._proposal(new_content=llm_new, current="fact")]
+        proposals = [self._proposal(new_content=llm_new, current="A18 Pro")]
         result = filter_proposals(
             proposals, frontmatter={}, existing_sections={"核心規格": section_content}
         )

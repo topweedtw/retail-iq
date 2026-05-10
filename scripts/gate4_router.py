@@ -24,8 +24,7 @@ from pathlib import Path
 from typing import NamedTuple
 
 SCRIPTS = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPTS))
-from yaml_mini import loads as yloads  # noqa: E402
+from .yaml_mini import loads as yloads  # noqa: E402
 
 REPO_ROOT = SCRIPTS.parent
 PRODUCTS_DIR = REPO_ROOT / "wiki" / "products"

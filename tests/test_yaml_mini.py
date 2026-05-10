@@ -11,10 +11,6 @@ import sys
 import unittest
 from pathlib import Path
 
-# 允許從 tests/ 匯入 scripts/yaml_mini
-HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "scripts"))
-
 import yaml_mini  # noqa: E402
 
 
@@ -187,7 +183,7 @@ class TestRealConfigParsing(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.config_path = HERE.parent / "wiki" / "sources-config.yaml"
+        cls.config_path = Path(__file__).resolve().parent.parent / "wiki" / "sources-config.yaml"
         if not cls.config_path.exists():
             raise unittest.SkipTest(f"{cls.config_path} 不存在，跳過")
 

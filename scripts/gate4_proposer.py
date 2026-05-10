@@ -19,9 +19,8 @@ from pathlib import Path
 from typing import Optional
 
 SCRIPTS = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPTS))
-from yaml_mini import loads as yloads           # noqa: E402
-from llm_client import LLMClient, LLMError      # noqa: E402
+from .yaml_mini import loads as yloads           # noqa: E402
+from .llm_client import LLMClient, LLMError      # noqa: E402
 
 REPO_ROOT = SCRIPTS.parent
 RAW_DIR = REPO_ROOT / "raw"

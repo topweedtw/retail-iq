@@ -11,7 +11,21 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "approved",
   "ingest_log_ref": null,
-  "notes": "pubDate: Tue, 28 Apr 2026 16:44:06 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Tue, 28 Apr 2026 16:44:06 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 9,
+  "relevance_reasoning": "Mac 3A 大作實測，MetalFX + 光線追蹤是銷售素材",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 3,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "Mac",
+    "MetalFX",
+    "Ray Tracing",
+    "Cronos"
+  ]
 }

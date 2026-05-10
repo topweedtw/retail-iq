@@ -11,7 +11,19 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "skipped-low-relevance",
   "ingest_log_ref": null,
-  "notes": "pubDate: 2026-04-29T21:35:11-04:00; extracted via pre-w2-crawler"
+  "notes": "pubDate: 2026-04-29T21:35:11-04:00; extracted via pre-w2-crawler",
+  "relevance_score": 1,
+  "relevance_reasoning": "Musk 訴訟報導，與 Apple 無關",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Elon Musk",
+    "OpenAI"
+  ]
 }

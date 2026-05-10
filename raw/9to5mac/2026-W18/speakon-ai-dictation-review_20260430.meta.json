@@ -11,7 +11,20 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "approved",
   "ingest_log_ref": null,
-  "notes": "pubDate: ; extracted via pre-w2-crawler"
+  "notes": "pubDate: ; extracted via pre-w2-crawler",
+  "relevance_score": 9,
+  "relevance_reasoning": "iPhone AI 聽寫配件，商務 persona 素材",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 2,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "iPhone",
+    "AI dictation",
+    "SpeakOn"
+  ]
 }

@@ -11,7 +11,19 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "skipped-low-relevance",
   "ingest_log_ref": null,
-  "notes": "pubDate: Thu, 30 Apr 2026 08:00:00 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Thu, 30 Apr 2026 08:00:00 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 1,
+  "relevance_reasoning": "廣告業配，MS Visual Studio 特價",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "MS Visual Studio",
+    "AI coding"
+  ]
 }

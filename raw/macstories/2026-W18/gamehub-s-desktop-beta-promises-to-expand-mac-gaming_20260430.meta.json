@@ -11,7 +11,20 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "approved",
   "ingest_log_ref": null,
-  "notes": "pubDate: Tue, 28 Apr 2026 17:27:50 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Tue, 28 Apr 2026 17:27:50 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 7,
+  "relevance_reasoning": "Mac 遊戲生態擴展，可作為「Mac 沒遊戲」反對處理素材",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 2,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "Mac",
+    "GameHub",
+    "Steam"
+  ]
 }

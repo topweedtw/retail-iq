@@ -11,7 +11,19 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "skipped-low-relevance",
   "ingest_log_ref": null,
-  "notes": "pubDate: Thu, 30 Apr 2026 07:35:54 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Thu, 30 Apr 2026 07:35:54 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 2,
+  "relevance_reasoning": "DJI 電源配件，非 Apple 主題",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 0,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "DJI",
+    "Power Station"
+  ]
 }

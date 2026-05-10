@@ -11,7 +11,20 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "approved",
   "ingest_log_ref": null,
-  "notes": "pubDate: Fri, 24 Apr 2026 13:40:50 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Fri, 24 Apr 2026 13:40:50 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 7,
+  "relevance_reasoning": "Tim Cook 時代回顧分析，觀點間接相關",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 2,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Tim Cook",
+    "Apple",
+    "iPhone"
+  ]
 }

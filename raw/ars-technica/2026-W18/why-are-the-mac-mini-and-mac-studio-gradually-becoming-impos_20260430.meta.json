@@ -11,7 +11,20 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "approved",
   "ingest_log_ref": null,
-  "notes": "pubDate: Thu, 23 Apr 2026 17:06:08 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Thu, 23 Apr 2026 17:06:08 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 7,
+  "relevance_reasoning": "Mac 供貨議題，可用於客戶詢問 Mac mini 時",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "Mac mini",
+    "Mac Studio",
+    "RAM"
+  ]
 }

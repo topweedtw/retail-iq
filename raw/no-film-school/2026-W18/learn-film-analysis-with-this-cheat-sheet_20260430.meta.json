@@ -11,7 +11,18 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "skipped-low-relevance",
   "ingest_log_ref": null,
-  "notes": "pubDate: Thu, 30 Apr 2026 04:52:00 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Thu, 30 Apr 2026 04:52:00 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 2,
+  "relevance_reasoning": "電影分析教學，可能間接提升內容創作者共鳴",
+  "relevance_breakdown": {
+    "d1_product_mention": 0,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "film analysis"
+  ]
 }

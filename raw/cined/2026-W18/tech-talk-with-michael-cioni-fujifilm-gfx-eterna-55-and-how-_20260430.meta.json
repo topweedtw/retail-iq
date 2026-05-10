@@ -11,7 +11,21 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "pending-review",
   "ingest_log_ref": null,
-  "notes": "pubDate: Wed, 29 Apr 2026 15:29:44 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Wed, 29 Apr 2026 15:29:44 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 6,
+  "relevance_reasoning": "業界電影機比較，iPhone ProRes 定位反對處理素材",
+  "relevance_breakdown": {
+    "d1_product_mention": 1,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 2,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "FUJIFILM",
+    "ARRI",
+    "ProRes",
+    "cinema"
+  ]
 }

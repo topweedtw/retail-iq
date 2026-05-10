@@ -7,10 +7,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-from gate4_proposer import Proposal, ProposalSet  # noqa: E402
-from gate4_queue import (  # noqa: E402
+from scripts.gate4_proposer import Proposal, ProposalSet  # noqa: E402
+from scripts.gate4_queue import (  # noqa: E402
     format_orphan_file, format_queue_file, iso_week, orphan_file_path,
     queue_file_path, write_orphan, write_review,
 )
@@ -170,7 +168,7 @@ Old positioning.
         self.tmp.cleanup()
 
     def test_orphan_when_no_products(self):
-        from gate4_pipeline import run_gate4_for_article
+        from scripts.gate4_pipeline import run_gate4_for_article
         llm = MagicMock()
         result, queues = run_gate4_for_article(
             self.meta_path, llm=llm, products=[], dry_run=True,
@@ -180,8 +178,8 @@ Old positioning.
         self.assertIn("_orphans", str(queues[0]))
 
     def test_skips_if_already_applied(self):
-        from gate4_pipeline import run_gate4_for_article
-        from gate4_router import Product
+        from scripts.gate4_pipeline import run_gate4_for_article
+        from scripts.gate4_router import Product
         meta = json.loads(self.meta_path.read_text())
         meta["ingest_log_ref"] = "already"
         self.meta_path.write_text(json.dumps(meta))

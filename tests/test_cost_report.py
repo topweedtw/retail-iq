@@ -5,9 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-import cost_report as cr  # noqa: E402
+import scripts.cost_report as cr  # noqa: E402
 
 
 # v2.0 digest template stub — just enough to exercise the parse regexes

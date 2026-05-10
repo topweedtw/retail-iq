@@ -16,7 +16,7 @@ import json
 import logging
 from dataclasses import dataclass
 
-from llm_client import LLMClient, LLMError
+from .llm_client import LLMClient, LLMError
 
 
 @dataclass

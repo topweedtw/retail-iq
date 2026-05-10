@@ -5,11 +5,9 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-from gate4_proposer import Proposal  # noqa: E402
-from gate4_queue import format_queue_file  # noqa: E402
-from review_queue import (  # noqa: E402
+from scripts.gate4_proposer import Proposal  # noqa: E402
+from scripts.gate4_queue import format_queue_file  # noqa: E402
+from scripts.review_queue import (  # noqa: E402
     QueueItem, QueueProposal, apply_queue_item, archive_queue_file,
     cmd_apply_decided, parse_queue_file, walk_queue,
 )
@@ -129,7 +127,7 @@ Old specs.
 
     def test_apply_writes_changes(self):
         # Patch PRODUCTS_DIR to our tmpdir
-        import review_queue as rq
+        import scripts.review_queue as rq
         original = rq.PRODUCTS_DIR
         rq.PRODUCTS_DIR = self.products
         try:
@@ -155,7 +153,7 @@ Old specs.
             rq.PRODUCTS_DIR = original
 
     def test_dry_run_does_not_write(self):
-        import review_queue as rq
+        import scripts.review_queue as rq
         original = rq.PRODUCTS_DIR
         rq.PRODUCTS_DIR = self.products
         try:
@@ -177,7 +175,7 @@ Old specs.
             article_ref="x",
             proposals=[QueueProposal("A", "update", "x", "apply")],
         )
-        import review_queue as rq
+        import scripts.review_queue as rq
         original = rq.PRODUCTS_DIR
         rq.PRODUCTS_DIR = self.products
         try:
@@ -225,7 +223,7 @@ class TestWalkQueue(unittest.TestCase):
 
 class TestArchive(unittest.TestCase):
     def test_archive_path_preserves_week(self):
-        import review_queue as rq
+        import scripts.review_queue as rq
         tmp = tempfile.TemporaryDirectory()
         try:
             queue = Path(tmp.name) / "ingest-queue"

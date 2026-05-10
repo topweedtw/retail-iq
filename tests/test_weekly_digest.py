@@ -6,9 +6,7 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-import generate_weekly_digest as g  # noqa: E402
+import scripts.generate_weekly_digest as g  # noqa: E402
 
 
 class TestSourceStats(unittest.TestCase):

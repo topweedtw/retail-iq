@@ -6,10 +6,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-import gate4_lint as gl  # noqa: E402
-from review_queue import QueueItem, QueueProposal  # noqa: E402
+import scripts.gate4_lint as gl  # noqa: E402
+from scripts.review_queue import QueueItem, QueueProposal  # noqa: E402
 
 
 def mock_item(slug="iphone", article="a1", proposals=None):
@@ -229,7 +227,7 @@ test content
 
 class TestCostEstimate(unittest.TestCase):
     def test_estimate_math(self):
-        from generate_weekly_digest import CostEstimate, collect_cost_estimate, Gate4Stats
+        from scripts.generate_weekly_digest import CostEstimate, collect_cost_estimate, Gate4Stats
         from collections import Counter
         metas = [{"relevance_score": 10} for _ in range(10)]
         metas += [{"relevance_score": None}]  # no Gate 3 call

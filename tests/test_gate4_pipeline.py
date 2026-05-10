@@ -14,11 +14,9 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-import gate4_pipeline as gp  # noqa: E402
-from gate4_router import Product  # noqa: E402
-from gate4_proposer import Proposal, ProposalSet  # noqa: E402
+import scripts.gate4_pipeline as gp  # noqa: E402
+from scripts.gate4_router import Product  # noqa: E402
+from scripts.gate4_proposer import Proposal, ProposalSet  # noqa: E402
 
 
 def make_meta(status="approved", entities=None, log_ref=None, tier="T2"):
@@ -76,14 +74,16 @@ Old positioning text.
 
         # Patch module-level paths in BOTH gate4_applier AND gate4_pipeline
         # (gate4_pipeline imported PRODUCTS_DIR at load time)
-        import gate4_applier, gate4_pipeline
+        import scripts.gate4_applier as gate4_applier
+        import scripts.gate4_pipeline as gate4_pipeline
         self._orig_applier_products = gate4_applier.PRODUCTS_DIR
         self._orig_pipeline_products = gate4_pipeline.PRODUCTS_DIR
         gate4_applier.PRODUCTS_DIR = self.products_dir
         gate4_pipeline.PRODUCTS_DIR = self.products_dir
 
     def tearDown(self):
-        import gate4_applier, gate4_pipeline
+        import scripts.gate4_applier as gate4_applier
+        import scripts.gate4_pipeline as gate4_pipeline
         gate4_applier.PRODUCTS_DIR = self._orig_applier_products
         gate4_pipeline.PRODUCTS_DIR = self._orig_pipeline_products
         self.tmp.cleanup()
@@ -109,7 +109,8 @@ Old positioning text.
         products = [make_product("iphone-17-pro"), make_product("decoy1", tags=["unrelated1"]), make_product("decoy2", tags=["unrelated2"])]
 
         # Point gate4_queue's QUEUE_DIR into tmpdir too
-        import gate4_queue, gate4_pipeline
+        import scripts.gate4_queue as gate4_queue
+        import scripts.gate4_pipeline as gate4_pipeline
         orig_queue = gate4_queue.QUEUE_DIR
         gate4_queue.QUEUE_DIR = self.dir / "queue"
         try:
@@ -129,7 +130,7 @@ Old positioning text.
 
     def test_orphan_when_no_matching_product(self):
         llm = MagicMock()
-        import gate4_queue
+        import scripts.gate4_queue as gate4_queue
         orig_queue = gate4_queue.QUEUE_DIR
         gate4_queue.QUEUE_DIR = self.dir / "queue"
         try:
@@ -183,7 +184,7 @@ Old positioning text.
         meta = json.loads(self.meta_path.read_text())
         meta["key_entities"] = [f"iPhone {i}" for i in range(gp.MAX_FANOUT + 1)]
         self.meta_path.write_text(json.dumps(meta))
-        import gate4_queue
+        import scripts.gate4_queue as gate4_queue
         orig_queue = gate4_queue.QUEUE_DIR
         gate4_queue.QUEUE_DIR = self.dir / "queue"
         try:
@@ -205,7 +206,7 @@ Old positioning text.
         })
         before = self.iphone_page.read_text()
         products = [make_product("iphone-17-pro"), make_product("decoy1", tags=["unrelated1"]), make_product("decoy2", tags=["unrelated2"])]
-        import gate4_queue
+        import scripts.gate4_queue as gate4_queue
         orig_queue = gate4_queue.QUEUE_DIR
         gate4_queue.QUEUE_DIR = self.dir / "queue"
         try:
@@ -260,7 +261,7 @@ class TestRunGate4Pass(unittest.TestCase):
         self.assertEqual(report.skipped_already_applied, 1)  # a3
 
     def test_counts_applied_and_review(self):
-        from gate4_applier import ApplyResult
+        from scripts.gate4_applier import ApplyResult
         self._write_meta("a1")
         self._write_meta("a2")
         fake_apply = ApplyResult(applied_sections=["S1", "S2"],

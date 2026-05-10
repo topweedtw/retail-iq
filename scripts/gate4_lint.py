@@ -29,7 +29,7 @@ from pathlib import Path
 
 SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
-from review_queue import walk_queue  # noqa: E402
+from .review_queue import walk_queue  # noqa: E402
 
 REPO_ROOT = SCRIPTS.parent
 RAW_DIR = REPO_ROOT / "raw"

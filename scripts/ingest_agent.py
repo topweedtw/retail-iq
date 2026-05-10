@@ -40,8 +40,18 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 
 # Embedded YAML parser（無 pip 依賴；詳見 scripts/yaml_mini.py）
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import yaml_mini as yaml
+# Support both `python3 -m scripts.ingest_agent` (package) and
+# `python3 scripts/ingest_agent.py` (direct execution).
+_SCRIPTS_DIR = Path(__file__).resolve().parent
+_REPO_ROOT_DIR = _SCRIPTS_DIR.parent
+if __package__:
+    from . import yaml_mini as yaml
+else:
+    # Direct execution: add repo root to sys.path so `scripts` is importable
+    # as a package (enables `from scripts.xxx import` in sibling modules).
+    if str(_REPO_ROOT_DIR) not in sys.path:
+        sys.path.insert(0, str(_REPO_ROOT_DIR))
+    from scripts import yaml_mini as yaml  # type: ignore[no-redef]
 
 # ════════════════════════════════════════════════════════════════════
 # 常數
@@ -343,7 +353,9 @@ class IngestPipeline:
         self._llm = None
         if not (skip_scoring and skip_gate1b):
             try:
-                from llm_client import LLMClient
+                from .llm_client import LLMClient
+            except ImportError:
+                from scripts.llm_client import LLMClient  # type: ignore[no-redef]
                 self._llm = LLMClient()
                 logging.info(
                     f"LLM client ready: chat={self._llm.chat_model} embed={self._llm.embedding_model} @ {self._llm.endpoint}"
@@ -356,7 +368,9 @@ class IngestPipeline:
         self._embed_index = None
         if not self.skip_gate1b and self._llm is not None:
             try:
-                from embedding_index import EmbeddingIndex
+                from .embedding_index import EmbeddingIndex
+            except ImportError:
+                from scripts.embedding_index import EmbeddingIndex  # type: ignore[no-redef]
                 self._embed_index = EmbeddingIndex(
                     path=RAW_DIR / "_embeddings-index.json",
                     client=self._llm,
@@ -450,7 +464,10 @@ class IngestPipeline:
             score_total, status, reason = None, "pending", "Gate 3 skipped (--skip-scoring)"
         else:
             try:
-                from relevance_scorer import score_article, status_for_score
+                try:
+                    from .relevance_scorer import score_article, status_for_score
+                except ImportError:
+                    from scripts.relevance_scorer import score_article, status_for_score  # type: ignore[no-redef]
                 score = score_article(article.title, text, client=self._llm)
                 score_total = score.total
                 status = status_for_score(score_total)
@@ -596,8 +613,12 @@ def main() -> int:
         if args.skip_gate4:
             logging.error("--gate4-only + --skip-gate4 is contradictory")
             return 1
-        from llm_client import LLMClient
-        from gate4_pipeline import run_gate4_pass, GATE4_ELIGIBLE_STATUSES
+        try:
+            from .llm_client import LLMClient
+            from .gate4_pipeline import run_gate4_pass, GATE4_ELIGIBLE_STATUSES
+        except ImportError:
+            from scripts.llm_client import LLMClient  # type: ignore[no-redef]
+            from scripts.gate4_pipeline import run_gate4_pass, GATE4_ELIGIBLE_STATUSES  # type: ignore[no-redef]
         try:
             llm = LLMClient()
         except Exception as e:
@@ -648,7 +669,10 @@ def main() -> int:
     # (status='pending' means Gate 3 was skipped; Gate 4 still works on
     # existing approved/pending-review articles in raw/)
     if not args.skip_gate4 and pipeline._llm is not None:
-        from gate4_pipeline import run_gate4_pass
+        try:
+            from .gate4_pipeline import run_gate4_pass
+        except ImportError:
+            from scripts.gate4_pipeline import run_gate4_pass  # type: ignore[no-redef]
         # Collect meta paths for this run's successful writes
         meta_paths: list[Path] = []
         for r in all_results:

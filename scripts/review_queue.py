@@ -28,7 +28,7 @@ from typing import Optional
 
 SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
-from gate4_applier import (  # noqa: E402
+from .gate4_applier import (  # noqa: E402
     _append_to_section, _replace_section, _excerpt_matches, sandbox_safe_write,
     split_frontmatter, serialize_frontmatter, update_frontmatter, extract_sections,
 )

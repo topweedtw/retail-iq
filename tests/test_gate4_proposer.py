@@ -9,13 +9,11 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock
 
-SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-sys.path.insert(0, str(SCRIPTS))
-from gate4_proposer import (  # noqa: E402
+from scripts.gate4_proposer import (  # noqa: E402
     Proposal, ProposalSet, _parse_response, build_prompt, extract_sections,
     propose, split_frontmatter,
 )
-from llm_client import LLMError  # noqa: E402
+from scripts.llm_client import LLMError  # noqa: E402
 
 
 # ─────────────────────────────────────────────────────────────────────

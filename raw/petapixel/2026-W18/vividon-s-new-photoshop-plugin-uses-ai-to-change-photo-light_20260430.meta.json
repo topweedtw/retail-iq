@@ -11,7 +11,20 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "skipped-low-relevance",
   "ingest_log_ref": null,
-  "notes": "pubDate: Wed, 29 Apr 2026 22:21:08 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Wed, 29 Apr 2026 22:21:08 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 4,
+  "relevance_reasoning": "攝影工作流 AI 工具，攝影客群感興趣但非 Apple",
+  "relevance_breakdown": {
+    "d1_product_mention": 1,
+    "d2_ecosystem": 0,
+    "d3_training_potential": 1,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "Photoshop",
+    "Vividon",
+    "AI lighting"
+  ]
 }

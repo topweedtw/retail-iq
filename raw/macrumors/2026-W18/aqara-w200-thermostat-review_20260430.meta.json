@@ -11,7 +11,20 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "approved",
   "ingest_log_ref": null,
-  "notes": "pubDate: ; extracted via pre-w2-crawler"
+  "notes": "pubDate: ; extracted via pre-w2-crawler",
+  "relevance_score": 7,
+  "relevance_reasoning": "HomeKit 溫控器實測，智慧家居生態",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 1,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "HomeKit",
+    "Aqara",
+    "Matter"
+  ]
 }

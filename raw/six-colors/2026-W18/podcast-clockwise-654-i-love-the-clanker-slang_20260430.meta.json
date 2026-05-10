@@ -11,7 +11,19 @@
   "http_status": 200,
   "locale": "en-US",
   "related_wiki_pages": [],
-  "ingest_status": "pending",
+  "ingest_status": "skipped-low-relevance",
   "ingest_log_ref": null,
-  "notes": "pubDate: Wed, 29 Apr 2026 20:06:24 +0000; extracted via pre-w2-crawler"
+  "notes": "pubDate: Wed, 29 Apr 2026 20:06:24 +0000; extracted via pre-w2-crawler",
+  "relevance_score": 3,
+  "relevance_reasoning": "podcast 閒聊內容，無明確產品訓練價值",
+  "relevance_breakdown": {
+    "d1_product_mention": 1,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 0,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Clockwise",
+    "podcast"
+  ]
 }

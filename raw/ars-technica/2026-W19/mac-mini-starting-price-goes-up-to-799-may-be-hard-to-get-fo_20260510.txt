@@ -1,0 +1,134 @@
+AI
+
+Biz & IT
+
+Cars
+
+Culture
+
+Gaming
+
+Health
+
+Policy
+
+Science
+
+Security
+
+Space
+
+Tech
+
+Feature
+
+Reviews
+
+AI
+
+Biz & IT
+
+Cars
+
+Culture
+
+Gaming
+
+Health
+
+Policy
+
+Science
+
+Security
+
+Space
+
+Tech
+
+HyperLight
+
+Day & Night
+
+Dark
+
+System
+
+Mac mini starting price goes up to $799, may be hard to get for “months”
+
+Chip shortages and demand from AI enthusiasts are both playing a part.
+
+Originally published
+    
+      May 4, 2026
+
+Apple’s Mac mini and Mac Studio desktops have been increasingly difficult to buy over the course of the year—multiple configurations are listed on Apple’s site as “currently unavailable,” which almost never happens, and others will take weeks or months to ship if you order them today. A top-end version of the Mac Studio with 512GB of RAM was delisted from Apple’s store entirely.
+
+Now, the $599 entry-level Mac mini has also been removed from Apple’s store. The cheapest Mac mini you can currently order from Apple costs $799, which gets you an M4 chip, 16GB of RAM, and 512GB of storage.
+
+This isn’t technically a price hike; Apple has charged the same amount for these specs since launching the M4 Mac mini in late 2024. But now that the basic model with 256GB of storage has apparently been discontinued, it’s no longer possible to buy a Mac mini for its original $599 starting price unless you can find stock left over at some third-party retailer somewhere.
+
+The last time the Mac mini’s starting price was this high was in 2018, when the last Intel-based version of the desktop was introduced. The system’s cost had been falling in the Apple Silicon era—first to $699 for the Apple M1 version, then to $599 for the M2 version. The M4 iteration increased the starting RAM allotment from 8GB to 16GB, making the entry-level model much more useful and future-proof.
+
+Apple similarly discontinued the 256GB versions of the MacBook Air earlier this year when it introduced the new M5 models, but the company only increased the starting prices of those laptops by $100, rather than $200. A new M5 version of the Mac mini is reportedly coming later this year, and its starting price could land anywhere between $599 and $799, depending on its specs (and how much Apple is paying for memory and storage chips by then).
+
+A $799 Mac mini ordered from Apple’s website today will take five or six weeks to show up at your door.
+
+“Higher-than-expected demand”
+
+Current Apple CEO Tim Cook addressed the situation on Apple’s Q2 earnings call last week as part of a larger conversation about how Apple is navigating component shortages, and he partly blamed the shortage on the popularity of those desktops among users looking to run AI agents and other tools locally.
+
+“Both [the Mac mini and the Mac Studio] are amazing platforms for AI and agentic tools, and the customer recognition of that is happening faster than what we had predicted, and so we saw higher-than-expected demand,” said Cook. “We think looking forward that the Mac mini and the Mac Studio may take several months to reach supply-demand balance.”
+
+Cook wasn’t specific about what components were driving the Mac mini and Studio shortages, though he did say that generally, “availability of the advanced [manufacturing] nodes our SoCs are produced on” was constrained, and “we have less flexibility in the supply chain than we normally would.” In other words, it has become harder for Apple to go to TSMC and ask for more chips because TSMC doesn’t have the spare manufacturing capacity. Cook said these constraints “primarily” affected the iPhone, though, and only affected the Mac “to a lesser extent.”
+
+As we wrote last month, the extent of the shipping delays can probably be blamed on multiple factors. AI-related demand for the desktops and chip shortages are probably factors, but Apple is also said to be planning replacements for both systems with Apple M5-series chips later this year, and it’s common for models to see their ship times slip when replacements are imminent. Cook’s “several months” estimate could easily include the introduction of new models, plus whatever time Apple needs to catch up to pent-up demand afterward.
+
+Cook also noted that “customer response to MacBook Neo has been off the charts, with higher-than-expected demand” and that Apple “set a March record for customers new to the Mac, partly due to the Neo.” (Note that “a March record” is not the same thing as “an all-time record,” but regardless, it seems that demand for the Neo has been healthy.)
+
+But MacBook Neo availability has been much better than for the Mac mini or Studio. A Neo ordered directly from Apple will usually arrive in two or three weeks, but this time window has stayed roughly the same since early March. The Neo also remains widely available for same-day shipping or pickup at third-party retailers like Amazon, Walmart, and Best Buy, which is not true of most Mac mini or Studio models.
+
+Supply constraints aside, Apple’s Q2 2026 was a successful one for the company. Apple made $111.2 billion in revenue, a 17 percent increase over Q2 of 2025, thanks to strong growth from iPhone 17 sales and its Services division. The Mac also grew 6 percent year over year despite the shortages affecting the Mac mini, Mac Studio, and MacBook Neo. But Apple isn’t immune to the industry-wide RAM shortage: Cook said that Apple expected “significantly higher memory costs” for Q3 than it paid in Q2 and that “memory costs will drive an increasing impact on our business” going forward.
+
+This story was updated on May 4 at 10:55 am Eastern to add details about the discontinued $599 Mac mini.
+
+1.
+                Engineers at NASA's Jet Propulsion Lab make a breakthrough in rotor technology
+
+2.
+                The unprecedented and deadly cruise ship hantavirus outbreak, explained
+
+3.
+                ABC refuses to capitulate to Trump admin, fights FCC probe into The View
+
+4.
+                The new Wild West of AI kids’ toys
+
+5.
+                SpaceX is starting to move on from the world's most successful rocket
+
+Ars Technica has been separating the signal from
+          the noise for over 25 years. With our unique combination of
+          technical savvy and wide-ranging interest in the technological arts
+          and sciences, Ars is the trusted source in a sea of information. After
+          all, you don’t need to know everything, only what’s important.
+
+About Us
+
+Staff Directory
+
+Ars Newsletters
+
+General FAQ
+
+Posting Guidelines
+
+AI Policy
+
+RSS Feeds
+
+Contact us
+
+Advertise with us
+
+Reprints

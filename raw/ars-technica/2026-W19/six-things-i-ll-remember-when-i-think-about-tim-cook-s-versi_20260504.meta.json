@@ -12,7 +12,7 @@
   "locale": "en-US",
   "related_wiki_pages": [],
   "ingest_status": "pending-review",
-  "ingest_log_ref": null,
+  "ingest_log_ref": "gate4-fanout-review",
   "notes": "pubDate: Fri, 24 Apr 2026 13:40:50 +0000; extracted via pre-w2-crawler",
   "relevance_score": 5,
   "relevance_reasoning": "文章主要回顧 Tim Cook 時期 Apple 的產品策略與成功，提及部分產品但非最新款，訓練素材潛力有限。",
@@ -28,5 +28,13 @@
     "MacBook Neo",
     "iPhone",
     "iPad"
+  ],
+  "ingest_targets": [
+    "airpods-pro-3",
+    "ipad-air",
+    "iphone-17-pro",
+    "macbook-neo",
+    "apple-watch-series-11",
+    "apple-watch-ultra-3"
   ]
 }

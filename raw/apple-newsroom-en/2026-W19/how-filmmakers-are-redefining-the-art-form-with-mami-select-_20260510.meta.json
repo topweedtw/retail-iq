@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.apple.com/newsroom/2026/05/how-filmmakers-are-redefining-the-art-form-with-mami-select-filmed-on-iphone/",
+  "source_type": "apple-newsroom-en",
+  "source_tier": "T2",
+  "source_title": "How filmmakers are redefining the art form with MAMI Select: Filmed on iPhone",
+  "fetched_at": "2026-05-10T15:32:22+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:487cf638f359db684c63224d98c0daf89f376230861557c67aecc1294b37d4a2",
+  "content_type": "text/html",
+  "content_size_bytes": 264822,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": null,
+  "notes": "pubDate: 2026-05-07T17:00:28.779Z",
+  "relevance_score": 9,
+  "relevance_reasoning": "文章強調 iPhone 17 Pro Max 的使用，具高訓練潛力及時效性。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 3,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "iPhone 17 Pro Max",
+    "MacBook Pro",
+    "filmmaking",
+    "MAMI Select",
+    "cinematic mode"
+  ]
+}

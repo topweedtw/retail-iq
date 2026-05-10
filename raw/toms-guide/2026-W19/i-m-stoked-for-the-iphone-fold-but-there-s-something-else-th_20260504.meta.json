@@ -12,7 +12,7 @@
   "locale": "en-US",
   "related_wiki_pages": [],
   "ingest_status": "pending-review",
-  "ingest_log_ref": null,
+  "ingest_log_ref": "2026-05-10T15:34:34+08:00|iphone-17-pro",
   "notes": "pubDate: Mon, 04 May 2026 06:45:00 +0000; extracted via pre-w2-crawler",
   "relevance_score": 5,
   "relevance_reasoning": "文章提及 iPhone 和 Apple Watch，但重點在於對折疊手機的期望，訓練素材潛力有限。",
@@ -26,5 +26,8 @@
     "iPhone",
     "Apple Watch",
     "Apple Intelligence"
+  ],
+  "ingest_targets": [
+    "iphone-17-pro"
   ]
 }

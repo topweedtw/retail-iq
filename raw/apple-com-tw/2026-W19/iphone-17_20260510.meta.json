@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/tw/iphone-17/",
+  "source_type": "apple-com-tw",
+  "source_tier": "T1",
+  "source_title": "iphone-17",
+  "fetched_at": "2026-05-10T15:32:21+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:8bc5d94c4e3385b7d6bbfdb253d116b1eec8b424fd23729a39e85b9912bccf45",
+  "content_type": "text/html",
+  "content_size_bytes": 655771,
+  "http_status": 200,
+  "locale": "zh-TW",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": null
+}

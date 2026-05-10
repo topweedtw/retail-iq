@@ -12,7 +12,7 @@
   "locale": "en-US",
   "related_wiki_pages": [],
   "ingest_status": "approved",
-  "ingest_log_ref": null,
+  "ingest_log_ref": "2026-05-10T15:33:48+08:00|mac-mini",
   "notes": "pubDate: Fri, 01 May 2026 14:10:48 +0000; extracted via pre-w2-crawler",
   "relevance_score": 8,
   "relevance_reasoning": "文章聚焦於 Mac mini 和 Mac Studio 的供貨短缺，並提及 AI 需求和新機預期，具備訓練潛力。",
@@ -28,5 +28,8 @@
     "Apple M5",
     "AI",
     "Tim Cook"
+  ],
+  "ingest_targets": [
+    "mac-mini"
   ]
 }

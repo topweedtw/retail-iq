@@ -1,0 +1,35 @@
+{
+  "source_url": "https://arstechnica.com/gadgets/2026/05/apple-may-take-several-months-to-catch-up-to-mac-mini-and-studio-demand/",
+  "source_type": "ars-technica",
+  "source_tier": "T2",
+  "source_title": "Mac mini starting price goes up to $799, may be hard to get for \"months\"",
+  "fetched_at": "2026-05-10T15:32:33+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:3a75a25f8cc81de1469db06af67d2804d8f972ca93d622d27842f14005654c5d",
+  "content_type": "text/html",
+  "content_size_bytes": 148623,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": "2026-05-10T15:33:55+08:00|mac-mini",
+  "notes": "pubDate: Mon, 04 May 2026 14:55:48 +0000",
+  "relevance_score": 8,
+  "relevance_reasoning": "文章詳細討論了最新的Mac mini，具有高時效性和訓練潛力。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 2,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "Mac mini",
+    "M4 chip",
+    "Mac Studio",
+    "Apple Silicon",
+    "Tim Cook"
+  ],
+  "ingest_targets": [
+    "mac-mini"
+  ]
+}

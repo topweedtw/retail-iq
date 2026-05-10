@@ -1,0 +1,283 @@
+ABOUT
+
+CLUB
+
+PODCASTS
+
+SHORTCUTS
+
+SETUPS
+
+iOS 26
+
+APPS
+
+STORIES
+
+SIGN IN
+
+DARK
+
+LIGHT
+
+AUTOMATIC
+
+Astropad Workbench Rethinks Remote Mac Control for AI Agents
+
+Pedometer++ 8: Glimmers of an Apple Wrist Renaissance
+
+Introducing Apple Frames 4: A Revamped Shortcut, Support for Frame Colors, Proportional Scaling, and the Apple Frames CLI for Developers
+
+Podcast Rewind: Codex, GameHub, a Mouse Lament, a Peacock Invasion, and an Interview with Niléane Dorffer
+
+Enjoy the latest episodes from MacStories’ family of podcasts:
+
+AppStories
+
+This week on AppStories, John shares a tip for moving files with Taildrop before he and Federico dig into Codex and its unique capabilities.
+
+On AppStories+, Federico and John have both returned to Apple Reminders and discuss why and how they’re using it.
+
+NPC: Next Portable Console
+
+This week on Next Portable Console, we finally have RG Rotate specs and prices, get excited for the Steam Controller, update listeners on the latest grips available for the Switch 2, and cover the GameHub for Mac beta.
+
+On NPC XL, we revisit GameNative, and Federico turns his Legion Go 2 into a SteamOS device.
+
+First, Last, Everything
+
+Jonathan is joined by Niléane Dorffer, a French-Réunionnese podcaster, writer, and activist, known for being the co-host of Comfort Zone, her writing at MacStories, and her advocacy for trans rights.
+
+Comfort Zone
+
+With Chris out getting a puppy, Matt and Niléane hold down the fort, celebrating an app and lamenting a mouse. Then, everyone pretends to be someone else for fun.
+
+On Cozy Zone, the gang compares their Mac Docks, and you won’t believe it, monsters were revealed!
+
+MacStories Unwind
+
+This week, Federico wins the wild kingdom award, John is defending against vultures and has a creepy new show to recommend, and Federico closes with a TV check-in.
+
+AppStories, Episode 483, ‘Codex as a Productivity Super App’ Show Notes
+
+This episode is sponsored by:
+
+Mercury Weather: Forecasts, beautifully done. Download now for free.
+
+Follow-Up: Moving Files Between Devices
+
+Tailscale
+
+Taildrop
+
+Hyperduck
+
+Codex as a Productivity Super App
+
+Codex
+
+OpenAI acquires Software Applications Incorporated
+
+Sky Acquired by OpenAI
+
+Claude Code Issues
+
+An update on recent Claude Code quality reports (Anthropic)
+
+Claude Code
+
+Federico’s Codex Workflows
+
+Apple Frames CLI
+
+Cardmarket
+
+Monologue
+
+Matter
+
+Other Mac Dictation Apps
+
+Wispr Flow
+
+Aqua Voice
+
+Remote Codex on iPhone
+
+Remodex
+
+Remodex Is the Best Codex Remote Client for iOS
+
+Open-Source Personal AI Assistants
+
+OpenClaw
+
+AppStories+ Post-Show
+
+Apple Reminders
+
+GoodTask
+
+Remind Me Faster
+
+Subscribe to AppStories+
+
+Visit AppStories.net to learn more about the extended, high bitrate audio version of AppStories that is delivered early each week and subscribe.
+
+NPC, Episode 79, ‘The Weirdly Wonderful RG Rotate’ Show Notes
+
+The Latest Portable Gaming News
+
+Anbernic teases the RG Rotate with gameplay demo showing PSP, 3DS, GameCube, and PS2 running.
+
+Dbrand’s Joy-Lock gives Switch 2 Joy-Cons an adjustable ratcheting grip.
+
+Genki Grips Development Update: Locking In The Details
+
+GameHub brings Windows PC game compatibility to Mac in an early beta with solid early results.
+
+Subscribe to NPC XL
+
+NPC XL is a weekly members-only version of NPC with extra content, available exclusively through our new Patreon for $5/month. Each week on NPC XL, Federico, Brendon, and John record a special segment or deep dive about a particular topic that is released alongside the “regular” NPC episodes. You can subscribe here.
+
+First, Last, Everything, Season 2, Episode 8, ‘Niléane Dorffer - Activist, Podcaster’ Show Notes
+
+This Episode’s Links
+
+The Future of Being Trans on the Internet - The Verge
+
+Discord’s age verification mandate is a leap toward a gated internet
+
+Wiki Trans
+
+Toutes des Femmes
+
+Comfort Zone Podcast
+
+Klack App
+
+TinyStart - A wonderful launcher app that Niléane released after our chat
+
+Niléane’s Picks
+
+Niléane’s ‘First’: Sony PSP
+
+Niléane’s ‘Last’: Swinsian
+
+Niléane’s ‘Everything’: M2 MacBook Air
+
+‘Something’
+
+Sinclair C5
+
+Follow Niléane
+
+Mastodon
+
+Bluesky
+
+MacStories Author Page
+
+Comfort Zone, Episode 99, ‘Better Than Getting Into Crypto’ Show Notes
+
+Things Discussed
+
+TinyStart
+
+Dia is getting really good
+
+Niléane’s proofreader part 1
+
+Niléane’s proofreader part 2
+
+BetterTouchTool
+
+Logitech MX Master 4
+
+Niléane becomes Chris
+
+Matt becomes Chris
+
+Chris becomes Matt
+
+Cozy Zone
+
+For even more from the Comfort Zone crew, you can subscribe to Cozy Zone. Cozy Zone is a weekly bonus episode of Comfort Zone where Matt, Niléane, and Chris invite listeners to join them in the Cozy Zone where they’ll cover extra topics, invent wilder challenges and games, and share all their great (and not so great) takes on tech. You can subscribe to Cozy Zone for $5 per month here or $50 per year here.
+
+MacStories Unwind, ‘Screaming Peacocks and Roving Coyotes’ Show Notes
+
+It’s Springtime and the Animals Are Back
+
+The woodchuck (groundhog) is a relatively recent addition to North Carolina and is considered a squirrel.
+
+Dealing with black vultures
+
+John took the right approach.
+
+Apparently, there are two approaches to dealing with coyotes in North Carolina.
+
+Scare them away
+
+Bare-handed combat
+
+Video
+
+Facciamo chiarezza sulla ‘famosa’ invasione dei pavoni a Punta Marina (ma è davvero un’invasione?)
+
+Picks
+
+Widows Bay
+
+Margo’s Got Money Troubles
+
+Hacks
+
+For All Mankind
+
+Star City
+
+Unwind Deal
+
+Send Help is $9.99 in the TV app.
+
+When two business colleagues (Rachel McAdams and Dylan O’Brien) become stranded on a deserted island as the only survivors of a plane crash, they must overcome past grievances and work together to stay alive. But they’re not in the office anymore, and an unsettling, wryly humorous battle of wills and wits begins in this original, darkly comedic psychological thriller.
+
+MacStories Unwind+
+
+We deliver MacStories Unwind+ to Club MacStories subscribers ad-free with high bitrate audio every week. To learn more about the benefits of a Club MacStories subscription, visit our Plans page.
+
+MacStories launched its first podcast in 2017 with AppStories. Since then, the lineup has expanded to include a family of weekly shows that also includes MacStories Unwind, Magic Rays of Light, Comfort Zone, NPC: Next Portable Console, and First, Last, Everything that collectively, cover a broad range of the modern media world from Apple’s streaming service and videogame hardware to apps for a growing audience that appreciates our thoughtful, in-depth approach to media.
+
+If you’re interested in advertising on our shows, you can learn more here or by contacting our Managing Editor, John Voorhees.
+
+Access Extra Content and Perks
+
+Founded in 2015, Club MacStories has delivered exclusive content every week for nearly a decade.
+
+What started with weekly and monthly email newsletters has blossomed into a family of memberships designed for every MacStories fan.
+
+Learn more here and from our Club FAQs.
+
+Club MacStories: Weekly and monthly newsletters via email and the web that are brimming with apps, tips, automation workflows, longform writing, early access to the MacStories Unwind podcast, periodic giveaways, and more;
+
+Club MacStories+: Everything that Club MacStories offers, plus an active Discord community, advanced search and custom RSS features for exploring the Club’s entire back catalog, bonus columns, and dozens of app discounts;
+
+Club Premier: All of the above and AppStories+, an extended version of our flagship podcast that’s delivered early, ad-free, and in high-bitrate audio.
+
+Learn more here and from our Club FAQs.
+
+ABOUT
+
+CLUB
+
+ADVERTISE
+
+PRIVACY POLICY
+
+TERMS OF SERVICE
+
+Web Dev by Made with Fuel | Design by Silvia Gatta
+
+Copyright © 2026 MacStories, Inc. Find Federico on MastodonFind John on MastodonFind Alex on MastodonFind Silvia on MastodonFind MacStories on Mastodon All rights reserved.
+
+v4.6

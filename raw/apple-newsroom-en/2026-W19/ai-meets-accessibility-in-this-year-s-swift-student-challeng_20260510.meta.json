@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.apple.com/newsroom/2026/05/ai-meets-accessibility-in-this-years-swift-student-challenge/",
+  "source_type": "apple-newsroom-en",
+  "source_tier": "T2",
+  "source_title": "AI meets accessibility in this year’s Swift Student Challenge",
+  "fetched_at": "2026-05-10T15:32:24+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:6031912b97748ebe69f22c0fc4f675aca0889bde18a9f7369839581b32408255",
+  "content_type": "text/html",
+  "content_size_bytes": 210432,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": null,
+  "notes": "pubDate: 2026-05-07T13:59:24.632Z",
+  "relevance_score": 10,
+  "relevance_reasoning": "文章強調了Apple產品及其生態系統的應用，且具時效性。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 3,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "Swift",
+    "Apple platforms",
+    "WWDC",
+    "AI tools",
+    "app playgrounds"
+  ]
+}

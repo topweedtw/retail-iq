@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.macstories.net/news/podcast-rewind-codex-gamehub-a-mouse-lament-a-peacock-invasion-and-an-interview-with-nileane-dorffer/",
+  "source_type": "macstories",
+  "source_tier": "T2",
+  "source_title": "Podcast Rewind: Codex, GameHub, a Mouse Lament, a Peacock Invasion, and an Interview with Niléane Dorffer",
+  "fetched_at": "2026-05-10T15:32:38+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:e597396e2a0ecfb44fdf4cdc1ab5488f18362d4cf541496ae1194e5bd7e4b803",
+  "content_type": "text/html",
+  "content_size_bytes": 69703,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Fri, 08 May 2026 18:23:28 +0000",
+  "relevance_score": 7,
+  "relevance_reasoning": "文章提及多個Apple產品及生態系統，具訓練潛力。",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 2,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Apple Frames",
+    "Codex",
+    "Apple Reminders",
+    "iOS",
+    "Mac"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.apple.com/tw/iphone-air/",
+  "source_type": "apple-com-tw",
+  "source_tier": "T1",
+  "source_title": "iphone-air",
+  "fetched_at": "2026-05-10T15:32:21+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:1200e15c22313dd948c2c82cbd7384c4300ec7ca72fa475beebd2b373c3b244f",
+  "content_type": "text/html",
+  "content_size_bytes": 695401,
+  "http_status": 200,
+  "locale": "zh-TW",
+  "related_wiki_pages": [],
+  "ingest_status": "pending",
+  "ingest_log_ref": null,
+  "notes": null
+}

@@ -1,0 +1,98 @@
+Apple, technology, and other stuff
+
+Archive
+
+Sign In
+
+Membership
+
+26 OS versions
+
+Help Me, Glenn!
+
+Reviews
+
+Apple Report Card
+
+E-readers
+
+Apple Photos
+
+20 Macs for 2020
+
+Merch
+
+Jason Snell
+
+Dan Moren
+
+Sponsorships
+
+Archive
+
+Sign In
+
+Membership
+
+26 OS versions
+
+Help Me, Glenn!
+
+Reviews
+
+Apple Report Card
+
+E-readers
+
+Apple Photos
+
+20 Macs for 2020
+
+Merch
+
+Jason Snell
+
+Dan Moren
+
+Sponsorships
+
+by Jason Snell
+
+May 7, 2026 9:05 AM 
+					PT
+
+Culpan: Apple goes all in on MacBook Neo production
+
+Last month, journalist Tim Culpan reported that Apple was going to have to make some hard decisions about the MacBook Neo, because the laptop was selling more than the company expected and, as a result, the supply of A18 Pro chips was dwindling rapidly.
+
+Now Culpan reports that Apple has decided how it will solve the problem:
+
+Apple recently made its decision and opted to put more units of the Neo in customer hands… As a result, it’s now asking suppliers to prepare capacity for 10 million units of the debut version of the Neo, up from an initial estimate of 5 million to 6 million, my sources tell me.
+
+This renewed commitment to meeting demand means Apple must also ask TSMC for a hot lot of A18 Pro chips, the same processor used in the iPhone 16 Pro. The system-on-chip is made using TSMC’s N3E process, with the initial production run underway at least two years ago.
+
+The net result of this is that the cost of making MacBook Neos is going to go up, but Apple has (quite rightly, in my opinion) decided that it’s more important to keep MacBook Neo momentum rolling than to maintain higher margins.
+
+Apple recently cut some Mac mini and Mac Studio configurations as it manages RAM costs and shortages, and Culpan says that it’s certainly on the table for Apple to do the same on the MacBook Neo.
+
+The simplest answer is probably to eliminate the $599 model entirely, but changing the base price point threatens to undermine the entire premise of the Neo. It’s a tricky one. This is how John Ternus earns his paycheck, I suppose.
+
+Report a typo
+
+Discuss in members Discord (app)
+
+Search Six Colors
+
+Sponsor
+
+Mastodon
+
+Merch
+
+Report a mistake
+
+RSS Feed
+
+JSON Feed
+
+Privacy Policy

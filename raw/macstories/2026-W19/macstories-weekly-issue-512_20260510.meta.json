@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.macstories.net/club/macstories-weekly-issue-512/",
+  "source_type": "macstories",
+  "source_tier": "T2",
+  "source_title": "MacStories Weekly: Issue 512",
+  "fetched_at": "2026-05-10T15:32:40+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:dbeabdd1a302667de4983e593f1e873cb3413146a6d04718cd8fbd41ad85a76c",
+  "content_type": "text/html",
+  "content_size_bytes": 34805,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": "2026-05-10T15:34:01+08:00|mac-mini",
+  "notes": "pubDate: Fri, 08 May 2026 15:54:44 +0000",
+  "relevance_score": 7,
+  "relevance_reasoning": "文章提及多個Apple產品及相關技術，具時效性。",
+  "relevance_breakdown": {
+    "d1_product_mention": 2,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 2,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "Mac",
+    "Apple Frames",
+    "Pedometer++",
+    "Codex Skills",
+    "AGENTS.md"
+  ],
+  "ingest_targets": [
+    "mac-mini"
+  ]
+}

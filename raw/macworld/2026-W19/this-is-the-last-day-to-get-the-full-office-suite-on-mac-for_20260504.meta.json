@@ -12,7 +12,7 @@
   "locale": "en-US",
   "related_wiki_pages": [],
   "ingest_status": "approved",
-  "ingest_log_ref": null,
+  "ingest_log_ref": "gate4-fanout-review",
   "notes": "pubDate: Sun, 03 May 2026 08:00:00 +0000; extracted via pre-w2-crawler",
   "relevance_score": 7,
   "relevance_reasoning": "文章主要關於 Mac 上的 Office 軟體，但提及多款 Apple 產品，具備訓練潛力，時效性普通。",
@@ -28,5 +28,14 @@
     "iPad",
     "Apple Watch",
     "AirPods"
+  ],
+  "ingest_targets": [
+    "airpods-pro-3",
+    "ipad-air",
+    "iphone-17-pro",
+    "apple-watch-series-11",
+    "apple-watch-ultra-3",
+    "mac-mini",
+    "macbook-neo"
   ]
 }

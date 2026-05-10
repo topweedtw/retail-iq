@@ -1,0 +1,95 @@
+Apple
+
+Store
+
+Mac
+
+iPad
+
+iPhone
+
+Watch
+
+Vision
+
+AirPods
+
+TV & Home
+
+Entertainment
+
+Accessories
+
+Support
+
+0+
+
+Apple Services
+
+Apple Stories
+
+AI meets accessibility in this year’s  Swift Student Challenge
+
+Making Art More Accessible with Steady Hands
+
+Perfecting Presentations with Pitch Coach
+
+Finding Safe Flood Zone Evacuation Paths with Asuo
+
+Accessibility was a core consideration from the start, not an afterthought. I believe that during a crisis, no one should be left behind because of a disability or limitation.
+
+Karen-Happuch Peprah Henneh, Asuo creator
+
+Democratizing Music Education with LeViola
+
+Media
+
+Text of this article
+
+May 7, 2026
+
+UPDATE
+
+AI meets accessibility in this year’s :br(s): Swift Student Challenge
+
+Receiving real-time feedback while giving a presentation. Escaping a flood zone in Accra. Playing the viola, without the physical instrument. Drawing on iPad without worry of tremors. These are just four of the solutions that this year’s Swift Student Challenge Distinguished Winners created with their winning app playgrounds.
+
+The annual Swift Student Challenge invites students from across the globe to bring their ideas to life through original app playgrounds built with Apple’s easy-to-learn Swift coding language. This year’s 350 winning submissions represent 37 countries and regions, and showcase a wide range of technologies.
+
+“The breadth of creativity we see in the Swift Student Challenge never ceases to amaze us,” says Susan Prescott, Apple’s vice president of Worldwide Developer Relations. “This year’s winners found remarkable ways to harness the power of Apple platforms, Swift, and AI tools to build app playgrounds that are as technically impressive as they are meaningful. We’re incredibly proud to support their journey and can’t wait to see what they create next.”
+
+Fifty Distinguished Winners have been invited to attend the Worldwide Developers Conference (WWDC) at Apple Park in June, where they’ll take part in a curated three-day experience. Throughout the week, the students will have the opportunity to watch the Keynote live, learn from Apple experts and engineers, and participate in hands-on labs.
+
+Many of this year’s winners took inspiration from their communities — or even from conversations at their kitchen tables — to engineer impressive apps with accessibility at their core. Below, Distinguished Winners Gayatri Goundadkar, Anton Baranov, Karen-Happuch Peprah Henneh, and Yoonjae Joung delve into their app playgrounds and the real-world problems they’re aiming to solve, demonstrating the power of app development to drive lasting change.
+
+Making Art More Accessible with Steady Hands
+
+Gayatri Goundadkar, 20, grew up drawing and painting with her grandmother in Pune, India. The two shared a passion for Warli painting, a centuries-old art form known for its use of basic geometric shapes. But as Goundadkar’s grandmother aged, her hands started shaking and she was unable to partake in her daily practice. That loss stayed with Goundadkar and inspired her to build Steady Hands, an app playground that uses Apple Pencil stabilization to support individuals with tremors in creating art.
+
+“My main audience is older adults,” explains Goundadkar, a third-year computer science student at Maharashtra Institute of Technology World Peace University, where she’s involved in an app development program. “Especially in India, technology can feel intimidating for that generation, so I made every decision with that in mind. The interface had to feel calm, not clinical. I didn’t want anyone to open the app and feel lost or overwhelmed. I wanted them to feel like it was made for them.”
+
+In order for the app to allow users to draw freely, Goundadkar had to understand tremors and how they affect interaction with the touchscreen on iPad. Inspired in part by Apple’s accessibility features such as Touch Accommodations, she got started by learning SwiftUI concepts, using Anthropic’s Claude to help unpack lessons on topics like how PencilKit handles stroke data. And to characterize a user’s tremor, she built a tool that analyzes raw motion data from iPad and Apple Pencil. It captures hand movements and applies signal processing techniques to identify the frequency and intensity of a user’s tremor.
+
+“When a person draws, my app uses Apple’s PencilKit and Accelerate frameworks to analyze stroke data and recognize tremors. It detects what is intentional and what is not, and removes the tremor component,” she says. “Every drawing is then displayed in a personal 3D museum, because I wanted them to feel like artists, not patients. When users saw the stabilization working, they felt more confident.”
+
+Perfecting Presentations with Pitch Coach
+
+Anton Baranov, 22, was sitting at his family’s kitchen table in Frankfurt, Germany, when his mother, a linguistics and literature professor, made a comment that struck him.
+
+“She said her students are really talented, but sometimes when they present something, they just freeze. They lose their words. They’re slouching. They can’t share their ideas,” says Baranov, a computer science student at the University of Applied Sciences Mittelhessen in Germany. It was in that moment that pitch coach — an app Baranov describes as “an Apple Intelligence-powered wingman for Shark Tank pitches” — was born.
+
+Baranov, who got into programming at 16, used Swift for the first time last August, and in February, he built pitch coach. He brought an early version to his mom’s students and discovered a specific pain point: Students know where they fall flat, but they only realize their mistakes after the fact. “A student told me, ‘I want to be able to catch myself in the act,’” Baranov recalls. “That’s exactly how the real-time feedback and AirPods posture tracking became the core of the app.”
+
+To guide users through overcoming presentation anxiety, Baranov leveraged Apple’s Foundation Models framework to generate personalized, context-aware feedback and summaries after each session, alerting the user to filler words such as “like” or “um.” He also used Claude Agent in Xcode 26 to translate the app into 20 languages, and consulted with friends and colleagues to help identify filler words in other languages.
+
+Baranov released pitch coach on the App Store in early March, and since then, it has amassed more than 6,000 organic downloads. Most of the app’s users employ it for presentation practice, but Baranov mentions some use cases that have made him laugh: practicing rap performances and stand-up comedy routines. “Users define the app, so if they like it for this purpose, they use it for this purpose,” he says.
+
+Finding Safe Flood Zone Evacuation Paths with Asuo
+
+Karen-Happuch Peprah Henneh only learned Swift this year. After completing undergraduate degrees in computer science and information technology in her home country of Ghana, Henneh focused on animation since coding opportunities were slim. She learned Figma and HTML5 on the side, and is now working on her master’s in interaction design at the California College of the Arts.
+
+She designed her winning app playground, Asuo, for flood-prone communities. (Asuo means “flowing water” in Twi, a language that’s widely spoken in Ghana.) Asuo provides safe real-time routing to individuals in flood zones, and it’s rooted in lived experience — the fatal floods that hit Accra in 2015, causing a ripple effect of disaster.
+
+“That experience really stayed with me because the whole country was in mourning,” Henneh says. “I decided that if I ever had a chance, it’s going to be the first thing that I would want to work on: Build an app that can calculate rain intensity and uses a pathfinding algorithm informed by historic flood data.”
+
+To create Asuo, Henneh had to not only synthesize all this data, but also ensure that it worked for everyone. “Accessibility was a core consideration from the start, not an afterthought,” she says. “I believe that during a crisis, no one should be left behind because of a d

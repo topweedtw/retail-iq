@@ -1,0 +1,59 @@
+ABOUT
+
+CLUB
+
+PODCASTS
+
+SHORTCUTS
+
+SETUPS
+
+iOS 26
+
+APPS
+
+STORIES
+
+SIGN IN
+
+DARK
+
+LIGHT
+
+AUTOMATIC
+
+Astropad Workbench Rethinks Remote Mac Control for AI Agents
+
+Pedometer++ 8: Glimmers of an Apple Wrist Renaissance
+
+Introducing Apple Frames 4: A Revamped Shortcut, Support for Frame Colors, Proportional Scaling, and the Apple Frames CLI for Developers
+
+Spotify CLI Turns Personalized Audio into a Podcast Feed→
+
+Spotify introduced a new feature called Personal Podcasts today that’s really clever. It’s a CLI, a set of agent skills, and a Claude plugin available from GitHub that, once installed, lets users prompt AI agents to create personalized audio that can be listened to like a podcast.
+
+Here’s how Spotify explains the feature:
+
+People are already starting to use their agents to create personal audio that guides their day: from summaries of class notes before an exam to briefings of what’s on their calendar. And they’re asking for a way to listen to it on Spotify, where they already listen to everything else.
+
+Now, we’re making it possible to save and play Personal Podcasts on Spotify. Your agent can generate a daily briefing, private to you, and it’s saved alongside everything else in Your Library. And as always with Spotify, it’s seamlessly integrated across the devices you use.
+
+This is a lot like a tool I built for myself that lives on a Mac mini server and generates a podcast feed from articles I save. I’ve enjoyed the experience so much that I plan to expand my server setup to handle exactly the sort of daily briefings Spotify envisions. What’s great about Spotify’s solution is that it eliminates the sort of tinkering I went through to build a suite of tools on a personal server. Yes, you still need to install a command-line tool, but with an AI agent to help, that’s simple.
+
+I’m actually surprised that no indie developer of a podcast app has built a CLI for side-loading audio yet. The closest thing I’ve found is a Python CLI that automates the web-based uploading of audio to Overcast for premium subscribers. That’s an okay solution, but it’s unofficial, which means changes to the Overcast website could break it. Hopefully we’ll see something like this from more than just Spotify soon.
+
+ABOUT
+
+CLUB
+
+ADVERTISE
+
+PRIVACY POLICY
+
+TERMS OF SERVICE
+
+Web Dev by Made with Fuel | Design by Silvia Gatta
+
+Copyright © 2026 MacStories, Inc. Find Federico on MastodonFind John on MastodonFind Alex on MastodonFind Silvia on MastodonFind MacStories on Mastodon All rights reserved.
+
+v4.6

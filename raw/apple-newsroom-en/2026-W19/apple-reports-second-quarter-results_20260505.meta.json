@@ -12,7 +12,7 @@
   "locale": "en-US",
   "related_wiki_pages": [],
   "ingest_status": "pending-review",
-  "ingest_log_ref": null,
+  "ingest_log_ref": "gate4-fanout-review",
   "notes": "pubDate: 2026-04-30T20:30:59.836Z",
   "relevance_score": 6,
   "relevance_reasoning": "文章提及多款 Apple 產品和部分生態系統，但訓練潛力與時效性較低。",
@@ -28,5 +28,13 @@
     "Mac",
     "Apple Watch",
     "Apple Vision Pro"
+  ],
+  "ingest_targets": [
+    "ipad-air",
+    "iphone-17-pro",
+    "apple-watch-series-11",
+    "apple-watch-ultra-3",
+    "mac-mini",
+    "macbook-neo"
   ]
 }

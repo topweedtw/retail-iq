@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.macstories.net/linked/spotify-cli-turns-personalized-audio-into-a-podcast-feed/",
+  "source_type": "macstories",
+  "source_tier": "T2",
+  "source_title": "Spotify CLI Turns Personalized Audio into a Podcast Feed",
+  "fetched_at": "2026-05-10T15:32:42+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:a52e9bfd024fea0d53689f45eb29c334e3156dc438d3841f71f65b36c1a5df98",
+  "content_type": "text/html",
+  "content_size_bytes": 38606,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "skipped-low-relevance",
+  "ingest_log_ref": null,
+  "notes": "pubDate: Thu, 07 May 2026 20:00:34 +0000",
+  "relevance_score": 4,
+  "relevance_reasoning": "文章提及 Apple 產品和生態系統，但不具高訓練潛力。",
+  "relevance_breakdown": {
+    "d1_product_mention": 1,
+    "d2_ecosystem": 1,
+    "d3_training_potential": 1,
+    "d4_timeliness": 1
+  },
+  "key_entities": [
+    "Mac",
+    "iOS",
+    "Apple Frames",
+    "Spotify",
+    "AI agents"
+  ]
+}

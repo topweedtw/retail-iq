@@ -21,10 +21,10 @@
 Mac mini 和 Mac Studio 因其強大的 AI 處理能力，受到用戶的熱烈歡迎，導致需求超出預期，供貨緊張。
 ```
 
-**Decision**: [ ] apply  [ ] reject  [ ] edit-then-apply
+**Decision**: [ ] apply  [x] reject  [ ] edit-then-apply
 
-**Decided by**: @___
+**Decided by**: @topweedtw
 
-**Decided at**: ___
+**Decided at**: 2026-05-10
 
 ---

@@ -12,7 +12,7 @@
   "locale": "en-US",
   "related_wiki_pages": [],
   "ingest_status": "pending-review",
-  "ingest_log_ref": null,
+  "ingest_log_ref": "gate4-fanout-review",
   "notes": "pubDate: Mon, 04 May 2026 13:28:47 +0000",
   "relevance_score": 5,
   "relevance_reasoning": "文章提及 Apple Watch、iPhone、iPad，但訓練潛力有限，時效性為當代產品。",
@@ -28,5 +28,11 @@
     "iPad",
     "watchOS",
     "iOS"
+  ],
+  "ingest_targets": [
+    "iphone-17-pro",
+    "apple-watch-series-11",
+    "apple-watch-ultra-3",
+    "ipad-air"
   ]
 }

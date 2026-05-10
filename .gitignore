@@ -94,3 +94,4 @@ Icon
 # ─── Enchanté conversation files（對話工作目錄）──────
 # 這個檔案在對話專用目錄下，不入 git
 # （用於開發期間，實際 repo 應從 cleaner path 初始化）
+.claude/

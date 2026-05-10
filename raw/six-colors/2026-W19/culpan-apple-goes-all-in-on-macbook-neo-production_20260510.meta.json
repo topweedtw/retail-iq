@@ -1,0 +1,35 @@
+{
+  "source_url": "https://sixcolors.com/link/2026/05/culpan-apple-goes-all-in-on-macbook-neo-production/",
+  "source_type": "six-colors",
+  "source_tier": "T2",
+  "source_title": "Culpan: Apple goes all in on MacBook Neo production ↦",
+  "fetched_at": "2026-05-10T15:32:36+08:00",
+  "fetched_by": "ingest-agent-v0.1",
+  "content_hash": "sha256:a4f239d36204e6e3746873e549b16ef95b8e4644171583d2567dc1874ef5bd28",
+  "content_type": "text/html",
+  "content_size_bytes": 40890,
+  "http_status": 200,
+  "locale": "en-US",
+  "related_wiki_pages": [],
+  "ingest_status": "approved",
+  "ingest_log_ref": "2026-05-10T15:34:27+08:00|macbook-neo",
+  "notes": "pubDate: Thu, 07 May 2026 16:05:33 +0000",
+  "relevance_score": 10,
+  "relevance_reasoning": "文章詳細討論了最新的MacBook Neo及其生產情況。",
+  "relevance_breakdown": {
+    "d1_product_mention": 3,
+    "d2_ecosystem": 2,
+    "d3_training_potential": 3,
+    "d4_timeliness": 2
+  },
+  "key_entities": [
+    "MacBook Neo",
+    "A18 Pro",
+    "iPhone 16 Pro",
+    "Mac mini",
+    "Mac Studio"
+  ],
+  "ingest_targets": [
+    "macbook-neo"
+  ]
+}

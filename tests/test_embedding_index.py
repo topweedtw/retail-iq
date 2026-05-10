@@ -7,6 +7,7 @@ from pathlib import Path
 from unittest.mock import MagicMock
 
 from scripts.embedding_index import EmbeddingIndex, cosine_similarity, INDEX_VERSION  # noqa: E402
+from scripts.llm_client import MockLLMClient  # noqa: E402
 
 
 # ─────────────────────────────────────────────────────────────────────
@@ -156,8 +157,8 @@ class TestWithRealClientMock(unittest.TestCase):
     """Verify EmbeddingIndex works with the actual LLMClient in mock mode."""
 
     def setUp(self):
-        from scripts.llm_client import LLMClient
-        self.client = LLMClient(mock=True)
+        from scripts.llm_client import MockLLMClient
+        self.client = MockLLMClient()
         self.tmpdir = tempfile.TemporaryDirectory()
         self.path = Path(self.tmpdir.name) / "idx.json"
 
@@ -171,7 +172,7 @@ class TestWithRealClientMock(unittest.TestCase):
         # First article
         vec1 = idx.embed_text(text)
         self.assertIsNotNone(vec1)
-        self.assertEqual(len(vec1), 768)
+        self.assertEqual(len(vec1), 1536)
         idx.add("sha256:a", "apple-com-tw", "first", vec1)
 
         # Same text → mock returns same vector → sim = 1.0

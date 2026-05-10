@@ -353,10 +353,11 @@ class IngestPipeline:
         self._llm = None
         if not (skip_scoring and skip_gate1b):
             try:
-                from .llm_client import LLMClient
-            except ImportError:
-                from scripts.llm_client import LLMClient  # type: ignore[no-redef]
-                self._llm = LLMClient()
+                try:
+                    from .llm_client import make_client
+                except ImportError:
+                    from scripts.llm_client import make_client  # type: ignore[no-redef]
+                self._llm = make_client()
                 logging.info(
                     f"LLM client ready: chat={self._llm.chat_model} embed={self._llm.embedding_model} @ {self._llm.endpoint}"
                 )
@@ -368,9 +369,10 @@ class IngestPipeline:
         self._embed_index = None
         if not self.skip_gate1b and self._llm is not None:
             try:
-                from .embedding_index import EmbeddingIndex
-            except ImportError:
-                from scripts.embedding_index import EmbeddingIndex  # type: ignore[no-redef]
+                try:
+                    from .embedding_index import EmbeddingIndex
+                except ImportError:
+                    from scripts.embedding_index import EmbeddingIndex  # type: ignore[no-redef]
                 self._embed_index = EmbeddingIndex(
                     path=RAW_DIR / "_embeddings-index.json",
                     client=self._llm,
@@ -614,13 +616,13 @@ def main() -> int:
             logging.error("--gate4-only + --skip-gate4 is contradictory")
             return 1
         try:
-            from .llm_client import LLMClient
+            from .llm_client import make_client
             from .gate4_pipeline import run_gate4_pass, GATE4_ELIGIBLE_STATUSES
         except ImportError:
-            from scripts.llm_client import LLMClient  # type: ignore[no-redef]
+            from scripts.llm_client import make_client  # type: ignore[no-redef]
             from scripts.gate4_pipeline import run_gate4_pass, GATE4_ELIGIBLE_STATUSES  # type: ignore[no-redef]
         try:
-            llm = LLMClient()
+            llm = make_client()
         except Exception as e:
             logging.error(f"LLM client init failed: {e}")
             return 1

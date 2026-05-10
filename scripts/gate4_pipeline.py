@@ -21,7 +21,7 @@ from .gate4_router import load_products, route, RouteMatch  # noqa: E402
 from .gate4_proposer import propose, _load_article          # noqa: E402
 from .gate4_applier import apply_to_page, ApplyResult, PRODUCTS_DIR, mark_meta_applied  # noqa: E402
 from .gate4_queue import write_review, write_orphan        # noqa: E402
-from .llm_client import LLMClient                          # noqa: E402
+from .llm_client import LLMClient, make_client                          # noqa: E402
 
 REPO_ROOT = SCRIPTS.parent
 

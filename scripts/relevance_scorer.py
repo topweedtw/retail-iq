@@ -16,7 +16,7 @@ import json
 import logging
 from dataclasses import dataclass
 
-from .llm_client import LLMClient, LLMError
+from .llm_client import LLMClient, LLMError, make_client
 
 
 @dataclass
@@ -78,7 +78,7 @@ def score_article(
     Raises:
         LLMError: API 呼叫失敗或 JSON 解析失敗
     """
-    client = client or LLMClient()
+    client = client or make_client()
     content_excerpt = (content or "")[:max_content_chars]
     prompt = PROMPT_TEMPLATE.format(
         title=title or "(無標題)",

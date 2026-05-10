@@ -8,7 +8,7 @@ import sys
 import unittest
 from pathlib import Path
 
-os.environ["APPLE_GENAI_MOCK"] = "1"
+os.environ["OPENAI_MOCK"] = "1"
 
 from scripts.relevance_scorer import (  # noqa: E402
     score_article,

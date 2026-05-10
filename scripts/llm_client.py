@@ -1,21 +1,27 @@
 """
 scripts/llm_client.py — OpenAI-compatible 客戶端（stdlib urllib，零依賴）
 
-Apple GenAI 透過本地 proxy (http://localhost:11211/api/openai/v1) 提供：
-  - Chat completion：gemini-2.5-flash-lite:latest（輕量，適合 Gate 3 rubric 打分）
-  - Embedding:        text-multilingual-embedding-002:latest（繁中+英文，適合 Gate 1b）
+支援任何 OpenAI-compatible endpoint：
+  - api.openai.com（預設）
+  - 本地 Ollama（http://localhost:11434/v1）
+  - 本地 LM Studio（http://localhost:1234/v1）
+  - 其他 proxy
 
 環境變數（全 optional，有合理預設）：
-  APPLE_GENAI_ENDPOINT        default: http://localhost:11211/api/openai/v1
-  APPLE_GENAI_CHAT_MODEL      default: gemini-2.5-flash-lite:latest
-  APPLE_GENAI_EMBEDDING_MODEL default: text-multilingual-embedding-002:latest
-  APPLE_GENAI_TIMEOUT         default: 30（秒）
-  APPLE_GENAI_MOCK            若 =1 → 用內建 mock 不打網路（CI/unit test 用）
+  OPENAI_API_KEY          API key（打 api.openai.com 時必填）
+  OPENAI_ENDPOINT         default: https://api.openai.com/v1
+  OPENAI_CHAT_MODEL       default: gpt-4o-mini
+  OPENAI_EMBEDDING_MODEL  default: text-embedding-3-small
+  OPENAI_TIMEOUT          default: 30（秒）
+  OPENAI_MOCK             若 =1 → 用 MockLLMClient 不打網路（CI/unit test 用）
+
+向後相容：舊的 APPLE_GENAI_* 環境變數仍可用，優先序低於 OPENAI_*。
 
 本檔零 pip 依賴，純 stdlib。
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -23,9 +29,9 @@ import urllib.error
 import urllib.request
 from typing import Any
 
-DEFAULT_ENDPOINT = "http://localhost:11211/api/openai/v1"
-DEFAULT_CHAT_MODEL = "gemini-2.5-flash-lite:latest"
-DEFAULT_EMBEDDING_MODEL = "text-multilingual-embedding-002:latest"
+DEFAULT_ENDPOINT = "https://api.openai.com/v1"
+DEFAULT_CHAT_MODEL = "gpt-4o-mini"
+DEFAULT_EMBEDDING_MODEL = "text-embedding-3-small"
 DEFAULT_TIMEOUT = 30
 
 
@@ -38,30 +44,55 @@ class LLMClient:
     最小 OpenAI-compatible 客戶端。
 
     使用：
-        client = LLMClient()
-        content = client.chat([
-            {"role": "user", "content": "回 OK"}
-        ])
+        client = LLMClient()                          # 讀環境變數
+        client = LLMClient(api_key="sk-...")          # 明確傳入
+        client = LLMClient(endpoint="http://localhost:11434/v1", api_key="")  # Ollama
 
-        embeddings = client.embed(["some text"])
-        # → list[list[float]]
+        content = client.chat([{"role": "user", "content": "回 OK"}])
+        embeddings = client.embed(["some text"])      # → list[list[float]]
+
+    測試用：
+        from scripts.llm_client import MockLLMClient
+        client = MockLLMClient()                      # 固定 stub 回應
     """
 
     def __init__(
         self,
         endpoint: str | None = None,
+        api_key: str | None = None,
         chat_model: str | None = None,
         embedding_model: str | None = None,
         timeout: int | None = None,
-        mock: bool | None = None,
     ) -> None:
-        self.endpoint = (endpoint or os.environ.get("APPLE_GENAI_ENDPOINT") or DEFAULT_ENDPOINT).rstrip("/")
-        self.chat_model = chat_model or os.environ.get("APPLE_GENAI_CHAT_MODEL") or DEFAULT_CHAT_MODEL
-        self.embedding_model = embedding_model or os.environ.get("APPLE_GENAI_EMBEDDING_MODEL") or DEFAULT_EMBEDDING_MODEL
-        self.timeout = timeout or int(os.environ.get("APPLE_GENAI_TIMEOUT", DEFAULT_TIMEOUT))
-        if mock is None:
-            mock = os.environ.get("APPLE_GENAI_MOCK") == "1"
-        self.mock = mock
+        # Endpoint：OPENAI_ENDPOINT > APPLE_GENAI_ENDPOINT（向後相容）> default
+        self.endpoint = (
+            endpoint
+            or os.environ.get("OPENAI_ENDPOINT")
+            or os.environ.get("APPLE_GENAI_ENDPOINT")
+            or DEFAULT_ENDPOINT
+        ).rstrip("/")
+
+        # API key：明確傳入 > OPENAI_API_KEY > 空字串（本地 endpoint 不需要）
+        self.api_key = api_key if api_key is not None else os.environ.get("OPENAI_API_KEY", "")
+
+        # Models：OPENAI_* > APPLE_GENAI_*（向後相容）> default
+        self.chat_model = (
+            chat_model
+            or os.environ.get("OPENAI_CHAT_MODEL")
+            or os.environ.get("APPLE_GENAI_CHAT_MODEL")
+            or DEFAULT_CHAT_MODEL
+        )
+        self.embedding_model = (
+            embedding_model
+            or os.environ.get("OPENAI_EMBEDDING_MODEL")
+            or os.environ.get("APPLE_GENAI_EMBEDDING_MODEL")
+            or DEFAULT_EMBEDDING_MODEL
+        )
+        self.timeout = timeout or int(
+            os.environ.get("OPENAI_TIMEOUT")
+            or os.environ.get("APPLE_GENAI_TIMEOUT")
+            or DEFAULT_TIMEOUT
+        )
 
     # ═════════════════════════════════════════════════════════════
     # Chat
@@ -76,9 +107,6 @@ class LLMClient:
         max_tokens: int = 500,
     ) -> str:
         """送 chat completion，回傳 content 字串。"""
-        if self.mock:
-            return _mock_chat(messages)
-
         body = {
             "model": model or self.chat_model,
             "messages": messages,
@@ -99,8 +127,7 @@ class LLMClient:
         temperature: float = 0.1,
         max_tokens: int = 500,
     ) -> dict[str, Any]:
-        """
-        送 chat 並解析 JSON 結果。
+        """送 chat 並解析 JSON 結果。
 
         策略：很多模型會包 markdown fence（如 ```json ... ```），
         先找第一個 { ... } 區塊，不行才 raise。
@@ -114,9 +141,6 @@ class LLMClient:
 
     def embed(self, texts: list[str], *, model: str | None = None) -> list[list[float]]:
         """取 embedding。單筆或批次皆可。"""
-        if self.mock:
-            return [_mock_embed(t) for t in texts]
-
         body = {
             "model": model or self.embedding_model,
             "input": texts,
@@ -134,12 +158,10 @@ class LLMClient:
     def _post_json(self, path: str, body: dict) -> dict:
         url = self.endpoint + path
         data = json.dumps(body).encode("utf-8")
-        req = urllib.request.Request(
-            url,
-            data=data,
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
+        headers: dict[str, str] = {"Content-Type": "application/json"}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+        req = urllib.request.Request(url, data=data, headers=headers, method="POST")
         try:
             with urllib.request.urlopen(req, timeout=self.timeout) as resp:
                 raw = resp.read().decode("utf-8")
@@ -154,7 +176,7 @@ class LLMClient:
         except urllib.error.URLError as e:
             raise LLMError(
                 f"Network error to {url}: {e.reason}. "
-                f"Check Apple GenAI proxy is running on {self.endpoint}."
+                f"Is the endpoint reachable? ({self.endpoint})"
             ) from e
 
     @staticmethod
@@ -163,13 +185,11 @@ class LLMClient:
 
         使用 JSONDecoder.raw_decode() 逐字元掃描，找到第一個可合法解析的
         '{' 起始位置即停止，避免貪婪 regex 在多 JSON 物件時抓到整段導致
-        json.loads 失敗（#6）。
+        json.loads 失敗。
         """
         content = content.strip()
-        # 去掉 markdown code fence
         content = re.sub(r"^```(?:json)?\s*", "", content)
         content = re.sub(r"\s*```$", "", content)
-        # 用 raw_decode 找第一個合法 JSON 物件
         decoder = json.JSONDecoder()
         for i, ch in enumerate(content):
             if ch == "{":
@@ -182,12 +202,90 @@ class LLMClient:
 
 
 # ═════════════════════════════════════════════════════════════════
-# Mock implementations (for APPLE_GENAI_MOCK=1)
+# MockLLMClient — 測試 / CI 用
 # ═════════════════════════════════════════════════════════════════
 
-def _mock_chat(messages: list[dict[str, str]]) -> str:
-    """給 CI / unit test 用。回傳符合 §8.10.3 rubric 的假 JSON。"""
-    # 看 prompt 是否要求 JSON（rubric），否則回文字
+class MockLLMClient(LLMClient):
+    """不打網路的 mock 實作，供 unit test 和 CI 使用。
+
+    使用方式：
+        # 1. 固定 stub（預設行為，與舊 APPLE_GENAI_MOCK=1 相同）
+        client = MockLLMClient()
+
+        # 2. 自訂 chat 回應（per-test 注入）
+        client = MockLLMClient(chat_response='{"total": 5, ...}')
+
+        # 3. 用 callable 動態決定回應
+        client = MockLLMClient(chat_fn=lambda messages: '{"total": 9}')
+
+        # 4. 模擬 API 失敗
+        client = MockLLMClient(raise_on_chat=LLMError("timeout"))
+    """
+
+    def __init__(
+        self,
+        *,
+        chat_response: str | None = None,
+        chat_fn: Any = None,
+        embed_fn: Any = None,
+        raise_on_chat: Exception | None = None,
+        raise_on_embed: Exception | None = None,
+        # 保留 LLMClient 的 signature 相容性，但忽略網路相關參數
+        endpoint: str | None = None,
+        api_key: str | None = None,
+        chat_model: str | None = None,
+        embedding_model: str | None = None,
+        timeout: int | None = None,
+    ) -> None:
+        # 不呼叫 super().__init__() 的網路邏輯，直接設屬性
+        self.endpoint = endpoint or "mock://localhost"
+        self.api_key = ""
+        self.chat_model = chat_model or DEFAULT_CHAT_MODEL
+        self.embedding_model = embedding_model or DEFAULT_EMBEDDING_MODEL
+        self.timeout = timeout or DEFAULT_TIMEOUT
+
+        self._chat_response = chat_response
+        self._chat_fn = chat_fn
+        self._embed_fn = embed_fn
+        self._raise_on_chat = raise_on_chat
+        self._raise_on_embed = raise_on_embed
+
+        # 呼叫記錄（方便 test 驗證）
+        self.chat_calls: list[list[dict]] = []
+        self.embed_calls: list[list[str]] = []
+
+    def chat(
+        self,
+        messages: list[dict[str, str]],
+        *,
+        model: str | None = None,
+        temperature: float = 0.1,
+        max_tokens: int = 500,
+    ) -> str:
+        self.chat_calls.append(messages)
+        if self._raise_on_chat:
+            raise self._raise_on_chat
+        if self._chat_fn:
+            return self._chat_fn(messages)
+        if self._chat_response is not None:
+            return self._chat_response
+        return _default_mock_chat(messages)
+
+    def embed(self, texts: list[str], *, model: str | None = None) -> list[list[float]]:
+        self.embed_calls.append(texts)
+        if self._raise_on_embed:
+            raise self._raise_on_embed
+        if self._embed_fn:
+            return self._embed_fn(texts)
+        return [_default_mock_embed(t) for t in texts]
+
+
+# ═════════════════════════════════════════════════════════════════
+# 預設 mock 實作（MockLLMClient 的 fallback）
+# ═════════════════════════════════════════════════════════════════
+
+def _default_mock_chat(messages: list[dict[str, str]]) -> str:
+    """固定 stub：rubric prompt → 9 分 JSON；其他 → '[mock] ok'。"""
     last_user = next((m["content"] for m in reversed(messages) if m["role"] == "user"), "")
     if "rubric" in last_user.lower() or "total" in last_user.lower():
         return json.dumps({
@@ -202,12 +300,13 @@ def _mock_chat(messages: list[dict[str, str]]) -> str:
     return "[mock] ok"
 
 
-def _mock_embed(text: str) -> list[float]:
-    """回一個確定性的 768-dim 假 embedding（hash-based）。相同文字 → 相同 vector。"""
-    import hashlib
+def _default_mock_embed(text: str) -> list[float]:
+    """確定性 1536-dim 假 embedding（hash-based）。相同文字 → 相同 vector。
+
+    維度改為 1536 以符合 text-embedding-3-small 的實際輸出維度。
+    """
     h = hashlib.sha256(text.encode("utf-8")).digest()
-    # 把 hash bytes 展開成 768 維（每 byte → [-1, 1] 浮點）
-    dim = 768
+    dim = 1536
     out = []
     for i in range(dim):
         b = h[i % len(h)]
@@ -216,17 +315,44 @@ def _mock_embed(text: str) -> list[float]:
 
 
 # ═════════════════════════════════════════════════════════════════
+# 向後相容：OPENAI_MOCK=1 或 APPLE_GENAI_MOCK=1 → 回傳 MockLLMClient
+# ═════════════════════════════════════════════════════════════════
+
+def make_client(**kwargs: Any) -> LLMClient:
+    """工廠函式：依環境變數決定回傳 LLMClient 或 MockLLMClient。
+
+    建議在 pipeline 程式碼裡用這個取代直接 LLMClient()，
+    這樣 CI 只要設 OPENAI_MOCK=1 就自動走 mock。
+
+    使用：
+        from scripts.llm_client import make_client
+        llm = make_client()
+    """
+    mock_env = os.environ.get("OPENAI_MOCK") or os.environ.get("APPLE_GENAI_MOCK")
+    if mock_env == "1":
+        return MockLLMClient(**{k: v for k, v in kwargs.items()
+                                if k in ("chat_model", "embedding_model", "timeout")})
+    return LLMClient(**kwargs)
+
+
+# ═════════════════════════════════════════════════════════════════
 # CLI 測試用
 # ═════════════════════════════════════════════════════════════════
 
 def _main() -> None:
     """執行 `python3 scripts/llm_client.py` 直接測 endpoint 活著沒。"""
+    import sys
     client = LLMClient()
-    print(f"Endpoint: {client.endpoint}")
+    print(f"Endpoint:        {client.endpoint}")
     print(f"Chat model:      {client.chat_model}")
     print(f"Embedding model: {client.embedding_model}")
-    print(f"Mock mode:       {client.mock}")
+    print(f"API key:         {'set' if client.api_key else 'NOT SET'}")
     print()
+
+    if not client.api_key and "openai.com" in client.endpoint:
+        print("⚠️  OPENAI_API_KEY 未設定，打 api.openai.com 會 401")
+        print("   請先執行：export OPENAI_API_KEY=sk-...")
+        sys.exit(1)
 
     print("── Chat test ──")
     try:
@@ -240,7 +366,7 @@ def _main() -> None:
     try:
         data = client.chat_json([
             {"role": "system", "content": "You output JSON only."},
-            {"role": "user", "content": "Output: {\"status\": \"ok\", \"n\": 42}"},
+            {"role": "user", "content": 'Output: {"status": "ok", "n": 42}'},
         ], max_tokens=50)
         print(f"  ✅ {data}")
     except LLMError as e:

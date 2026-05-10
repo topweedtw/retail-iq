@@ -20,7 +20,7 @@ from typing import Optional
 
 SCRIPTS = Path(__file__).resolve().parent
 from .yaml_mini import loads as yloads           # noqa: E402
-from .llm_client import LLMClient, LLMError      # noqa: E402
+from .llm_client import LLMClient, LLMError, make_client      # noqa: E402
 
 REPO_ROOT = SCRIPTS.parent
 RAW_DIR = REPO_ROOT / "raw"
@@ -235,7 +235,7 @@ def propose(
     max_article_chars: int = 3000,
 ) -> ProposalSet:
     """Main entry: article + target page → structured proposals."""
-    client = client or LLMClient()
+    client = client or make_client()
     fm, body = split_frontmatter(product_page_md)
     sections = extract_sections(body)
     prompt = build_prompt(

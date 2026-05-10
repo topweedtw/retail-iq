@@ -7,7 +7,9 @@ const NAV_ITEMS = [
     { label: "儀表板", href: "/", icon: "📊" },
     { label: "產品頁", href: "/products", icon: "📱" },
     { label: "Ingest Pipeline", href: "/ingest", icon: "📥" },
+    { label: "上傳文件", href: "/ingest/upload", icon: "📤" },
     { label: "資料來源", href: "/sources", icon: "🌐" },
+    { label: "新增來源", href: "/sources/add", icon: "➕" },
     { label: "Review Queue", href: "/review", icon: "⚠️" },
 ];
 
@@ -36,8 +38,8 @@ export function Sidebar() {
                             key={item.href}
                             href={item.href}
                             className={`flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors ${active
-                                    ? "bg-surface-2 text-accent"
-                                    : "text-text-dim hover:bg-surface-2 hover:text-text-primary"
+                                ? "bg-surface-2 text-accent"
+                                : "text-text-dim hover:bg-surface-2 hover:text-text-primary"
                                 }`}
                         >
                             <span>{item.icon}</span>
